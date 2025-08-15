@@ -1,0 +1,61 @@
+{
+    "title": "Надлежащее качество (товар не использовался)",
+    "logoPosition": "right",
+    "pages": [
+        {
+            "name": "page1",
+            "elements": [
+                {
+                    "type": "dropdown",
+                    "name": "question1_1",
+                    "title": "Упаковка товара сохранена и имеет товарный вид?",
+                    "isRequired": true,
+                    "choices": [
+                        {
+                            "value": "TRUE",
+                            "text": "ДА"
+                        },
+                        {
+                            "value": "FALSE",
+                            "text": "НЕТ"
+                        }
+                    ]
+                },
+                {
+                    "type": "dropdown",
+                    "name": "question1_2",
+                    "title": "В комплекте есть все элементы, указанные на коробке?",
+                    "isRequired": true,
+                    "choices": [
+                        {
+                            "value": "TRUE",
+                            "text": "ДА"
+                        },
+                        {
+                            "value": "FALSE",
+                            "text": "НЕТ"
+                        }
+                    ]
+                },
+                {
+                    "type": "dropdown",
+                    "name": "question1_3",
+                    "title": "Товар не был в употреблении?",
+                    "isRequired": true,
+                    "choices": [
+                        {
+                            "value": "TRUE",
+                            "text": "ДА, не использовался"
+                        },
+                        {
+                            "value": "FALSE",
+                            "text": "НЕТ, использовался"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "showTitle": false,
+    "showCompletedPage": false
+}

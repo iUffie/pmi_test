@@ -1,0 +1,29 @@
+{
+    "title": "Adverse event",
+    "logoPosition": "right",
+    "pages": [
+     {
+      "name": "page1",
+      "elements": [
+       {
+        "type": "dropdown",
+        "name": "question1_1",
+        "title": "Клиент подтверждает проблемы со здоровьем?",
+        "isRequired": true,
+        "choices": [
+         {
+          "value": "TRUE",
+          "text": "ДА"
+         },
+         {
+          "value": "FALSE",
+          "text": "НЕТ"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "showTitle": false,
+    "showCompletedPage": false
+   }

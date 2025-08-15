@@ -1,0 +1,93 @@
+{
+  "title": "Чекап опрос для Lil Hybrid 3.0",
+  "pages": [
+    {
+      "name": "page1",
+      "elements": [
+        {
+          "type": "boolean",
+          "name": "question1",
+          "title": "Отсутствуют следы попадания влаги?",
+          "isRequired": true,
+          "labelTrue": "Да",
+          "labelFalse": "Нет"
+        },
+        {
+          "type": "boolean",
+          "name": "question2",
+          "title": "Отсутствуют физические повреждения",
+          "isRequired": true,
+          "labelTrue": "Да",
+          "labelFalse": "Нет"
+        },
+        {
+          "type": "boolean",
+          "name": "question3",
+          "title": "Корректная работа датчика затяжек?",
+          "isRequired": true,
+          "labelTrue": "Да",
+          "labelFalse": "Нет"
+        },
+        {
+          "type": "boolean",
+          "name": "question4",
+          "title": "Корректное потребление тока в режиме ожидания?",
+          "isRequired": true,
+          "labelTrue": "Да",
+          "labelFalse": "Нет"
+        },
+        {
+          "type": "boolean",
+          "name": "question5",
+          "title": "Корректная работа индикации?",
+          "isRequired": true,
+          "labelTrue": "Да",
+          "labelFalse": "Нет"
+        },
+        {
+          "type": "boolean",
+          "name": "question6",
+          "title": "Корректная работа вибрации?",
+          "isRequired": true,
+          "labelTrue": "Да",
+          "labelFalse": "Нет"
+        },
+        {
+          "type": "boolean",
+          "name": "question7",
+          "title": "Работает автостарт?",
+          "isRequired": true,
+          "labelTrue": "Да",
+          "labelFalse": "Нет"
+        },
+        {
+          "type": "boolean",
+          "name": "question8",
+          "title": "Длительность сеанса соответствует норме?",
+          "isRequired": true,
+          "labelTrue": "Да",
+          "labelFalse": "Нет"
+        },
+        {
+          "type": "boolean",
+          "name": "question9",
+          "title": "Качество нагревания соответствует норме?",
+          "isRequired": true,
+          "labelTrue": "Да",
+          "labelFalse": "Нет"
+        },
+        {
+          "type": "text",
+          "name": "question10",
+          "title": "Количество сеансов",
+          "isRequired": true,
+          "inputType": "number",
+          "min": 0
+        }
+      ]
+    }
+  ],
+  "showTitle": false,
+  "showCompletePage": false,
+  "headerView": "advanced"
+}

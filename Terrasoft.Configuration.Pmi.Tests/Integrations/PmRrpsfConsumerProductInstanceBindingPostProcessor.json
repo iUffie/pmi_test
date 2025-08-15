@@ -1,0 +1,26 @@
+{
+    "ConsumerProductInstanceBinding": {
+        "PostProcessingClassName": "PmRrpsfConsumerProductInstanceBindingPostProcessor",
+        "ReferenceSchemaName": "PmAsset",
+        "IndexRegister": "UpperCase",
+        "Map": {
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace"
+        }
+    },
+    "ConsumerReference": {
+        "ReferenceSchemaName": "PmClient",
+        "IndexRegister": "UpperCase",
+        "Map": {
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace"
+        }
+    },
+    "CountryReference": {
+        "ReferenceSchemaName": "Country",
+        "Map": {
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace"
+        }
+    }
+}

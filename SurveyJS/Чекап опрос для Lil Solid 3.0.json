@@ -1,0 +1,112 @@
+{
+  "title": "Чекап опрос для Lil Solid 3.0",
+  "pages": [
+    {
+      "name": "page1",
+      "elements": [
+        {
+          "type": "boolean",
+          "name": "question1",
+          "title": "Отсутствуют следы попадания влаги?",
+          "isRequired": true,
+          "labelTrue": "Да",
+          "labelFalse": "Нет"
+        },
+        {
+          "type": "boolean",
+          "name": "question2",
+          "title": "Отсутствуют физические повреждения",
+          "isRequired": true,
+          "labelTrue": "Да",
+          "labelFalse": "Нет"
+        },
+        {
+          "type": "boolean",
+          "name": "question3",
+          "title": "Корректное потребление тока в режиме ожидания?",
+          "isRequired": true,
+          "labelTrue": "Да",
+          "labelFalse": "Нет"
+        },
+        {
+          "type": "boolean",
+          "name": "question4",
+          "title": "Корректный процесс зарядки?",
+          "isRequired": true,
+          "labelTrue": "Да",
+          "labelFalse": "Нет"
+        },
+        {
+          "type": "boolean",
+          "name": "question5",
+          "title": "Корректная работа индикации?",
+          "isRequired": true,
+          "labelTrue": "Да",
+          "labelFalse": "Нет"
+        },
+        {
+          "type": "boolean",
+          "name": "question6",
+          "title": "Корректная работа вибрации?",
+          "isRequired": true,
+          "labelTrue": "Да",
+          "labelFalse": "Нет"
+        },
+        {
+          "type": "boolean",
+          "name": "question7",
+          "title": "Корректная работа датчика температуры?",
+          "isRequired": true,
+          "labelTrue": "Да",
+          "labelFalse": "Нет"
+        },
+        {
+          "type": "boolean",
+          "name": "question8",
+          "title": "Работает автостарт?",
+          "isRequired": true,
+          "labelTrue": "Да",
+          "labelFalse": "Нет"
+        },
+        {
+          "type": "boolean",
+          "name": "question9",
+          "title": "Длительность сеанса соответствует норме?",
+          "isRequired": true,
+          "labelTrue": "Да",
+          "labelFalse": "Нет"
+        },
+        {
+          "type": "boolean",
+          "name": "question10",
+          "title": "Качество нагревания соответствует норме?",
+          "isRequired": true,
+          "labelTrue": "Да",
+          "labelFalse": "Нет"
+        },
+        {
+          "type": "dropdown",
+          "name": "question11",
+          "title": "Степень загрязнения устройства",
+          "isRequired": true,
+          "choices": [
+            "0",
+            "1",
+            "2"
+          ]
+        },
+        {
+          "type": "text",
+          "name": "question12",
+          "title": "Количество сеансов",
+          "isRequired": true,
+          "inputType": "number",
+          "min": 0
+        }
+      ]
+    }
+  ],
+  "showTitle": false,
+  "showCompletePage": false,
+  "headerView": "advanced"
+}

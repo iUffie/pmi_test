@@ -1,0 +1,101 @@
+{
+    "locale": "ru",
+    "title": "Диагностика (LIL SOLID 3.0 Hybrid)",
+    "logoPosition": "right",
+    "completedHtml": {
+        "ru": "<div><table><thead><tr><th>Вопрос</th><th>Значение</th></tr></thead><tbody><tr><td>Держатель</td><td>{holder}</td></tr><tr><td>Комментарий</td><td>{comment}</td></tr></tbody></table></div>"
+    },
+    "pages": [
+        {
+            "name": "page1",
+            "elements": [
+                {
+                    "type": "panel",
+                    "name": "panel_1",
+                    "elements": [
+                        {
+                            "type": "html",
+                            "name": "html_1",
+                            "html": "<! -- html_1 -->\n    <style>\n        details {\n            border: 1px solid #aaa;\n            border-radius: 4px;\n            padding: 0.5em 0.5em 0;\n        }\n\n        summary {\n            font-weight: bold;\n            margin: -0.5em -0.5em 0;\n            padding: 0.5em;\n        }\n\n        details[open] {\n            padding: 0.5em;\n        }\n\n        details[open] summary {\n            border-bottom: 1px solid #aaa;\n            margin-bottom: 0.5em;\n        }\n\n        summary::before {\n            border-radius: 5px;\n            content: \"+\";\n            float: left;\n            font-size: 1.5em;\n            font-weight: bold;\n            margin: -5px 10px 0 0;\n            padding: 0;\n            text-align: center;\n            width: 20px;\n        }\n\n        details[open] summary::before {\n            content: \"-\";\n        }\n\n        .bracket-list {\n            counter-reset: custom-counter;\n        }\n\n        .bracket-list li {\n            list-style: none;\n            counter-increment: custom-counter;\n        }\n\n        .bracket-list li::before {\n            content: counter(custom-counter) \") \";\n        }\n\n        .image-text-table {\n            border-collapse: collapse;\n            width: 100%;\n        }\n\n        .image-text-table td {\n            border: none;\n            padding: 10px;\n            vertical-align: top;\n        }\n    </style>\n    <h3>Спросите, что не так с устройством:</h3>\n    <br><br>\n\n    <h3>Физические повреждения</h3>\n    <p>Перед началом диагностики проверьте, есть ли на устройстве <strong>попадание жидкости, поврежденные контакты для зарядки, серьезные повреждения корпуса</strong>  устройства (сколы, трещины), <strong>изменение серийного номера</strong>. Если такие повреждения обнаружены выберите <strong>«Физические повреждения».</strong></p>\n    <br><br>\n\n    <h3>Стики не тянутся или мало табачного пара</h3>\n    <p>Устройство не требует регулярной чистки и чаще всего проблема связана с тем, что жидкость в картридже закончилась или используется не подходящий стик.</p>\n    <p>Если клиент жалуется на данную проблему, необходимо провести полную диагностику устройства, см. <strong>«Действия эксперта при жалобе на проблемы с электроникой»</strong>.</p>\n    <br><br>\n\n    <h3>Замена без L0 подтверждения</h3>\n    <p>Если клиент обращается повторно и говорит о том, что проблема уже была ранее - выберите <strong>\"Замена без L0 подтверждения\"</strong></p>\n    <br><br>\n\n    <h3>Проблемы с электроникой</h3>\n    <p>Возможные жалобы на проблемы с электроникой:</p>\n    <ul style=\"padding-left: 20px;\">\n        <li style=\"list-style: inside;\"><strong>Ошибка Е00</strong></li>\n        <li style=\"list-style: inside;\"><strong>Не работает авто-старт или сеанс не начинается</strong></li>\n        <li style=\"list-style: inside;\"><strong>Не работает выбор режима или пауза сеанса</strong></li>\n        <li style=\"list-style: inside;\"><strong>Не работает дисплей</strong></li>\n        <li style=\"list-style: inside;\"><strong>Отсутствует вибрация</strong></li>\n        <li style=\"list-style: inside;\"><strong>Устройство перегревается</strong></li>\n        <li style=\"list-style: inside;\"><strong>Устройство долго заряжается, не держит заряд, не включается</strong></li>\n    </ul>\n    <br><br>\n\n    <details>\n        <summary>Действия эксперта при жалобе на проблемы с электроникой</summary>\n        <ol style=\"padding-left: 30px;\">\n            <li style=\"list-style: decimal;\">Проверьте уровень заряда устройства:\n                <ul style=\"padding-left: 30px; list-style-type: '-';\">\n                    <li style=\"list-style: inside;\"> Если горит красный индикатор - нужно зарядить устройство 30 мин оригинальными аксессуарами lil SOLID от сети.</li>\n                    <li style=\"list-style: inside;\"> Если индикатор белого цвета, можно переходить к следующему шагу.</li>\n                </ul>\n            </li>\n            <li style=\"list-style: decimal;\">Подключите устройство к приложению «lil HYBRID 3.0». Запустите проверку в разделах «Диагностика» и «Проверка длительности сеанса»:\n                <ul style=\"padding-left: 30px; list-style-type: '-';\">\n                    <li style=\"list-style: inside;\"> Если приложение показало, что «Выявлена проблема», то переходите к оформлению замены с типом поломки «Проблема с электроникой», в комментарии укажи какой именно тест не пройден.</li>\n                    <li style=\"list-style: inside;\"> Если в приложение ошибок в работе устройства не обнаружено, то переходите к следующему шагу.</li>\n                </ul>\n            </li>\n            <li style=\"list-style: decimal;\">Почистите устройство с помощью чистящих палочек, включая контакты устройства.</li>\n            <li style=\"list-style: decimal;\">Перезагрузите устройство:\n                <ol style=\"padding-left: 30px;\" class=\"bracket-list\">\n                    <li> Нажмите и удерживайте кнопку в течение 8 секунд несмотря на вибрацию</li>\n                    <li> Устройство провибрирует и отобразится экран с надписью lil</li>\n                    <li> Когда устройство перезагрузится, будет отображен главный экран с тремя иконками</li>\n                </ol>\n            </li>\n        </ol>\n        <br>\n\n        <p>Если работа устройства восстановлена выберете <strong>«Рабочее устройство»</strong>, если проблема не устранена – <strong>«Проблема с электроникой»</strong></p>\n    </details>\n    <br><br>\n\n    <h3>Иконки на устройстве, которые не требуют замены (если неисправность устранилась)</h3>\n    <p><strong>Необходимо выполнить действия ниже:</strong></p>\n\n    <table class=\"image-text-table\">\n        <tr>\n            <td><img src=\"https://iqos.speedsize.com/8dc60dcf-a0ba-480a-bfc8-3a5d9683eb12/demo.speedsize.com/iqos/img1.png\"\n                    alt=\"Устройство перегрето\" width=\"60\" height=\"140\"></td>\n            <td>Устройство перегрето. Охлаждение устройства займет 3 минуты 30 секунд, после чего вы сможете начать\n                следующий сеанс.</td>\n        </tr>\n        <tr>\n            <td><img src=\"https://iqos.speedsize.com/8dc60dcf-a0ba-480a-bfc8-3a5d9683eb12/demo.speedsize.com/iqos/img5.png\"\n                    alt=\"Неподходящий стик\" width=\"60\" height=\"140\"></td>\n            <td>Обнаружен неподходящий стик или он вставлен неверно. Пожалуйста, вставьте стик табака нагреваемого MIIX.\n                Стик должен быть вставлен фильтром вверх.</td>\n        </tr>\n        <tr>\n            <td><img src=\"https://iqos.speedsize.com/8dc60dcf-a0ba-480a-bfc8-3a5d9683eb12/demo.speedsize.com/iqos/img6.png\"\n                    alt=\"Уже использованный стик\" width=\"60\" height=\"140\"></td>\n            <td>Если вы вставите уже использованный стик в устройство, отобразится экран слева, а устройство не будет\n                работать. Чтобы решить данную проблему, вставьте новый, неиспользованный ранее стик табака нагреваемого\n                MIIX.</td>\n        </tr>\n        <tr>\n            <td><img src=\"https://iqos.speedsize.com/8dc60dcf-a0ba-480a-bfc8-3a5d9683eb12/demo.speedsize.com/iqos/img2.png\"\n                    alt=\"Уровень заряда аккумулятора или картриджа у устройства низкий\" width=\"60\" height=\"140\"></td>\n            <td>Уровень заряда аккумулятора или картриджа у устройства низкий. Зарядите устройство или замените\n                картридж.</td>\n        </tr>\n        <tr>\n            <td><img src=\"https://iqos.speedsize.com/8dc60dcf-a0ba-480a-bfc8-3a5d9683eb12/demo.speedsize.com/iqos/img4.png\"\n                    alt=\"Низкий уровень заряда\" width=\"60\" height=\"140\"></td>\n            <td>Низкий уровень заряда. Необходимо зарядить устройство.</td>\n        </tr>\n        <tr>\n            <td><img src=\"https://iqos.speedsize.com/8dc60dcf-a0ba-480a-bfc8-3a5d9683eb12/demo.speedsize.com/iqos/img7.png\"\n                    alt=\"Возникла проблема с электроникой\" width=\"60\" height=\"140\"></td>\n            <td>Возникла проблема с электроникой. Необходима перезагрузка устройства.</td>\n        </tr>\n    </table>"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "page2",
+            "elements": [
+                {
+                    "type": "panel",
+                    "name": "panel1",
+                    "elements": [
+                        {
+                            "type": "html",
+                            "name": "html_2",
+                            "html": "<! -- html_2--> <h3>Что пошло не так?</h3><br>Выберите состояние устройства после проведенной диагностики"
+                        },
+                        {
+                            "type": "dropdown",
+                            "name": "holder",
+                            "title": "Держатель",
+                            "hideNumber": true,
+                            "isRequired": true,
+                            "choices": [
+                                {
+                                    "value": "105",
+                                    "text": "Физические повреждения"
+                                },
+                                {
+                                    "value": "107",
+                                    "text": "Рабочее устройство"
+                                },
+                                {
+                                    "value": "108",
+                                    "text": "Проблема с электроникой"
+                                },
+                                {
+                                    "value": "111",
+                                    "text": "Замена без L0 подтверждения"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "comment",
+                            "name": "comment",
+                            "title": "Комментарий",
+                            "hideNumber": true,
+                            "requiredIf": "{holder} = 108 or {holder} = 111",
+                            "maxLength": 1000
+                        },
+                        {
+                            "type": "html",
+                            "name": "html_3",
+                            "html": "<! -- html_3 -->\n<div style=\"user-select: text;\">\n    <div onclick=\"document.getElementsByClassName('sd-input sd-comment')[0].value += this.innerHTML.trimStart()+'\\n'; document.getElementsByClassName('sd-input sd-comment')[0].dispatchEvent(new Event('change', { 'bubbles': true }));\" style=\"border: solid 1px gray; border-radius: 10px; padding: 5px 10px; margin: 5px 0px;\">\n        Поломка появляется 1 раз в XX сеансов / XX полных зарядок / каждый раз;</div>\n    <div onclick=\"document.getElementsByClassName('sd-input sd-comment')[0].value += this.innerHTML.trimStart()+'\\n'; document.getElementsByClassName('sd-input sd-comment')[0].dispatchEvent(new Event('change', { 'bubbles': true }));\" style=\"border: solid 1px gray; border-radius: 10px; padding: 5px 10px; margin: 5px 0px;\">\n        Индикация красная / белая / отсутствует / нормальная;</div>\n    <div onclick=\"document.getElementsByClassName('sd-input sd-comment')[0].value += this.innerHTML.trimStart()+'\\n'; document.getElementsByClassName('sd-input sd-comment')[0].dispatchEvent(new Event('change', { 'bubbles': true }));\" style=\"border: solid 1px gray; border-radius: 10px; padding: 5px 10px; margin: 5px 0px;\">\n        Устройство обеспечивает ХХ сеансов подряд / сеанс не начинается;</div>\n    <div onclick=\"document.getElementsByClassName('sd-input sd-comment')[0].value += this.innerHTML.trimStart()+'\\n'; document.getElementsByClassName('sd-input sd-comment')[0].dispatchEvent(new Event('change', { 'bubbles': true }));\" style=\"border: solid 1px gray; border-radius: 10px; padding: 5px 10px; margin: 5px 0px;\">\n        Длительность первого / второго / обоих сеансов ХХ минут / сеанс не начинается;</div>\n    <div onclick=\"document.getElementsByClassName('sd-input sd-comment')[0].value += this.innerHTML.trimStart()+'\\n'; document.getElementsByClassName('sd-input sd-comment')[0].dispatchEvent(new Event('change', { 'bubbles': true }));\" style=\"border: solid 1px gray; border-radius: 10px; padding: 5px 10px; margin: 5px 0px;\">\n        Заряжает держатель на один сеанс / на два сеанса / не заряжает держатель совсем;</div>\n    <div onclick=\"document.getElementsByClassName('sd-input sd-comment')[0].value += this.innerHTML.trimStart()+'\\n'; document.getElementsByClassName('sd-input sd-comment')[0].dispatchEvent(new Event('change', { 'bubbles': true }));\" style=\"border: solid 1px gray; border-radius: 10px; padding: 5px 10px; margin: 5px 0px;\">\n        Устройство обеспечивает ХХ сеансов / сеанс не начинается;</div>\n    <div onclick=\"document.getElementsByClassName('sd-input sd-comment')[0].value += this.innerHTML.trimStart()+'\\n'; document.getElementsByClassName('sd-input sd-comment')[0].dispatchEvent(new Event('change', { 'bubbles': true }));\" style=\"border: solid 1px gray; border-radius: 10px; padding: 5px 10px; margin: 5px 0px;\">\n        Длительность зарядки ХХ минут / не заряжается;</div>\n    <div onclick=\"document.getElementsByClassName('sd-input sd-comment')[0].value += this.innerHTML.trimStart()+'\\n'; document.getElementsByClassName('sd-input sd-comment')[0].dispatchEvent(new Event('change', { 'bubbles': true }));\" style=\"border: solid 1px gray; border-radius: 10px; padding: 5px 10px; margin: 5px 0px;\">\n        Нужно полностью зарядить и разрядить устройство ХХ раз / поместить держатель в зарядное устройство / устройство перегревается при использовании / другое</div>\n</div>"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "showTitle": false,
+    "startSurveyText": {
+        "ru": "Начать"
+    },
+    "pagePrevText": {
+        "ru": "Назад"
+    },
+    "pageNextText": {
+        "ru": "Далее"
+    },
+    "completeText": {
+        "ru": "Завершить"
+    },
+    "previewText": {
+        "ru": "Посмотреть"
+    },
+    "editText": {
+        "ru": "Изменить"
+    },
+    "widthMode": "static",
+    "width": "50rem"
+}

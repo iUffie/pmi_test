@@ -1,0 +1,248 @@
+{
+    "locale": "ru",
+    "title": "Диагностика IQOS 3 DUOS ORIGINALS",
+    "logoPosition": "right",
+    "focusOnFirstError": false,
+    "pages": [
+        {
+            "name": "page1",
+            "elements": [
+                {
+                    "type": "image",
+                    "name": "question1",
+                    "title": "Что не так с держателем",
+                    "imageLink": "https://iqos.speedsize.com/8dc60dcf-a0ba-480a-bfc8-3a5d9683eb12/demo.speedsize.com/iqos/01_%D0%9A%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B0 %D1%81 %D0%BF%D0%BE%D0%BB%D0%BE%D0%BC%D0%BA%D0%B0%D0%BC%D0%B8/Holders.ONE.png",
+                    "imageFit": "fill",
+                    "imageHeight": "auto",
+                    "imageWidth": "100%"
+                },
+                {
+                    "type": "dropdown",
+                    "name": "holder",
+                    "title": "Что не так с держателем?",
+                    "hideNumber": true,
+                    "valueName": "holder",
+                    "renderAs": "select",
+                    "choices": [
+                        {
+                            "value": "108",
+                            "text": "Проблемы с электроникой"
+                        },
+                        {
+                            "value": "110",
+                            "text": "Стики не тянутся или мало табачного пара"
+                        },
+                        {
+                            "value": "105",
+                            "text": "Физические повреждения"
+                        },
+                        {
+                            "value": "106",
+                            "text": "Сломан нагревательный элемент"
+                        }
+                    ],
+                    "placeholder": {
+                        "ru": "Выбрать..."
+                    }
+                }
+            ],
+            "title": "Онлайн-диагностика",
+            "description": "Понятные советы и рекомендации, которые позволят самостоятельно наладить корректную работу устройства."
+        },
+        {
+            "name": "page2",
+            "elements": [
+                {
+                    "type": "image",
+                    "name": "question14",
+                    "imageLink": "https://iqos.speedsize.com/8dc60dcf-a0ba-480a-bfc8-3a5d9683eb12/demo.speedsize.com/iqos/02_%D0%9D%D0%BE%D1%80%D0%BC%D1%8B/DUOS Holder norms.png",
+                    "imageFit": "cover",
+                    "imageHeight": "auto",
+                    "imageWidth": "100%"
+                },
+                {
+                    "type": "expression",
+                    "name": "question5",
+                    "title": "1. Проблемы с электроникой иногда могут быть связаны с загрязнением контактов на обоих элементах. Поэтому мы рекомендуем начать с чистки контактов.",
+                    "hideNumber": true
+                },
+                {
+                    "type": "image",
+                    "name": "question9",
+                    "title": "3. Если на устройстве не горят индикаторы, проверьте, включено ли оно.",
+                    "imageLink": "https://iqos.speedsize.com/8dc60dcf-a0ba-480a-bfc8-3a5d9683eb12/demo.speedsize.com/iqos/03_GIF/GIF ORIGINALS 1.gif",
+                    "contentMode": "image",
+                    "imageFit": "fill",
+                    "imageHeight": "auto",
+                    "imageWidth": "100%"
+                },
+                {
+                    "type": "expression",
+                    "name": "question6",
+                    "title": "2. Проверьте, что устройство включено. Для этого 1 раз нажмите на кнопку зарядного устройства. Если индикаторы не загораются, зажмите кнопку на 4 секунды.",
+                    "hideNumber": true
+                },
+                {
+                    "type": "image",
+                    "name": "question2",
+                    "imageLink": "https://iqos.speedsize.com/8dc60dcf-a0ba-480a-bfc8-3a5d9683eb12/demo.speedsize.com/iqos/03_GIF/GIF ORIGINALS 2.gif",
+                    "imageFit": "cover",
+                    "imageHeight": "auto",
+                    "imageWidth": "100%"
+                },
+                {
+                    "type": "expression",
+                    "name": "question4",
+                    "title": "3. Перезагрузка всего устройства обычно помогает устранить неисправность. Но для этого устройство должно быть достаточно заряжено: не менее двух индикаторов заряда на обоих элементах.",
+                    "hideNumber": true
+                },
+                {
+                    "type": "image",
+                    "name": "question7",
+                    "imageLink": "https://iqos.speedsize.com/8dc60dcf-a0ba-480a-bfc8-3a5d9683eb12/demo.speedsize.com/iqos/03_GIF/GIF ORIGINALS 3.gif",
+                    "imageFit": "cover",
+                    "imageHeight": "auto",
+                    "imageWidth": "100%"
+                },
+                {
+                    "type": "expression",
+                    "name": "question8",
+                    "title": "4. Когда вы убедились, что устройство достаточно заряжено, можно приступать к перезагрузке. Для этого поместите держатель в зарядное устройство и зажмите кнопку зарядного устройства на 10 секунд. Через 2-3 секунды после того, как индикаторы погаснут, отпустите кнопку. Индикаторы плавно загорятся.",
+                    "hideNumber": true
+                },
+                {
+                    "type": "image",
+                    "name": "question10",
+                    "imageLink": "https://iqos.speedsize.com/8dc60dcf-a0ba-480a-bfc8-3a5d9683eb12/demo.speedsize.com/iqos/03_GIF/GIF ORIGINALS 4.gif",
+                    "imageFit": "cover",
+                    "imageHeight": "auto",
+                    "imageWidth": "100%"
+                },
+                {
+                    "type": "dropdown",
+                    "name": "holder1",
+                    "title": "Удалось решить проблему?",
+                    "hideNumber": true,
+                    "valueName": "holder",
+                    "renderAs": "select",
+                    "choices": [
+                        {
+                            "value": "107",
+                            "text": "Да, устройство работает"
+                        },
+                        {
+                            "value": "108",
+                            "text": "Нет, нужна помощь"
+                        }
+                    ],
+                    "placeholder": {
+                        "ru": "Выбрать..."
+                    }
+                }
+            ],
+            "visibleIf": "{holder} = '108'",
+            "title": "Давайте попробуем восстановить работу вашего устройства:",
+            "description": "    "
+        },
+        {
+            "name": "page3",
+            "elements": [
+                {
+                    "type": "image",
+                    "name": "question3",
+                    "title": "Ваш IQOS нуждается в регулярном уходе, ведь от этого зависит качество вкуса и полнота ощущений.",
+                    "hideNumber": true,
+                    "imageLink": "https://iqos.speedsize.com/8dc60dcf-a0ba-480a-bfc8-3a5d9683eb12/demo.speedsize.com/iqos/04_%D0%9C%D0%B0%D0%BB%D0%BE %D0%BF%D0%B0%D1%80%D0%B0/IQOS_Cleaning_1.png",
+                    "imageFit": "cover",
+                    "imageHeight": "auto",
+                    "imageWidth": "100%"
+                },
+                {
+                    "type": "expression",
+                    "name": "question13",
+                    "title": "Ваш IQOS нуждается в регулярном уходе, ведь от этого зависит качество вкуса и полнота ощущений.",
+                    "hideNumber": true
+                },
+                {
+                    "type": "image",
+                    "name": "question12",
+                    "title": "Если не чистить устройство 7 дней, то вам может показаться, что вкус стал другим, пара стало меньше, а стики хуже тянутся. А если целый месяц - стик будет вставляется не до конца, а время сеанса казаться короче.",
+                    "hideNumber": true,
+                    "imageLink": "https://iqos.speedsize.com/8dc60dcf-a0ba-480a-bfc8-3a5d9683eb12/demo.speedsize.com/iqos/04_%D0%9C%D0%B0%D0%BB%D0%BE %D0%BF%D0%B0%D1%80%D0%B0/IQOS_Cleaning_2.png",
+                    "imageFit": "cover",
+                    "imageHeight": "auto",
+                    "imageWidth": "100%"
+                },
+                {
+                    "type": "expression",
+                    "name": "question22",
+                    "title": "Чтобы каждый сеанс с IQOS был только в удовольствие, важно не забывать регулярно чистить устройство — после каждой пачки стиков.",
+                    "hideNumber": true
+                },
+                {
+                    "type": "image",
+                    "name": "question15",
+                    "title": "https://cloud.mc.iqos.ru/video-regular-cleaning-iqos3duos?qs=2ed1163c7c27af1bd99a204f0a5081848f14495a5eade41f9e578d91990fc98c95f99081f6492d2a94606d23d9472ec68faee2d86beca60b6d6786aaf24df3d17ee73b075236aa28483e2305c0adc89176a3ad55997374039c375f508f3b5943629039df91b7d0d44d95d9122273e8b7e734ea90b3e42acccbe0f6772fa4c846a36e509e7876184a7ebb1a2258244c5f0e68688dec99c7e9b2174a9a07160603e9e9ac77b245fbddc5c912b38273db6facc152f161d9308a858aa75cf2f873e187ad99eef6da6733b161432d2e0b999096ff1bc02857ec8e58c7b1f8c296654f9d8896930e7ff10392d545c42f877e5b7acb3d5c25cc6be8",
+                    "imageLink": "https://iqos.speedsize.com/8dc60dcf-a0ba-480a-bfc8-3a5d9683eb12/demo.speedsize.com/iqos/04_%D0%9C%D0%B0%D0%BB%D0%BE %D0%BF%D0%B0%D1%80%D0%B0/IQOS_Cleaning_GIF.gif",
+                    "contentMode": "image",
+                    "imageFit": "cover",
+                    "imageHeight": "auto",
+                    "imageWidth": "100%"
+                },
+                {
+                    "type": "expression",
+                    "name": "question17",
+                    "title": "Рекомендуем воспользоваться сервисом \"Профессиональная чистка\". Доверьте комплексный уход за своим устройством нашим экспертам.",
+                    "hideNumber": true
+                }
+            ],
+            "visibleIf": "{holder} = '110'",
+            "title": "Мало пара"
+        },
+        {
+            "name": "page4",
+            "elements": [
+                {
+                    "type": "image",
+                    "name": "question19",
+                    "hideNumber": true,
+                    "imageLink": "https://iqos.speedsize.com/8dc60dcf-a0ba-480a-bfc8-3a5d9683eb12/demo.speedsize.com/iqos/05_%D0%A4%D0%B8%D0%B7%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5 %D0%BF%D0%BE%D0%B2%D1%80%D0%B5%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F/IQOS_Physical_1.png",
+                    "imageFit": "cover",
+                    "imageHeight": "auto",
+                    "imageWidth": "100%"
+                },
+                {
+                    "type": "expression",
+                    "name": "question20",
+                    "title": "Если вы планируете приобрести новое устройство, обратите внимание, что модель IQOS 3 DUOS представлена в 4 цветах.",
+                    "hideNumber": true
+                },
+                {
+                    "type": "image",
+                    "name": "question21",
+                    "imageLink": "https://iqos.speedsize.com/8dc60dcf-a0ba-480a-bfc8-3a5d9683eb12/demo.speedsize.com/iqos/05_%D0%A4%D0%B8%D0%B7%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5 %D0%BF%D0%BE%D0%B2%D1%80%D0%B5%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F/IQOS_Physical_2.png",
+                    "imageFit": "cover",
+                    "imageHeight": "auto",
+                    "imageWidth": "100%"
+                }
+            ],
+            "visibleIf": "{holder} = '105'",
+            "title": "Физические повреждения"
+        }
+    ],
+    "showTitle": false,
+    "showCompletedPage": false,
+    "goNextPageAutomatic": true,
+    "startSurveyText": {
+        "ru": "Начать"
+    },
+    "pagePrevText": {
+        "ru": "Назад"
+    },
+    "pageNextText": {
+        "ru": "Далее"
+    },
+    "completeText": {
+        "ru": "Завершить"
+    }
+}

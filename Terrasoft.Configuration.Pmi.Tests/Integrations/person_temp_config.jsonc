@@ -1,0 +1,26 @@
+{
+    "Person": {
+        "PostProcessingClassName": "PmPersonTempPostProcessor",
+        "ReferenceSchemaName": "PmClient",
+        "IndexRegister": "UpperCase",
+        "UniqueColumn": {
+            "CrmColumnName": "PmPersonId",
+            "BddmColumnName": "Code"
+        },
+        "Map": {
+            "AgeVerificationStatus": {
+                "CrmColumnName": "PmStatusAV",
+                "Type": "PersonAgeVerificationStatus"
+            },
+            "DepersonalizationDate": "PmPersonDepersonalizationDate",
+            "DepersonalizationReason": "PmPersonDepersonalizationReason",
+            "Code": "PmPersonId",
+            "CodeSpace": "PmPersonCodeSpace",
+            "Status": "PmPersonStatus"
+        }
+    },
+    "PersonAgeVerificationStatus": {
+        "IsEnum": true,
+        "ReferenceSchemaName": "PmClientStatusAV"
+    }
+}

@@ -1,0 +1,103 @@
+{
+    "locale": "ru",
+    "title": "Диагностика",
+    "logoPosition": "right",
+    "pages": [
+        {
+            "name": "page1",
+            "elements": [
+                {
+                    "type": "panel",
+                    "name": "panel_1",
+                    "elements": [
+                        {
+                            "type": "html",
+                            "name": "html_1",
+                            "html": "<! -- html_1 -->\n    <style>\n        details {\n            border: 1px solid #aaa;\n            border-radius: 4px;\n            padding: 0.5em 0.5em 0;\n        }\n\n        summary {\n            font-weight: bold;\n            margin: -0.5em -0.5em 0;\n            padding: 0.5em;\n        }\n\n        details[open] {\n            padding: 0.5em;\n        }\n\n        details[open] summary {\n            border-bottom: 1px solid #aaa;\n            margin-bottom: 0.5em;\n        }\n\n        summary::before {\n            border-radius: 5px;\n            content: \"+\";\n            float: left;\n            font-size: 1.5em;\n            font-weight: bold;\n            margin: -5px 10px 0 0;\n            padding: 0;\n            text-align: center;\n            width: 20px;\n        }\n\n        details[open] summary::before {\n            content: \"-\";\n        }\n    </style>\n    <h3>Физические повреждения</h3>Перед началом диагностики проверьте, есть ли на устройстве\n    <b style=\"font-weight: 600;\">попадание жидкости, поврежденные контакты для зарядки, серьезные повреждения корпуса</b> устройства (сколы, трещины),\n    <b style=\"font-weight: 600;\">изменение серийного номера.</b> Если такие повреждения обнаружены, выберите\n    <b style=\"font-weight: 600;\">«Физические повреждения»</b>.\n    <br>\n    <br>\n    <h3>Поломка лезвия</h3>У держателя <b style=\"font-weight: 600;\">сломан нагревательный элемент</b>\n    (может быть красная индикация) - выберите <b style=\"font-weight: 600;\">«Поломка лезвия»</b>.\n    <br>\n    <br>\n    <h3>Проблемы с электроникой</h3>\n    <ul style=\"padding-left: 20px;\">\n        <li style=\"list-style: inside;\"><b style=\"font-weight: 600;\">Жалоба на время зарядки</b> (норма - 2 часа от 0 до 100%)</li>\n        <li style=\"list-style: inside;\"><b style=\"font-weight: 600;\">Жалоба на кол-во сеансов</b> (норма - 20 сеансов)</li>\n        <li style=\"list-style: inside;\"><b style=\"font-weight: 600;\">Сеанса не хватает</b> (норма 6 минут или 14 затяжек)</li>\n        <li style=\"list-style: inside;\"><b style=\"font-weight: 600;\">Проблема с индикацией или вибрацией</b></li>\n        <li style=\"list-style: inside;\"><b style=\"font-weight: 600;\">Устройство перегревается</b></li>\n    </ul>\n    <br>\n    <br>\n    <details>\n        <summary>Действия эксперта при жалобе на проблемы с электроникой</summary>\n        <ol style=\"padding-left: 30px;\">\n            <li style=\"list-style: decimal;\">Почистите устройство с помощью чистящих палочек, включая контакты устройства.</li>\n            <li style=\"list-style: decimal;\">Убедитесь, что на устройстве горит хотя бы 2 индикатора заряда. Если нет, зарядите устройство\n                оригинальными аксессуарами IQOS от сети 30 мин.</li>\n            <li style=\"list-style: decimal;\">Если индикация отсутствует, включите устройство.</li>\n            <li style=\"list-style: decimal;\">Перезагрузите устройство.</li>\n            <li style=\"list-style: decimal;\">Проведите тестовый сеанс.</li>\n        </ol><br>Если работа устройства восстановлена, выберите <b style=\"font-weight: 600;\">«Рабочее устройство»</b>. Если проблема не устранена – <b\n            style=\"font-weight: 600;\">«Проблема с электроникой»</b>.\n    </details>"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "page2",
+            "elements": [
+                {
+                    "type": "panel",
+                    "name": "panel1",
+                    "elements": [
+                        {
+                            "type": "html",
+                            "name": "html_2",
+                            "html": "<! -- html_2--> <h2>Что пошло не так?</h2><br>Выберите состояние элементов после проведенной диагностики"
+                        },
+                        {
+                            "type": "dropdown",
+                            "name": "holder",
+                            "title": "Держатель",
+                            "hideNumber": true,
+                            "isRequired": true,
+                            "choices": [
+                                {
+                                    "value": "105",
+                                    "text": "Физические повреждения"
+                                },
+                                {
+                                    "value": "106",
+                                    "text": "Поломка лезвия"
+                                },
+                                {
+                                    "value": "107",
+                                    "text": "Рабочее устройство"
+                                },
+                                {
+                                    "value": "108",
+                                    "text": "Проблема с электроникой"
+                                },
+                                {
+                                    "value": "111",
+                                    "text": "Замена без L0 подтверждения"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "comment",
+                            "name": "comment",
+                            "title": "Комментарий",
+                            "hideNumber": true,
+                            "requiredIf": "{holder} = 108 or {holder} = 111",
+                            "maxLength": 1000
+                        },
+                        {
+                            "type": "html",
+                            "name": "html_3",
+                            "html": "<! -- html_3 -->\n\t<div style=\"user-select: text;\">\n\t\t<div onclick=\"document.getElementsByClassName('sd-input sd-comment')[0].value += this.innerHTML.trimStart()+' ';\" style=\"border: solid 1px gray; border-radius: 10px; padding: 5px 10px; margin: 5px 0px;\">\n\t\t\tПоломка появляется 1 раз в XX сеансов / XX полных зарядок / каждый раз</div>\n\t\t<div onclick=\"document.getElementsByClassName('sd-input sd-comment')[0].value += this.innerHTML.trimStart()+' ';\" style=\"border: solid 1px gray; border-radius: 10px; padding: 5px 10px; margin: 5px 0px;\">\n\t\t\tИндикация красная / белая / отсутствует / нормальная</div>\n\t\t<div onclick=\"document.getElementsByClassName('sd-input sd-comment')[0].value += this.innerHTML.trimStart()+' ';\" style=\"border: solid 1px gray; border-radius: 10px; padding: 5px 10px; margin: 5px 0px;\">\n\t\t\tУстройство обеспечивает ХХ сеансов подряд / сеанс не начинается</div>\n\t\t<div onclick=\"document.getElementsByClassName('sd-input sd-comment')[0].value += this.innerHTML.trimStart()+' ';\" style=\"border: solid 1px gray; border-radius: 10px; padding: 5px 10px; margin: 5px 0px;\">\n\t\t\tДлительность первого / второго / обоих сеансов ХХ минут /сеанс не начинается</div>\n\t\t<div onclick=\"document.getElementsByClassName('sd-input sd-comment')[0].value += this.innerHTML.trimStart()+' ';\" style=\"border: solid 1px gray; border-radius: 10px; padding: 5px 10px; margin: 5px 0px;\">\n\t\t\tЗаряжает держатель на один сеанс / на два сеанса / не заряжает держатель совсем</div>\n\t\t<div onclick=\"document.getElementsByClassName('sd-input sd-comment')[0].value += this.innerHTML.trimStart()+' ';\" style=\"border: solid 1px gray; border-radius: 10px; padding: 5px 10px; margin: 5px 0px;\">\n\t\t\tУстройство обеспечивает ХХ сеансов / сеанс не начинается</div>\n\t\t<div onclick=\"document.getElementsByClassName('sd-input sd-comment')[0].value += this.innerHTML.trimStart()+' ';\" style=\"border: solid 1px gray; border-radius: 10px; padding: 5px 10px; margin: 5px 0px;\">\n\t\t\tДлительность зарядки ХХ минут / не заряжается</div>\n\t\t<div onclick=\"document.getElementsByClassName('sd-input sd-comment')[0].value += this.innerHTML.trimStart()+' ';\" style=\"border: solid 1px gray; border-radius: 10px; padding: 5px 10px; margin: 5px 0px;\">\n\t\t\tНужно полностью зарядить и разрядить устройство ХХ раз / поместить держатель в зарядное устройство / устройство перегревается при использовании / другое</div>\n\t</div>"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "showTitle": false,
+    "showCompletedPage": false,
+    "startSurveyText": {
+        "ru": "Начать"
+    },
+    "pagePrevText": {
+        "ru": "Назад"
+    },
+    "pageNextText": {
+        "ru": "Далее"
+    },
+    "completeText": {
+        "ru": "Завершить"
+    },
+    "previewText": {
+        "ru": "Посмотреть"
+    },
+    "editText": {
+        "ru": "Изменить"
+    },
+    "widthMode": "static",
+    "width": "50rem"
+}

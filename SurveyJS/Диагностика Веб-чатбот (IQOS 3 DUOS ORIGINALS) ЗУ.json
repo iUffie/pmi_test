@@ -1,0 +1,187 @@
+{
+    "locale": "ru",
+    "title": "Диагностика IQOS 3 DUOS ORIGINALS",
+    "logoPosition": "right",
+    "focusOnFirstError": false,
+    "pages": [
+     {
+      "name": "page1",
+      "elements": [
+       {
+        "type": "image",
+        "name": "question1",
+        "title": "Что не так с зарядным устройством",
+        "imageLink": "https://iqos.speedsize.com/8dc60dcf-a0ba-480a-bfc8-3a5d9683eb12/demo.speedsize.com/iqos/01_%D0%9A%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B0 %D1%81 %D0%BF%D0%BE%D0%BB%D0%BE%D0%BC%D0%BA%D0%B0%D0%BC%D0%B8/Chargers.png",
+        "imageFit": "fill",
+        "imageHeight": "auto",
+        "imageWidth": "100%"
+       },
+       {
+        "type": "dropdown",
+        "name": "charger",
+        "title": "Что не так с зарядным устройством?",
+        "hideNumber": true,
+        "valueName": "charger",
+        "renderAs": "select",
+        "choices": [
+         {
+          "value": "108",
+          "text": "Проблемы с электроникой или устройство не держит заряд"
+         },
+         {
+          "value": "105",
+          "text": "Физические повреждения"
+         }
+        ],
+        "placeholder": {
+         "ru": "Выбрать..."
+        }
+       }
+      ],
+      "title": "Онлайн-диагностика",
+      "description": "Понятные советы и рекомендации, которые позволят самостоятельно наладить корректную работу устройства."
+     },
+     {
+      "name": "page2",
+      "elements": [
+       {
+        "type": "image",
+        "name": "question5",
+        "title": "1. Аккуратно почистите устройство при помощи чистящего устройства и палочек для чистки.",
+        "hideNumber": true,
+        "imageLink": "https://iqos.speedsize.com/8dc60dcf-a0ba-480a-bfc8-3a5d9683eb12/demo.speedsize.com/iqos/02_%D0%9D%D0%BE%D1%80%D0%BC%D1%8B/DUOS Charger norms.png",
+        "imageFit": "cover",
+        "imageHeight": "auto",
+        "imageWidth": "100%"
+       },
+       {
+        "type": "expression",
+        "name": "question3",
+        "title": "1. Проблемы с электроникой иногда могут быть связаны с загрязнением контактов на обоих элементах. Поэтому мы рекомендуем начать с чистки контактов.",
+        "hideNumber": true
+       },
+       {
+        "type": "image",
+        "name": "question9",
+        "title": "3. Если на устройстве не горят индикаторы, проверьте, включено ли оно.",
+        "imageLink": "https://iqos.speedsize.com/8dc60dcf-a0ba-480a-bfc8-3a5d9683eb12/demo.speedsize.com/iqos/03_GIF/GIF ORIGINALS 1.gif",
+        "contentMode": "image",
+        "imageFit": "fill",
+        "imageHeight": "auto",
+        "imageWidth": "100%"
+       },
+       {
+        "type": "expression",
+        "name": "question6",
+        "title": "2. Проверьте, что устройство включено. Для этого 1 раз нажмите на кнопку зарядного устройства. Если индикаторы не загораются, зажмите кнопку на 4 секунды.",
+        "hideNumber": true
+       },
+       {
+        "type": "image",
+        "name": "question2",
+        "imageLink": "https://iqos.speedsize.com/8dc60dcf-a0ba-480a-bfc8-3a5d9683eb12/demo.speedsize.com/iqos/03_GIF/GIF ORIGINALS 2.gif",
+        "imageFit": "cover",
+        "imageHeight": "auto",
+        "imageWidth": "100%"
+       },
+       {
+        "type": "expression",
+        "name": "question4",
+        "title": "3. Перезагрузка всего устройства обычно помогает устранить неисправность. Но для этого устройство должно быть достаточно заряжено: не менее двух индикаторов заряда на обоих элементах.",
+        "hideNumber": true
+       },
+       {
+        "type": "image",
+        "name": "question7",
+        "imageLink": "https://iqos.speedsize.com/8dc60dcf-a0ba-480a-bfc8-3a5d9683eb12/demo.speedsize.com/iqos/03_GIF/GIF ORIGINALS 3.gif",
+        "imageFit": "cover",
+        "imageHeight": "auto",
+        "imageWidth": "100%"
+       },
+       {
+        "type": "expression",
+        "name": "question8",
+        "title": "4. Когда вы убедились, что устройство достаточно заряжено, можно приступать к перезагрузке. Для этого поместите держатель в зарядное устройство и зажмите кнопку зарядного устройства на 10 секунд. Через 2-3 секунды после того, как индикаторы погаснут, отпустите кнопку. Индикаторы плавно загорятся.",
+        "hideNumber": true
+       },
+       {
+        "type": "image",
+        "name": "question10",
+        "imageLink": "https://iqos.speedsize.com/8dc60dcf-a0ba-480a-bfc8-3a5d9683eb12/demo.speedsize.com/iqos/03_GIF/GIF ORIGINALS 4.gif",
+        "imageFit": "cover",
+        "imageHeight": "auto",
+        "imageWidth": "100%"
+       },
+       {
+        "type": "dropdown",
+        "name": "charger1",
+        "title": "Удалось решить проблему?",
+        "hideNumber": true,
+        "valueName": "charger",
+        "renderAs": "select",
+        "choices": [
+         {
+          "value": "107",
+          "text": "Да, устройство работает"
+         },
+         {
+          "value": "108",
+          "text": "Нет, нужна помощь"
+         }
+        ],
+        "placeholder": {
+         "ru": "Выбрать..."
+        }
+       }
+      ],
+      "visibleIf": "{charger} = '108'",
+      "title": "Давайте попробуем восстановить работу вашего устройства:",
+      "description": "    "
+     },
+     {
+      "name": "page4",
+      "elements": [
+       {
+        "type": "image",
+        "name": "question19",
+        "hideNumber": true,
+        "imageLink": "https://iqos.speedsize.com/8dc60dcf-a0ba-480a-bfc8-3a5d9683eb12/demo.speedsize.com/iqos/05_%D0%A4%D0%B8%D0%B7%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5 %D0%BF%D0%BE%D0%B2%D1%80%D0%B5%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F/IQOS_Physical_1.png",
+        "imageFit": "cover",
+        "imageHeight": "auto",
+        "imageWidth": "100%"
+       },
+       {
+        "type": "expression",
+        "name": "question20",
+        "title": "Если вы планируете приобрести новое устройство, обратите внимание, что модель IQOS 3 DUOS представлена в 4 цветах.",
+        "hideNumber": true
+       },
+       {
+        "type": "image",
+        "name": "question21",
+        "imageLink": "https://iqos.speedsize.com/8dc60dcf-a0ba-480a-bfc8-3a5d9683eb12/demo.speedsize.com/iqos/05_%D0%A4%D0%B8%D0%B7%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5 %D0%BF%D0%BE%D0%B2%D1%80%D0%B5%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F/IQOS_Physical_2.png",
+        "imageFit": "cover",
+        "imageHeight": "auto",
+        "imageWidth": "100%"
+       }
+      ],
+      "visibleIf": "{charger} = '105'",
+      "title": "Физические повреждения"
+     }
+    ],
+    "showTitle": false,
+    "showCompletedPage": false,
+    "goNextPageAutomatic": true,
+    "startSurveyText": {
+     "ru": "Начать"
+    },
+    "pagePrevText": {
+     "ru": "Назад"
+    },
+    "pageNextText": {
+     "ru": "Далее"
+    },
+    "completeText": {
+     "ru": "Завершить"
+    }
+   }

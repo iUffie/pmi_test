@@ -1,0 +1,45 @@
+{
+    "title": "Money back",
+    "logoPosition": "right",
+    "pages": [
+        {
+            "name": "page1",
+            "elements": [
+                {
+                    "type": "dropdown",
+                    "name": "question1_1",
+                    "title": " Товар работает исправно?",
+                    "isRequired": true,
+                    "choices": [
+                        {
+                            "value": "TRUE",
+                            "text": "ДА"
+                        },
+                        {
+                            "value": "FALSE",
+                            "text": "НЕТ"
+                        }
+                    ]
+                },
+                {
+                    "type": "dropdown",
+                    "name": "question1_2",
+                    "title": "В комплекте есть все элементы, указанные на коробке?",
+                    "isRequired": true,
+                    "choices": [
+                        {
+                            "value": "TRUE",
+                            "text": "ДА"
+                        },
+                        {
+                            "value": "FALSE",
+                            "text": "НЕТ"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "showTitle": false,
+    "showCompletedPage": false
+}

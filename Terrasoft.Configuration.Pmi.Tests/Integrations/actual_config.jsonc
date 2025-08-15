@@ -1,0 +1,2422 @@
+{
+    "EquipmentProductInstance": {
+        "ReferenceSchemaName": "PmDevice",
+        "PostProcessingClassName": "PmBddmMappingEquipmentProductInstancePostProcessingHandler",
+        "IndexRegister": "UpperCase",
+        "Map": {
+            "Code": "PmExternalCode"
+        }
+    },
+    "ProductInstanceProcessType": {
+        "IsEnum": true,
+        "ReferenceSchemaName": "PmDeviceProcess"
+    },
+    "EquipmentFirmwareDataSource": {
+        "IsEnum": true,
+        "ReferenceSchemaName": "PmDeviceFirmwareSource"
+    },
+    "KitProductInstance": {
+        "ReferenceSchemaName": "PmDevice",
+        "PostProcessingClassName": "PmBddmMappingKitProductInstancePostProcessingHandler",
+        "IndexRegister": "UpperCase",
+        "Map": {
+            "Code": "PmExternalCode"
+        }
+    },
+    "ProductCategory": {
+        "ReferenceSchemaName": "ProductType",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ],
+        "Map": {
+            "Code": "PmExternalCode",
+            "Name": "Name"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "ProductInstanceStatus": {
+        "IsEnum": true,
+        "ReferenceSchemaName": "PmDeviceStatus",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ]
+    },
+    "GenericProductReference": {
+        "ReferenceSchemaName": "Product",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ],
+        "Map": {
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "Name": "Name"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "ProductLocationReference": {
+        "ReferenceSchemaName": "PmSalePoint",
+        "Map": {
+            "Code": "PmExternalCode"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "DigitalPOSReference": {
+        "ReferenceSchemaName": "PmSalePoint",
+        "Map": {
+            "Code": "PmExternalCode"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "POSReference": {
+        "ReferenceSchemaName": "PmSalePoint",
+        "Map": {
+            "Code": "PmExternalCode"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "SalesAgentReference": {
+        "ReferenceSchemaName": "PmSalePoint",
+        "Map": {
+            "Code": "PmExternalCode"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "SalesPointReference": {
+        "ReferenceSchemaName": "PmSalePoint",
+        "Map": {
+            "Code": "PmExternalCode"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "WarehouseReference": {
+        "ReferenceSchemaName": "PmSalePoint",
+        "Map": {
+            "Code": "PmExternalCode"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "DistributorProductReference": {
+        "ReferenceSchemaName": "Product",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ],
+        "Map": {
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "Name": "Name"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "NielsenProductItemReference": {
+        "ReferenceSchemaName": "Product",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ],
+        "Map": {
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "Name": "Name"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "TradeAccountProductReference": {
+        "ReferenceSchemaName": "Product",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ],
+        "Map": {
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "Name": "Name"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "TradeAccountCostPlanProductReference": {
+        "ReferenceSchemaName": "Product",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ],
+        "Map": {
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "Name": "Name"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "ConsumableCommercialProductReference": {
+        "ReferenceSchemaName": "Product",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ],
+        "Map": {
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "Name": "Name"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "EquipmentCommercialProductReference": {
+        "ReferenceSchemaName": "Product",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ],
+        "Map": {
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "Name": "Name"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "ConsumableBrandVariantReference": {
+        "ReferenceSchemaName": "Product",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ],
+        "Map": {
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "Name": "PmNameEng"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "EquipmentBrandVariantReference": {
+        "ReferenceSchemaName": "Product",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ],
+        "Map": {
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "Name": "Name"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "EquipmentServiceVariantReference": {
+        "ReferenceSchemaName": "Product",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ],
+        "Map": {
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "Name": "Name"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "BrandVariantReference": {
+        "ReferenceSchemaName": "Product",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ],
+        "Map": {
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "Name": "PmNameEng"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "PromoVariantReference": {
+        "ReferenceSchemaName": "Product",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ],
+        "Map": {
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "Name": "Name"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "ServiceVariantReference": {
+        "ReferenceSchemaName": "Product",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ],
+        "Map": {
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "Name": "Name"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "BrandFamilyReference": {
+        "ReferenceSchemaName": "Product",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ],
+        "Map": {
+            "Name": "Name",
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "BrandGroupReference": {
+        "ReferenceSchemaName": "Product",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ],
+        "Map": {
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "Name": "Name"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "BrandManufacturerReference": {
+        "ReferenceSchemaName": "Product",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ],
+        "Map": {
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "Name": "Name"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "CommercialProductGroupReference": {
+        "ReferenceSchemaName": "Product",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ],
+        "Map": {
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "Name": "Name"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "ProductCatalogVariantReference": {
+        "ReferenceSchemaName": "Product",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ],
+        "Map": {
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "Name": "Name"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "ProductionProductGroupReference": {
+        "ReferenceSchemaName": "Product",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ],
+        "Map": {
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "Name": "Name"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "ConsumableProductionProductReference": {
+        "ReferenceSchemaName": "Product",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ],
+        "Map": {
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "Name": "Name"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "EquipmentProductionProductReference": {
+        "ReferenceSchemaName": "Product",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ],
+        "Map": {
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "Name": "Name"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "CommercialProductReference": {
+        "ReferenceSchemaName": "Product",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ],
+        "Map": {
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "Name": "Name"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "ProductGroupReference": {
+        "ReferenceSchemaName": "Product",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ],
+        "Map": {
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "Name": "Name"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "ProductionProductReference": {
+        "ReferenceSchemaName": "Product",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ],
+        "Map": {
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "Name": "Name"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "ComponentProductionMaterialReference": {
+        "ReferenceSchemaName": "Product",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ],
+        "Map": {
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "Name": "Name"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "ConsumablesProductionMaterialReference": {
+        "ReferenceSchemaName": "Product",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ],
+        "Map": {
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "Name": "Name"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "PackagingProductionMaterialReference": {
+        "ReferenceSchemaName": "Product",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ],
+        "Map": {
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "Name": "Name"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "POSMGroupReference": {
+        "ReferenceSchemaName": "Product",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ],
+        "Map": {
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "Name": "Name"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "ProductionMaterialReference": {
+        "ReferenceSchemaName": "Product",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ],
+        "Map": {
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "Name": "Name"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "ExternalProductReference": {
+        "ReferenceSchemaName": "Product",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ],
+        "Map": {
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "Name": "Name"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "InternalProductReference": {
+        "ReferenceSchemaName": "Product",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ],
+        "Map": {
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "Name": "Name"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "ProductClassReference": {
+        "ReferenceSchemaName": "Product",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ],
+        "Map": {
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "Name": "Name"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "ServiceClassReference": {
+        "ReferenceSchemaName": "Product",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ],
+        "Map": {
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "Name": "Name"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "MaterialReference": {
+        "ReferenceSchemaName": "Product",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ],
+        "Map": {
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "Name": "Name"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "ConsumableBrandVariant": {
+        "Filter": "PmBddmMappingConsumableBrandVariantFilterHandler",
+        "PostProcessingClassName": "PmBddmMappingConsumableBrandVariantPostProcessingHandler",
+        "ReferenceSchemaName": "Product",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ],
+        "Map": {
+            "$type": "PmBDDMType",
+            "CreationTime": "CreatedOn",
+            "UpdateTime": "ModifiedOn",
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "Name": "PmNameEng",
+            "Description": "Description"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "CountryReference": {
+        "ReferenceSchemaName": "Country",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ],
+        "Map": {
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "BrandVariantTaste": {
+        "ReferenceSchemaName": "PmProductTaste",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ],
+        "Map": {
+            "Code": "PmExternalCode",
+            "Name": "NameEN"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "IndustryStatus": {
+        "IsEnum": true,
+        "ReferenceSchemaName": "PmIndustryStatus",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ]
+    },
+    "LifeCycleStatus": {
+        "IsEnum": true,
+        "ReferenceSchemaName": "PmLifeCycleStatus",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ]
+    },
+    "EquipmentBrandVariant": {
+        "ReferenceSchemaName": "Product",
+        "Filter": "PmBddmMappingEquipmentBrandVariantFilterHandler",
+        "PostProcessingClassName": "PmBddmMappingEquipmentBrandVariantPostProcessingHandler",
+        "IndexRegister": "UpperCase",
+        "Map": {
+            "Code": "PmExternalCode"
+        }
+    },
+    "PromoVariant": {
+        "Filter": {
+            "Comparison": "Equal",
+            "Path": "Country.Code",
+            "Value": "RU"
+        },
+        "PostProcessingClassName": "PmBddmMappingPromoVariantPostProcessingHandler",
+        "ReferenceSchemaName": "Product",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ],
+        "Map": {
+            "$type": "PmBDDMType",
+            "CreationTime": "CreatedOn",
+            "UpdateTime": "ModifiedOn",
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "Name": "PmNameEng"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "EquipmentServiceVariant": {
+        "Filter": {
+            "Comparison": "Equal",
+            "Path": "Country.Code",
+            "Value": "RU"
+        },
+        "PostProcessingClassName": "PmBddmMappingEquipmentServiceVariantPostProcessingHandler",
+        "ReferenceSchemaName": "Product",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ],
+        "Map": {
+            "$type": "PmBDDMType",
+            "CreationTime": "CreatedOn",
+            "UpdateTime": "ModifiedOn",
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "Name": "PmNameEng"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "ConsumableProductionProduct": {
+        "Filter": "BddmMappingConsumableProductionProductFilterHandler",
+        "PostProcessingClassName": "PmBddmMappingConsumableProductionProductPostProcessingHandler",
+        "ReferenceSchemaName": "PmProductEAN",
+        "UniqueColumn": {
+            "CrmColumnName": "PmExternalCode",
+            "BddmColumnName": "EANPack"
+        },
+        "Map": {
+            "Code": "PmFPVCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "EANPack": "PmExternalCode",
+            "Name": "PmName",
+            "CreationTime": "CreatedOn",
+            "UpdateTime": "ModifiedOn"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "EquipmentProductionProduct": {
+        "Filter": "BddmMappingEquipmentProductionProductFilterHandler",
+        "PostProcessingClassName": "PmBddmMappingEquipmentProductionProductPostProcessingHandler",
+        "ReferenceSchemaName": "PmProductEAN",
+        "UniqueColumn": {
+            "CrmColumnName": "PmExternalCode",
+            "BddmColumnName": "EANPack"
+        },
+        "Map": {
+            "Code": "PmFPVCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "EANPack": "PmExternalCode",
+            "Name": "PmName",
+            "CreationTime": "CreatedOn",
+            "UpdateTime": "ModifiedOn"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "PriceListItem": {
+        "Filter": {
+            "Comparison": "Equal",
+            "Path": "Type",
+            "Value": "BrandRetail"
+        },
+        "PostProcessingClassName": "PmBddmMappingPriceListItemPostProcessingHandler",
+        "ReferenceSchemaName": "PmProductPriceListValidFrom",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ],
+        "Map": {
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "ValidFrom": "PmValidFromDate",
+            "Type": {
+                "CrmColumnName": "PmType",
+                "Type": "RetailPriceListItemType"
+            },
+            "UOM": {
+                "CrmColumnName": "PmUnit",
+                "Type": "QuantityUOM"
+            }
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "RetailPriceListItemType": {
+        "IsEnum": true,
+        "ReferenceSchemaName": "PmPriceListType",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ]
+    },
+    "QuantityUOM": {
+        "IsEnum": true,
+        "ReferenceSchemaName": "Unit",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ]
+    },
+    "ConsumerProductInstanceBinding": {
+        "ReferenceSchemaName": "PmAsset",
+        "PostProcessingClassName": "PmBddmMappingConsumerProductInstanceBindingPostProcessingHandler",
+        "IndexRegister": "UpperCase",
+        "Map": {
+            "Code": "PmExternalCode"
+        }
+    },
+    "ConsumerReference": {
+        "ReferenceSchemaName": "PmClient",
+        "IndexRegister": "UpperCase",
+        "Map": {
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace"
+        }
+    },
+    "Consumer": {
+        "Filter": {
+            "Comparison": "Exists",
+            "Path": "Person.Code"
+        },
+        "PostProcessingClassName": "PmBddmMappingConsumerPostProcessingHandler",
+        "ReferenceSchemaName": "PmClient",
+        "IndexRegister": "UpperCase",
+        "UniqueColumn": {
+            "CrmColumnName": "PmPersonId",
+            "BddmColumnName": "Person.Code"
+        },
+        "Map": {
+            "Person.Code": "PmPersonId",
+            "Person.CodeSpace": "PmPersonCodeSpace",
+            "CreationTime": "CreatedOn",
+            "UpdateTime": "ModifiedOn",
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "Country": {
+                "CrmColumnName": "PmCountry",
+                "Type": "CountryReference"
+            },
+            "SFDCAccountID": "PmSFId",
+            "Registration.Application": "PmRegistrationApplication",
+            "Registration.RegistrationCampaignName": "PmRegistrationCampaign",
+            "Registration.RegistrationChannel": "PmRegistrationChannel",
+            "LoyaltyProgram.EntryDate": "PmQClubJoinDate",
+            "IsResaleSuspicious": "PmIsWholesaler",
+            "FraudIndicatorStatus": {
+                "CrmColumnName": "PmFraudStatus",
+                "Type": "ConsumerFraudIndicatorStatus"
+            },
+            "ElectronicReceiptsConsent": "PmIsOnlyElectronicBill",
+            "FraudIndicatorScore": "PmFraudScore",
+            "Comment": "Notes",
+            "PromptSegment": {
+                "CrmColumnName": "PmPromptSegment",
+                "Type": "ConsumerPromptSegment"
+            },
+            "RRPLearningStatus": "PmRRPLearningStatus",
+            "RRPAssessmentDate": "PmIQOSAddingDate",
+            "TasteGuideDate": "PmTasteGuideDate",
+            "Wallet.InstallDate": "PmWalletInstallDate",
+            "Wallet.CardNumber": "PmWalletCardNumber"
+        }
+    },
+    "ConsumerPromptSegment": {
+        "IsEnum": true,
+        "ReferenceSchemaName": "PmClientPromptSegment",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ]
+    },
+    "ConsumerFraudIndicatorStatus": {
+        "IsEnum": true,
+        "ReferenceSchemaName": "PmClientFraudStatus",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ]
+    },
+    "RetailSaleOrder": {
+        "ReferenceSchemaName": "PmOrderSale",
+        "PostProcessingClassName": "PmBddmMappingRetailSaleOrderPostProcessingHandler",
+        "UniqueColumn": {
+            "CrmColumnName": "PmExternalCode",
+            "BddmColumnName": "Code"
+        },
+        "Map": {
+            "$type": "PmBDDMType",
+            "SourcePoint": {
+                "CrmColumnName": "PmPointSource",
+                "Type": "ProductLocationReference"
+            },
+            "ProcessedPoint": {
+                "CrmColumnName": "PmPointProcessed",
+                "Type": "ProductLocationReference"
+            },
+            "ProcessedLegalEntity": {
+                "CrmColumnName": "PmAccount",
+                "Type": "LegalEntityReference"
+            },
+            "AssistedBy": {
+                "CrmColumnName": "PmMSE",
+                "Type": "GenericUserReference"
+            },
+            "CancellationInfo.RequestDate": "PmCancelDate",
+            "CancellationInfo": {
+                "CrmColumnName": "PmCancelReason",
+                "Type": "RetailProductCancellationInfo"
+            },
+            "CloseDate": "PmDateClose",
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "ConsumerAgeVerificationStatus": {
+                "CrmColumnName": "PmClientStatusAV",
+                "Type": "PersonAgeVerificationStatus"
+            },
+            "Country": {
+                "CrmColumnName": "PmCountry",
+                "Type": "CountryReference"
+            },
+            "DeliveryInfo.Cost.Value": "PmDeliveryCost",
+            "CreationTime": "CreatedOn",
+            "UpdateTime": "ModifiedOn",
+            "CustomerNote": "PmClientComment",
+            "Description": "PmComment",
+            "DTEParticipant": {
+                "CrmColumnName": "PmDte",
+                "Type": "ParticipantProfileReference"
+            },
+            "IsPresent": "PmIsGift",
+            "SaleType": {
+                "CrmColumnName": "PmType",
+                "Type": "RetailProductOrderSaleType"
+            },
+            "StockType": {
+                "CrmColumnName": "PmStockType",
+                "Type": "RetailProductOrderStockType"
+            },
+            "OrderDate": "PmDateCreate",
+            "Status": {
+                "CrmColumnName": "PmStatus",
+                "Type": "RetailSaleOrderStatus"
+            },
+            "PaymentInfo.OnlinePaymentInfo.ProviderTransactionID": "PmArvatoTransactionID",
+            "TotalDiscount.Value": "PmDiscountSum",
+            "TotalDiscountedValue.Value": "PmSum",
+            "TotalValue.Value": "PmTotalPrice"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "ParticipantProfileReference": {
+        "ReferenceSchemaName": "PmDteParticipant",
+        "Map": {
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "GenericUserReference": {
+        "ReferenceSchemaName": "Contact",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ],
+        "Map": {
+            "Code": "PmExternalCode"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "ADUserReference": {
+        "ReferenceSchemaName": "Contact",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ],
+        "Map": {
+            "Code": "PmExternalCode",
+            "Name": "Name"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "RetailProductOrderStockType": {
+        "IsEnum": true,
+        "ReferenceSchemaName": "PmOrderSaleStockType"
+    },
+    "PersonAgeVerificationStatus": {
+        "IsEnum": true,
+        "ReferenceSchemaName": "PmClientStatusAV",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ]
+    },
+    "RetailProductOrderSaleType": {
+        "IsEnum": true,
+        "ReferenceSchemaName": "PmOrderSaleType",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ]
+    },
+    "RetailOrderPaymentStatus": {
+        "IsEnum": true,
+        "ReferenceSchemaName": "PmOrderPaymentStatus",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ]
+    },
+    "RetailOrderPaymentType": {
+        "IsEnum": true,
+        "ReferenceSchemaName": "PmPaymentMethod",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ]
+    },
+    "RetailSaleOrderStatus": {
+        "IsEnum": true,
+        "ReferenceSchemaName": "PmOrderStatus",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ]
+    },
+    "RetailProductCancellationInfo": {
+        "ReferenceSchemaName": "PmCancelReason",
+        "UniqueColumn": {
+            "CrmColumnName": "PmExternalCode",
+            "BddmColumnName": "Reason"
+        },
+        "Map": {
+            "Reason": "PmExternalCode"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "RetailSaleItem": {
+        "ReferenceSchemaName": "PmPositionOrder",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ],
+        "Map": {
+            "ItemCode": "PmExternalCode"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "LegalEntityReference": {
+        "ReferenceSchemaName": "Account",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ],
+        "Map": {
+            "Code": "PmExternalCode",
+            "Name": "Name"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "POS": {
+        "Filter": "PmBddmMappingProductLocationFilterHandler",
+        "PostProcessingClassName": "PmBddmMappingProductLocationPostProcessingHandler",
+        "ReferenceSchemaName": "PmSalePoint",
+        "Map": {
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "Name": "PmName",
+            "Address.City": "PmCity"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "DigitalPOS": {
+        "Filter": "PmBddmMappingProductLocationFilterHandler",
+        "PostProcessingClassName": "PmBddmMappingProductLocationPostProcessingHandler",
+        "ReferenceSchemaName": "PmSalePoint",
+        "Map": {
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "Name": "PmName"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "SalesAgent": {
+        "Filter": "PmBddmMappingProductLocationFilterHandler",
+        "PostProcessingClassName": "PmBddmMappingProductLocationPostProcessingHandler",
+        "ReferenceSchemaName": "PmSalePoint",
+        "Map": {
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "Name": "PmName"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "Warehouse": {
+        "PostProcessingClassName": "PmBddmMappingProductLocationPostProcessingHandler",
+        "ReferenceSchemaName": "PmSalePoint",
+        "Map": {
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "Name": "PmName",
+            "Address.City": "PmCity"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "GeoUnitReference": {
+        "ReferenceSchemaName": "PmGeoUnit",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ],
+        "Map": {
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "Name": "PmNameEN"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "ProductLocationSalesChannel": {
+        "IsEnum": true,
+        "ReferenceSchemaName": "PmSalePointChannel",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ]
+    },
+    "ProductLocationStatus": {
+        "IsEnum": true,
+        "ReferenceSchemaName": "PmSalePointStatus",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ]
+    },
+    "POSFormat": {
+        "IsEnum": true,
+        "ReferenceSchemaName": "PmPOSFormat",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ]
+    },
+    "DigitalPOSFormat": {
+        "IsEnum": true,
+        "ReferenceSchemaName": "PmPOSFormat",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ]
+    },
+    "SalesAgentFormat": {
+        "IsEnum": true,
+        "ReferenceSchemaName": "PmPOSFormat",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ]
+    },
+    "GeoUnit": {
+        "Filter": {
+            "Comparison": "NotEqual",
+            "Path": "Status",
+            "Value": "Planned"
+        },
+        "PostProcessingClassName": "PmBddmMappingGeoUnitPostProcessingHandler",
+        "ReferenceSchemaName": "PmGeoUnit",
+        "Map": {
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "Name": "PmNameEN",
+            "Parent": {
+                "CrmColumnName": "PmParent",
+                "Type": "GeoUnitReference"
+            },
+            "RRPExpansion": {
+                "CrmColumnName": "PmRRPExpansion",
+                "Type": "GeoUnitRRPExpansion"
+            },
+            "TimeZone": "PmTimeZone",
+            "TreeLevel": {
+                "CrmColumnName": "PmTreeLevel",
+                "Type": "GeoUnitTreeLevel"
+            },
+            "Country": {
+                "CrmColumnName": "PmCountry",
+                "Type": "CountryReference"
+            }
+        },
+        "CustomMap": [
+            {
+                "BddmColumnPath": "NameLocal.Localized",
+                "CrmColumnName": "PmName"
+            },
+            {
+                "BddmColumnPath": "KLADR.Code",
+                "CrmColumnName": "PmKLADR"
+            },
+            {
+                "BddmColumnPath": "FIAS.Code",
+                "CrmColumnName": "PmFIAS"
+            }
+        ],
+        "IndexRegister": "UpperCase"
+    },
+    "GeoUnitRRPExpansion": {
+        "IsEnum": true,
+        "ReferenceSchemaName": "PmGeoUnitRRPExpansion",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ]
+    },
+    "GeoUnitTreeLevel": {
+        "IsEnum": true,
+        "ReferenceSchemaName": "PmGeoUnitTreeLevel",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ]
+    },
+    "LegalEntity": {
+        "ReferenceSchemaName": "Account",
+        "PostProcessingClassName": "PmBddmMappingLegalEntityPostProcessingHandler",
+        "Map": {
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "INN": "PmINN",
+            "KPP": "PmKPP",
+            "Form": {
+                "CrmColumnName": "Ownership",
+                "Type": "LegalEntityFormType"
+            },
+            "Country": {
+                "CrmColumnName": "Country",
+                "Type": "CountryReference"
+            }
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "LegalEntityFormType": {
+        "IsEnum": true,
+        "ReferenceSchemaName": "AccountOwnership",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "Name"
+            }
+        ]
+    },
+    "ADUser": {
+        "PostProcessingClassName": "PmBddmMappingADUserPostProcessingHandler",
+        "ReferenceSchemaName": "Contact",
+        "Map": {
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "TradeAccountReference": {
+        "ReferenceSchemaName": "PmTradeAccount",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ],
+        "Map": {
+            "Code": "PmExternalCode"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "TradeBrandReference": {
+        "ReferenceSchemaName": "PmTradeBrand",
+        "Map": {
+            "Code": "PmExternalCode"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "Person": {
+        "ReferenceSchemaName": "PmClient",
+        "PostProcessingClassName": "PmBddmMappingPersonPostProcessingHandler",
+        "IndexRegister": "UpperCase",
+        "UniqueColumn": {
+            "CrmColumnName": "PmPersonId",
+            "BddmColumnName": "Code"
+        },
+        "Map": {
+            "Code": "PmPersonId"
+        }
+    },
+    "TradeBrand": {
+        "ReferenceSchemaName": "PmTradeBrand",
+        "Map": {
+            "$type": "PmBDDMType",
+            "IsActive": "PmIsActive",
+            "Name": "Name",
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "ConsumerFirstAcquisition": {
+        "PostProcessingClassName": "PmBddmMappingConsumerFirstAcquisitionPostProcessingHandler",
+        "ReferenceSchemaName": "PmClient",
+        "IndexRegister": "UpperCase",
+        "DoNotCreateEmptyRecord": true,
+        "Map": {
+            "$type": "PmBDDMType",
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace"
+        }
+    },
+    "ConsumerLastActiveDevice": {
+        "PostProcessingClassName": "PmBddmMappingConsumerLastActiveDevicePostProcessingHandler",
+        "ReferenceSchemaName": "PmClient",
+        "IndexRegister": "UpperCase",
+        "DoNotCreateEmptyRecord": true,
+        "Map": {
+            "$type": "PmBDDMType",
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace"
+        }
+    },
+    "PromotionRetailPOSGroup": {
+        "ReferenceSchemaName": "PmQRegMechanicInTradeAccount",
+        "IndexRegister": "UpperCase",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ],
+        "Map": {
+            "PromotionCodeTemplate": {
+                "CrmColumnName": "PmPromocodeTemplate",
+                "Type": "PromotionCodeTemplateReference"
+            },
+            "TradeAccount": {
+                "CrmColumnName": "PmTradeAccount",
+                "Type": "TradeAccountReference"
+            },
+            "TradeAccountMechanic": {
+                "CrmColumnName": "PmTradeAccountMechanic",
+                "Type": "RetailGroupTradeAccountMechanic"
+            },
+            "Name": "PmName",
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "CreationTime": "PmExternalCreationTime",
+            "UpdateTime": "PmExternalUpdateTime",
+            "QREGAvailable": "PmIsQRegAvailable"
+        }
+    },
+    "PromotionCodeTemplateReference": {
+        "ReferenceSchemaName": "PmPromocodeTemplate",
+        "Map": {
+            "Code": "PmExternalCode"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "RetailGroupTradeAccountMechanic": {
+        "IsEnum": true,
+        "ReferenceSchemaName": "PmTradeAccountMechanic",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ]
+    },
+    "PromotionCodeTemplate": {
+        "ReferenceSchemaName": "PmPromocodeTemplate",
+        "PostProcessingClassName": "PmBddmMappingPromotionCodeTemplatePostProcessingHandler",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ],
+        "Map": {
+            "ApplicationChannel": {
+                "CrmColumnName": "PmPromocodeApplicationChannel",
+                "Type": "PromotionApplicationChannel"
+            },
+            "CreatedBy": {
+                "CrmColumnName": "CreatedBy",
+                "Type": "GenericUserReference"
+            },
+            "UpdatedBy": {
+                "CrmColumnName": "ModifiedBy",
+                "Type": "GenericUserReference"
+            },
+            "DependentTemplate": {
+                "CrmColumnName": "PmDependentTemplate",
+                "Type": "PromotionCodeTemplateReference"
+            },
+            "ProcessType": {
+                "CrmColumnName": "PmType",
+                "Type": "PromotionCodeTemplateProcessType"
+            },
+            "RetailGroup": {
+                "CrmColumnName": "PmRetailGroup",
+                "Type": "PromotionRetailPOSGroupReference"
+            },
+            "TemplateCategory": {
+                "CrmColumnName": "PmCategory",
+                "Type": "PromotionCodeTemplateCategory"
+            },
+            "TemplateStatus": {
+                "CrmColumnName": "PmStatus",
+                "Type": "PromotionCodeTemplateStatus"
+            },
+            "$type": "PmBDDMType",
+            "Description": "PmDescription",
+            "IsApproved": "PmIsApproved",
+            "MessageToConsumer": "PmMessageToConsumer",
+            "Prefix": "PmPrefix",
+            "StatusComment": "PmStatusComment",
+            "TemplateName": "Name",
+            "UsageLimit": "PmUsageLimit",
+            "ValidFrom": "PmValidFrom",
+            "ValidTo": "PmValidTo",
+            "ValidityDays": "PmValidityDays",
+            "CurrencyName": "PmCurrency",
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "PromotionApplicationChannel": {
+        "IsEnum": true,
+        "ReferenceSchemaName": "PmPromocodeApplicationChannel",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ]
+    },
+    "PromotionCodeTemplateProcessType": {
+        "IsEnum": true,
+        "ReferenceSchemaName": "PmPromocodeTemplateType",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ]
+    },
+    "PromotionRetailPOSGroupReference": {
+        "ReferenceSchemaName": "PmQRegMechanicInTradeAccount",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ],
+        "Map": {
+            "Code": "PmExternalCode"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "PromotionCodeTemplateCategory": {
+        "IsEnum": true,
+        "ReferenceSchemaName": "PmPromocodeTemplateCategory",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ]
+    },
+    "PromotionCodeTemplateStatus": {
+        "IsEnum": true,
+        "ReferenceSchemaName": "PmPromocodeTemplateStatus",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ]
+    },
+    "PromotionCode": {
+        "ReferenceSchemaName": "PmPromocode",
+        "PostProcessingClassName": "PmBddmMappingPromotionCodePostProcessingHandler",
+        "Map": {
+            "$type": "PmBDDMType",
+            "AccrualReason": "PmAccrualReason",
+            "ActualUses": "PmUsageCount",
+            "Name": "PmNumber",
+            "ValidFrom": "PmValidFrom",
+            "ValidTo": "PmValidTo",
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "CreationTime": "CreatedOn",
+            "UpdateTime": "ModifiedOn"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "PromotionCodeStatus": {
+        "IsEnum": true,
+        "ReferenceSchemaName": "PmPromocodeStatus",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ]
+    },
+    "PromotionCodeStatusReason": {
+        "IsEnum": true,
+        "ReferenceSchemaName": "PmPromocodeStatusReason"
+    },
+    "ConsumerCommunicationSubscriptions": {
+        "PostProcessingClassName": "PmBddmMappingConsumerCommunicationSubscriptionsPostProcessingHandler",
+        "ReferenceSchemaName": "PmClient",
+        "IndexRegister": "UpperCase",
+        "UniqueColumn": {
+            "CrmColumnName": "PmExternalCode",
+            "BddmColumnName": "Consumer.Code"
+        },
+        "Map": {
+            "Consumer.Code": "PmExternalCode",
+            "Code": "PmSubscriptionExternalCode",
+            "CodeSpace": "PmSubscriptionExternalCodeSpace",
+            "CreationTime": "PmSubscriptionExternalCreatedOn",
+            "UpdateTime": "PmSubscriptionExternalModifiedOn"
+        }
+    },
+    "TradeAccount": {
+        "PostProcessingClassName": "PmBddmMappingTradeAccountPostProcessingHandler",
+        "ReferenceSchemaName": "PmTradeAccount",
+        "Map": {
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "CreationTime": "PmExternalCreationTime",
+            "UpdateTime": "PmExternalUpdateTime",
+            "Name": "PmName"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "User": {
+        "PostProcessingClassName": "PmUserMappingPostProcessor",
+        "ReferenceSchemaName": "PmSFUserInContact",
+        "Map": {
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "DisplayName": "PmDisplayName"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "ADUserRole": {
+        "PostProcessingClassName": "PmBddmMappingAdUserRoleIntoPmUserAdRolePostProcessingHandler",
+        "ReferenceSchemaName": "PmUserAdRole",
+        "Map": {
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "POSModelStoreLevel": {
+        "PostProcessingClassName": "PmPOSModelStoreLevelPostProcessingHandler",
+        "ReferenceSchemaName": "PmSalePoint",
+        "DoNotCreateEmptyRecord": true,
+        "Map": {
+            "Value": {
+                "CrmColumnName": "PmPOSConfiguration",
+                "Type": "POSModelStoreLevelValue"
+            },
+            "Code": "PmExternalCode"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "POSModelStoreLevelValue": {
+        "IsEnum": true,
+        "ReferenceSchemaName": "PmSalePointPOSConfiguration"
+    },
+    "Employee": {
+        "ReferenceSchemaName": "PmEmployee",
+        "PostProcessingClassName": "PmBddmMappingEmployeePostProcessingHandler",
+        "Map": {
+            "$type": "PmBDDMType",
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "Status": {
+                "CrmColumnName": "PmStatus",
+                "Type": "EmployeeStatus"
+            }
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "EmployeeStatus": {
+        "IsEnum": true,
+        "ReferenceSchemaName": "PmEmployeeStatus"
+    },
+    "FieldPositionRole": {
+        "PostProcessingClassName": "PmBddmMappingFieldPositionRolePostProcessingHandler",
+        "ReferenceSchemaName": "PmFieldPositionRole",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ],
+        "Map": {
+            "$type": "PmBDDMType",
+            "GeoUnit": {
+                "CrmColumnName": "PmGeoUnit",
+                "Type": "GeoUnitReference"
+            },
+            "JobFunction": {
+                "CrmColumnName": "PmJobFunction",
+                "Type": "JobFunctionReference"
+            },
+            "Name": "PmName",
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace"
+        },
+        "CustomMap": [
+            {
+                "BddmColumnPath": "LocalName.Localized",
+                "CrmColumnName": "PmNameRU"
+            }
+        ],
+        "IndexRegister": "UpperCase"
+    },
+    "JobFunctionReference": {
+        "ReferenceSchemaName": "PmJobFunction",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ],
+        "Map": {
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "Name": "NameEN"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "RetailReplacementOrder": {
+        "ReferenceSchemaName": "PmOrderReplacement",
+        "PostProcessingClassName": "PmBddmMappingRetailReplacementOrderPostProcessingHandler",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ],
+        "Map": {
+            "$type": "PmBDDMType",
+            "AssistedBy": {
+                "CrmColumnName": "PmMSE",
+                "Type": "GenericUserReference"
+            },
+            "CancellationInfo.RequestDate": "PmCancelDate",
+            "CancellationInfo": {
+                "CrmColumnName": "PmCancelReason",
+                "Type": "RetailProductCancellationInfo"
+            },
+            "CloseDate": "PmDateClose",
+            "ConsumerAgeVerificationStatus": {
+                "CrmColumnName": "PmClientStatusAV",
+                "Type": "PersonAgeVerificationStatus"
+            },
+            "CustomerNote": "PmClientComment",
+            "DeliveryInfo.Cost.Value": "PmDeliveryCost",
+            "DTEParticipant": {
+                "CrmColumnName": "PmDte",
+                "Type": "ParticipantProfileReference"
+            },
+            "ProcessedLegalEntity": {
+                "CrmColumnName": "PmAccount",
+                "Type": "LegalEntityReference"
+            },
+            "ProcessedPoint": {
+                "CrmColumnName": "PmPointProcessed",
+                "Type": "ProductLocationReference"
+            },
+            "SourcePoint": {
+                "CrmColumnName": "PmPointSource",
+                "Type": "ProductLocationReference"
+            },
+            "Description": "PmComment",
+            "OrderDate": "PmDateCreate",
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "Country": {
+                "CrmColumnName": "PmCountry",
+                "Type": "CountryReference"
+            },
+            "CreationTime": "CreatedOn",
+            "UpdateTime": "ModifiedOn"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "RetailReplacementOrderStatus": {
+        "IsEnum": true,
+        "ReferenceSchemaName": "PmOrderStatus",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ]
+    },
+    "POSServiceAvailabilityList": {
+        "PostProcessingClassName": "PmPOSServiceAvailabilityListPostProcessingHandler",
+        "ReferenceSchemaName": "PmSalePoint",
+        "UniqueColumn": {
+            "CrmColumnName": "PmExternalCode",
+            "BddmColumnName": "POS.Code"
+        },
+        "Map": {
+            "POS.Code": "PmExternalCode",
+            "POS.CodeSpace": "PmExternalCodeSpace"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "RetailAcceptanceAct": {
+        "PostProcessingClassName": "PmBddmMappingRetailAcceptanceActProcessingHandler",
+        "ReferenceSchemaName": "PmDocument",
+        "Map": {
+            "$type": "PmBDDMType",
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "CreationTime": "CreatedOn",
+            "UpdateTime": "ModifiedOn",
+            "Number": "PmNumber",
+            "SignatureDate": "PmSignDate"
+        },
+        "CustomMap": [
+            {
+                "BddmColumnPath": "Basis.$type",
+                "CrmColumnName": "PmBasisBDDMType"
+            },
+            {
+                "BddmColumnPath": "Basis.Code",
+                "CrmColumnName": "PmBasisCode"
+            },
+            {
+                "BddmColumnPath": "Basis.CodeSpace",
+                "CrmColumnName": "PmBasisCodeSpace"
+            },
+            {
+                "BddmColumnPath": "OriginalDocument.Target",
+                "CrmColumnName": "PmSignedDocLink"
+            }
+        ],
+        "IndexRegister": "UpperCase"
+    },
+    "JobFunction": {
+        "ReferenceSchemaName": "PmJobFunction",
+        "PostProcessingClassName": "PmJobFunctionPostProcessor",
+        "IndexRegister": "UpperCase",
+        "Map": {
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "Name": "NameEN",
+            "NameLocal.Localized": "Name"
+        }
+    },
+    "BrandFamily": {
+        "ReferenceSchemaName": "PmBrandFamily",
+        "PostProcessingClassName": "PmBddmMappingBrandFamilyPostProcessingHandler",
+        "Map": {
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "Name": "NameEN"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "FieldPositionRoleReference": {
+        "ReferenceSchemaName": "PmFieldPositionRole",
+        "Map": {
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "Position": {
+        "ReferenceSchemaName": "PmEmployeePosition",
+        "PostProcessingClassName": "PmBddmMappingPositionPostProcessingHandler",
+        "Map": {
+            "$type": "PmBDDMType",
+            "Employee": {
+                "CrmColumnName": "PmEmployee",
+                "Type": "EmployeeReference"
+            },
+            "Name": "PmName",
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "Status": {
+                "CrmColumnName": "PmStatus",
+                "Type": "PositionStatus"
+            }
+        },
+        "CustomMap": [
+            {
+                "BddmColumnPath": "NameLocal.Localized",
+                "CrmColumnName": "PmNameRU"
+            }
+        ],
+        "IndexRegister": "UpperCase"
+    },
+    "PositionStatus": {
+        "IsEnum": true,
+        "ReferenceSchemaName": "PmEmployeePositionStatus",
+        "Map": {
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace"
+        }
+    },
+    "EmployeeReference": {
+        "ReferenceSchemaName": "PmEmployee",
+        "Map": {
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "RetailReturnOrder": {
+      "ReferenceSchemaName": "PmOrderRefund",
+      "PostProcessingClassName": "PmBddmMappingRetailReturnOrderPostProcessingHandler",
+      "Map": {
+        "$type": "PmBDDMType",
+        "CancellationInfo.RequestDate": "PmCancelDate",
+        "CancellationInfo.Comment": "PmCancelComment",
+        "CancellationInfo.ConfirmationDate": "PmCancelConfirmationDate",
+        "CancellationInfo.WaitingForProcessingCompanyConfirmation": "PmIsCancelConfirmationWaiting",
+        "CloseDate": "PmDateClose",
+        "Code": "PmExternalCode",
+        "CodeSpace": "PmExternalCodeSpace",
+        "CreationTime": "CreatedOn",
+        "Description": "PmComment",
+        "OrderDate": "PmDateCreate",
+        "ProcessedLegalEntity": {
+          "CrmColumnName": "PmAccount",
+          "Type": "LegalEntityReference"
+        },
+        "SaleOrder": {
+          "CrmColumnName": "PmOrderSale",
+          "Type": "RetailSaleOrderReference"
+        },
+        "TotalValue.Value": "PmSum",
+        "UpdateTime": "ModifiedOn"
+      },
+      "IndexRegister": "UpperCase"
+    },
+    "RetailReturnOrderStatus": {
+        "IsEnum": true,
+        "ReferenceSchemaName": "PmOrderStatus",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ]
+    },
+    "RetailSaleOrderReference": {
+        "ReferenceSchemaName": "PmOrderSale",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ],
+        "Map": {
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "UserPOSCheckIn": {
+        "ReferenceSchemaName": "PmUserPOSCheckIn",
+        "PostProcessingClassName": "PmUserPOSCheckInPostProcessingHandler",
+        "Map": {
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "CreationTime": "CreatedOn",
+            "EndDate": "PmEndDate",
+            "StartDate": "PmStartDate",
+            "UpdateTime": "ModifiedOn"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "RetailLendingOrder": {
+        "ReferenceSchemaName": "PmOrderRent",
+        "PostProcessingClassName": "PmBddmMappingRetailLendingOrderPostProcessingHandler",
+        "Map": {
+            "$type": "PmBDDMType",
+
+            "ActualEndDate": "PmActualEndDate",
+            "ActualStartDate": "PmActualStartDate",
+            "CloseDate": "PmDateClose",
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "ConsumerAgeVerificationStatus": {
+                "CrmColumnName": "PmClientStatusAV",
+                "Type": "PersonAgeVerificationStatus"
+            },
+            "CustomerNote": "PmClientComment",
+            "Description": "PmComment",
+            "OrderDate": "PmDateCreate",
+            "PlannedEndDate": "PmPlannedEndDate",
+            "PurchaseRefusalReason": {
+                "CrmColumnName": "PmPurchaseRefusalReason",
+                "Type": "RetailLendingOrderPurchaseRefusalReason"
+            },
+            "Status": {
+                "CrmColumnName": "PmStatus",
+                "Type": "RetailLendingOrderStatus"
+            },
+
+            "Type": {
+                "CrmColumnName": "PmType",
+                "Type": "RetailLendingOrderType"
+            },
+
+            "CreationTime": "CreatedOn",
+            "UpdateTime": "ModifiedOn"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "RetailLendingOrderStatus": {
+        "IsEnum": true,
+        "ReferenceSchemaName": "PmOrderStatus",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ]
+    },
+    "RetailLendingOrderPurchaseRefusalReason": {
+        "IsEnum": true,
+        "ReferenceSchemaName": "PmPurchaseRefusalReason",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ]
+    },
+    "RetailLendingOrderType": {
+        "IsEnum": true,
+        "ReferenceSchemaName": "PmRentOrderType",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ]
+    },
+    "FieldForceVisitProblemStatus": {
+        "IsEnum": true,
+        "ReferenceSchemaName": "PmFFVisitProblemStatus",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ]
+    },
+    "FieldForceVisitProblem": {
+        "Filter": "PmBddmMappingFFVisitProblemFilterHandler",
+        "PostProcessingClassName": "PmBddmMappingFFVisitProblemPostProcessingHandler",
+        "ReferenceSchemaName": "PmFFVisitProblem",
+        "UniqueColumn": {
+            "CrmColumnName": "PmExternalCode",
+            "BddmColumnName": "Code"
+        },
+        "Map": {
+            "ResolutionDate": "PmResolutionDate",
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "CreationTime": "PmExternalCreationTime",
+            "UpdateTime": "PmExternalUpdateTime",
+            "Status": {
+                "CrmColumnName": "PmStatus",
+                "Type": "FieldForceVisitProblemStatus"
+            }
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "ConsumerAllocations": {
+        "PostProcessingClassName": "PmConsumerAllocationsPostProcessingHandler",
+        "ReferenceSchemaName": "PmClient",
+        "UniqueColumn": {
+            "CrmColumnName": "PmExternalCode",
+            "BddmColumnName": "Consumer.Code"
+        },
+        "Map": {
+            "Consumer.Code": "PmExternalCode"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "ConsumerLastBrandRetailVisit": {
+        "PostProcessingClassName": "PmBddmMappingConsumerLastBrandRetailVisitPostProcessingHandler",
+        "ReferenceSchemaName": "PmClient",
+        "IndexRegister": "UpperCase",
+        "DoNotCreateEmptyRecord": true,
+        "Map": {
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace"
+        }
+    },
+    "ConsumerQuestionnaire": {
+        "ReferenceSchemaName": "PmSurveyTemplate",
+        "PostProcessingClassName": "PmBddmMappingConsumerQuestionnairePostProcessingHandler",
+        "Map": {
+            "$type": "PmBDDMType",
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "CreationTime": "CreatedOn",
+            "UpdateTime": "ModifiedOn",
+            "Name": "Name",
+            "Category": {
+                "CrmColumnName": "PmCategory",
+                "Type": "ConsumerQuestionnaireCategory"
+            },
+            "Status": {
+                "CrmColumnName": "PmStatus",
+                "Type": "QuestionnaireStatus"
+            }
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "ConsumerQuestionnaireCategory": {
+        "ReferenceSchemaName": "PmSurveyTemplateCategory",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ],
+        "Map": {
+            "Code": "PmExternalCode",
+            "Name": "NameEN"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "QuestionnaireStatus": {
+        "IsEnum": true,
+        "ReferenceSchemaName": "PmSurveyTemplateStatus",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ]
+    },
+    "ConsumerSurveyRequest": {
+        "PostProcessingClassName": "PmBddmMappingConsumerSurveyRequestPostProcessingHandler",
+        "ReferenceSchemaName": "PmSurveyRequest",
+        "Map": {
+            "$type": "PmBDDMType",
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "Periodicity": "PmPeriodicityString",
+            "CreationTime": "PmExternalCreationTime",
+            "UpdateTime": "PmExternalUpdateTime"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "ConsumerSurvey": {
+        "PostProcessingClassName": "PmBddmMappingConsumerSurveyPostProcessingHandler",
+        "ReferenceSchemaName": "PmSurvey",
+        "Map": {
+            "$type": "PmBDDMType",
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "CreationTime": "CreatedOn",
+            "UpdateTime": "ModifiedOn",
+            "EndDate": "PmEndDate"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "RetailCallTask": {
+        "PostProcessingClassName": "PmBddmMappingRetailCallTaskPostProcessingHandler",
+        "Filter": "PmBddmMappingRetailCallTaskFilterHandler",
+        "ReferenceSchemaName": "Activity",
+        "WithoutOnConflictStatement": true,
+        "DoNotCreateEmptyRecord": true,
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmMindBoxRequestId"
+            }
+        ],
+        "UniqueColumn": {
+            "CrmColumnName": "PmMindBoxRequestId",
+            "BddmColumnName": "Code"
+        },
+        "Map": {
+            "$type": "PmBDDMType",
+            "Code": "PmMindBoxRequestId",
+            "CodeSpace": "PmExternalCodeSpace",
+            "StartDate": "PmCallPlanDate",
+            "Comment": "PmComment"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "ConsumerGeography": {
+        "PostProcessingClassName": "PmBddmMappingConsumerGeographyPostProcessingHandler",
+        "ReferenceSchemaName": "PmClient",
+        "IndexRegister": "UpperCase",
+        "DoNotCreateEmptyRecord": true,
+        "Map": {
+            "$type": "PmBDDMType",
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace"
+        }
+    },
+    "RetailRecyclingOrder": {
+        "ReferenceSchemaName": "PmOrderRecycling",
+        "PostProcessingClassName": "PmBddmMappingRetailRecyclingOrderPostProcessingHandler",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ],
+        "Map": {
+            "$type": "PmBDDMType",
+            "AssistedBy": {
+                "CrmColumnName": "PmMSE",
+                "Type": "GenericUserReference"
+            },
+            "CancellationInfo.Comment": "PmCancelComment",
+            "CancellationInfo.ConfirmationDate": "PmCancelConfirmationDate",
+            "CancellationInfo.RequestDate": "PmCancelDate",
+            "CancellationInfo.WaitingForProcessingCompanyConfirmation": "PmIsCancelConfirmationWaiting",
+            "CloseDate": "PmDateClose",
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "Consumer": {
+                "CrmColumnName": "PmClient",
+                "Type": "ConsumerReference"
+            },
+            "ConsumerAgeVerificationStatus": {
+                "CrmColumnName": "PmClientStatusAV",
+                "Type": "PersonAgeVerificationStatus"
+            },
+            "CreationTime": "CreatedOn",
+            "CustomerNote": "PmClientComment",
+            "Country": {
+                "CrmColumnName": "PmCountry",
+                "Type": "CountryReference"
+            },
+            "Description": "PmComment",
+            "OrderDate": "PmDateCreate",
+            "ProcessedLegalEntity": {
+                "CrmColumnName": "PmAccount",
+                "Type": "LegalEntityReference"
+            },
+            "ProcessedPoint": {
+                "CrmColumnName": "PmPointProcessed",
+                "Type": "ProductLocationReference"
+            },
+            "SourcePoint": {
+                "CrmColumnName": "PmPointSource",
+                "Type": "ProductLocationReference"
+            },
+            "Status": {
+                "CrmColumnName": "PmStatus",
+                "Type": "RetailReplacementOrderStatus"
+            },
+            "UpdateTime": "ModifiedOn"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "PartnerPromoOfferTemplate": {
+        "PostProcessingClassName": "PmBddmMappingPartnerPromoOfferTemplatePostProcessingHandler",
+        "ReferenceSchemaName": "PmPartnerPromoOfferTemplate",
+        "Map": {
+            "$type": "PmBDDMType",
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "CreationTime": "CreatedOn",
+            "UpdateTime": "ModifiedOn"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "PartnerOfferType": {
+        "IsEnum": true,
+        "ReferenceSchemaName": "PmPartnerOfferType",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ]  
+    },
+    "PromotionCodeGenerationType": {
+        "IsEnum": true,
+        "ReferenceSchemaName": "PmPromocodeTemplateType",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ]
+    },
+    "PromotionNameSetMethod": {
+        "IsEnum": true,
+        "ReferenceSchemaName": "PmPartnerPromoOfferTemplateMethod",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ]
+    },
+    "CurrencyStatus": {
+        "IsEnum": true,
+        "ReferenceSchemaName": "PmCurrencyStatus",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ]
+    },
+    "PartnerMoneyReward": {
+        "PostProcessingClassName": "PmBddmMappingPartnerMoneyRewardPostProcessingHandler",
+        "ReferenceSchemaName": "PmPartnerPromoOffer",
+        "Map": {
+            "$type": "PmBDDMType",
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "CreationTime": "CreatedOn",
+            "UpdateTime": "ModifiedOn"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "PartnerPromoReward": {
+        "PostProcessingClassName": "PmBddmMappingPartnerPromoRewardPostProcessingHandler",
+        "ReferenceSchemaName": "PmPartnerPromoOffer",
+        "Map": {
+            "$type": "PmBDDMType",
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "CreationTime": "CreatedOn",
+            "UpdateTime": "ModifiedOn"
+        },
+        "IndexRegister": "UpperCase"
+    },
+    "ConsumerAnswerTaxonStatus": {
+        "IsEnum": true,
+        "ReferenceSchemaName": "PmTaxonomyStatus",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ]
+    },
+    "ConsumerTaxonomy": {
+        "ReferenceSchemaName": "PmTaxonomy",
+        "IndexRegister": "UpperCase",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ],
+        "Map": {
+            "Code": "PmExternalCode",
+            "Name": "Name"
+        }
+    },
+    "ConsumerAnswerTaxon": {
+        "ReferenceSchemaName": "PmTagTaxonomy",
+        "PostProcessingClassName": "PmBddmMappingConsumerAnswerTaxonPostProcessingHandler",
+        "IndexRegister": "UpperCase",
+        "UniqueColumn": {
+            "CrmColumnName": "PmExternalCode",
+            "BddmColumnName": "Code"
+        },
+        "Map": {
+            "$type": "PmBDDMType",
+			
+            "Name": "Name",
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+			
+            "Taxonomy": {
+                "CrmColumnName": "PmTaxonomy",
+                "Type": "ConsumerTaxonomy"
+            },
+            "Status": {
+                "CrmColumnName": "PmStatus",
+                "Type": "ConsumerAnswerTaxonStatus"
+            },
+			
+            "CreationTime": "CreatedOn",
+            "UpdateTime": "ModifiedOn"
+        }
+    },
+    "TaxonAllocation": {
+        "ReferenceSchemaName": "PmTaxonAllocation",
+        "PostProcessingClassName": "PmBddmMappingTaxonAllocationPostProcessingHandler",
+        "IndexRegister": "UpperCase",
+        "UniqueColumn": {
+            "CrmColumnName": "PmExternalCode",
+            "BddmColumnName": "Code"
+        },
+        "Map": {
+            "$type": "PmBDDMType",
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+			
+            "CreationTime": "CreatedOn",
+            "UpdateTime": "ModifiedOn"
+        }
+    },
+    "ConsumerProgramParticipation": {
+        "ReferenceSchemaName": "PmProgramParticipation",
+        "PostProcessingClassName": "PmBddmMappingConsumerProgramParticipationPostProcessingHandler",
+        "IndexRegister": "UpperCase",
+        "UniqueColumn": {
+            "CrmColumnName": "PmExternalCode",
+            "BddmColumnName": "Code"
+        },
+        "Map": {
+            "$type": "PmBDDMType",
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace",
+            "CreationTime": "CreatedOn",
+            "UpdateTime": "ModifiedOn",
+            "ProgramAvailability": "PmProgramAvailability",
+            "QuitDate": "PmQuitDate",
+            "Status": {
+                "CrmColumnName": "PmStatus",
+                "Type": "ConsumerProgramParticipationStatus"
+            }
+        }
+    },
+    "ConsumerProgramParticipationStatus": {
+        "IsEnum": true,
+        "ReferenceSchemaName": "PmProgramParticipationStatus",
+        "SearchColumns": [
+            {
+                "Order": 0,
+                "CrmColumnName": "PmExternalCode"
+            }
+        ]
+    },
+    "ConsumerConversionStateMetric": {
+        "PostProcessingClassName": "PmBddmMappingConsumerConversionStateMetricPostProcessingHandler",
+        "ReferenceSchemaName": "PmClient",
+        "IndexRegister": "UpperCase",
+        "DoNotCreateEmptyRecord": true,
+        "Map": {
+            "$type": "PmBDDMType",
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace"
+        }
+    },
+    "ConsumerChannelAvailabilityMetric": {
+        "PostProcessingClassName": "PmBddmMappingConsumerChannelAvailabilityMetricPostProcessingHandler",
+        "ReferenceSchemaName": "PmClient",
+        "IndexRegister": "UpperCase",
+        "DoNotCreateEmptyRecord": true,
+        "Map": {
+            "$type": "PmBDDMType",
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace"
+        }
+    }
+}

@@ -1,0 +1,115 @@
+{
+  "locale": "ru",
+  "title": "Диагностика",
+  "logoPosition": "right",
+  "completedHtml": {
+    "ru": "<div><table><thead><tr><th><h4>Вопрос</h4></th><th><h4>Значение</h4></th></tr></thead><tbody><tr><td>Держатель</td><td>{holder}</td></tr><tr><td>Зарядное устройство</td><td>{charger}</td></tr><tr><td>Комментарий</td><td>{comment}</td></tr></tbody></table></div>"
+  },
+  "pages": [
+    {
+      "name": "page1",
+      "elements": [
+        {
+          "type": "panel",
+          "name": "panel_1",
+          "elements": [
+            {
+              "type": "html",
+              "name": "html_1",
+              "startWithNewLine": false,
+              "html": {
+                "default": "<! -- html_1 -->\n     <style>\n        details {\n            border: 1px solid #aaa;\n            border-radius: 4px;\n            padding: 0.5em 0.5em 0;\n        }\n\n        summary {\n            font-weight: bold;\n            margin: -0.5em -0.5em 0;\n            padding: 0.5em;\n        }\n\n        details[open] {\n            padding: 0.5em;\n        }\n\n        details[open] summary {\n            border-bottom: 1px solid #aaa;\n            margin-bottom: 0.5em;\n        }\n\n        summary::before {\n            border-radius: 5px;\n            content: \"+\";\n            float: left;\n            font-size: 1.5em;\n            font-weight: bold;\n            margin: -5px 10px 0 0;\n            padding: 0;\n            text-align: center;\n            width: 20px;\n        }\n\n        details[open] summary::before {\n            content: \"-\";\n        }\n    </style>\n    <h3>Спросите, что не так с устройством:</h3>\n    <br>\n    <h3>Физические повреждения</h3>\n    Если клиент сам говорит о серьезных повреждениях корпуса устройства (сколы, трещины) или утоплении - выберите <b style=\"font-weight: 600;\">\"Физические повреждения\"</b>\n    <br>\n    <br>\n    <h3>Стики не тянутся или мало табачного пара</h3>\n    Если клиент жалуется на мало пара, вкус стиков или проблемы с колпачком – выберите <b style=\"font-weight: 600;\">\"Стики не тянутся или мало табачного пара\"</b> и начислите промокод с маской PC5-\n    <br>\n    Если в городе нет фирменного магазина, необходимо дать клиенту рекомендации по уходу за устройством и задать вопросы из статьи \"Профессиональная чистка IQOS и lil SOLID\"\n    <br>\n    Если клиент повторно обращается с той же проблемой, на следующем экране выберите <b style=\"font-weight: 600;\">\"Замена без L0 подтверждения\"</b>\n    <br>\n    <br>\n    <h3>Поломка лезвия</h3>\n    Если клиент говорит о красном индикаторе и поломке лезвия - выберите <b style=\"font-weight: 600;\">\"Поломка лезвия\"</b>\n     <br>\n     <br>\n    <h3>Замена без L0 подтверждения</h3>\n     Если клиент обращается повторно и говорит о том, что проблема уже была ранее - выберите <b style=\"font-weight: 600;\">\"Замена без L0 подтверждения\"</b>\n     <br>\n     <br>\n    <h3>Сломан закрывающий механизм крышки IQOS 2.4+</h3>\n    Если клиент обратился с поломкой крышки зарядного устройства IQOS 2.4+ - выберите <b style=\"font-weight: 600;\">\"Поломка закрывающего механизма крышки IQOS 2.4+\"</b>\n     <br>\n    <br>\n    <h3>Проблемы с электроникой</h3>\n    Возможные жалобы на проблемы с электроникой:\n     <ul style=\"padding-left: 20px;\">\n        <li style=\"list-style: inside;\"><b style=\"font-weight: 600;\">Жалоба на время зарядки ЗУ</b> (норма: 2 часа от 0 до 100%)</li>\n        <li style=\"list-style: inside;\"><b style=\"font-weight: 600;\">Жалоба на время зарядки держателя в ЗУ</b> (норма: 5-10 минут от 0 до 100%)</li>\n        <li style=\"list-style: inside;\"><b style=\"font-weight: 600;\">Сеанса не хватает</b> (норма: 6 минут или 14 затяжек)</li>\n        <li style=\"list-style: inside;\"><b style=\"font-weight: 600;\">Проблемы с индикацией или вибрацией</b></li>\n         <li style=\"list-style: inside;\"><b style=\"font-weight: 600;\">Устройство перегревается</b></li>\n     </ul><br><br>\n     <details>\n         <summary>Действия агента при жалобе на проблемы с электроникой</summary>\n         Перезагрузите устройство вместе с клиентом во время звонка. Для этого сначала уточните уровень заряда на ЗУ (должно гореть минимум 2 индикатора заряда, чтобы его хватило на перезагрузку)\n        <br>\n        <ul style=\"padding-left: 30px; list-style-type: '-';\">\n            <li> Если заряда недостаточно, клиенту необходимо зарядить устройство 30 мин и перезвонить</li>\n             <li> Если заряда достаточно, выполните перезагрузку вместе с клиентом, объясняя, какие действия нужно для этого сделать. Уточните, как мигнули индикаторы после перезагрузки? (Правильно – мигнул белым 1 раз)</li>\n         </ul>\n         <br>\n        Если работа устройства восстановлена выберете <b style=\"font-weight: 600;\">«Рабочее устройство»</b>,\n        если проблема не устранена – <b style=\"font-weight: 600;\">«Проблема с электроникой»</b>\n     </details>",
+                "ru": "<! -- html_1 -->\n     <style>\n        details {\n            border: 1px solid #aaa;\n            border-radius: 4px;\n            padding: 0.5em 0.5em 0;\n        }\n\n        summary {\n            font-weight: bold;\n            margin: -0.5em -0.5em 0;\n            padding: 0.5em;\n        }\n\n        details[open] {\n            padding: 0.5em;\n        }\n\n        details[open] summary {\n            border-bottom: 1px solid #aaa;\n            margin-bottom: 0.5em;\n        }\n\n        summary::before {\n            border-radius: 5px;\n            content: \"+\";\n            float: left;\n            font-size: 1.5em;\n            font-weight: bold;\n            margin: -5px 10px 0 0;\n            padding: 0;\n            text-align: center;\n            width: 20px;\n        }\n\n        details[open] summary::before {\n            content: \"-\";\n        }\n    </style>\n    <h3>Спросите, что не так с устройством:</h3>\n    <br>\n    <h3>Физические повреждения</h3>\n    Если клиент сам говорит о серьезных повреждениях корпуса устройства (сколы, трещины) или утоплении - выберите <b style=\"font-weight: 600;\">\"Физические повреждения\"</b>\n    <br>\n    <br>\n    <h3>Стики не тянутся или мало аэрозоля</h3>\n     Если клиент жалуется на мало аэрозоля, вкус стиков или проблемы с колпачком и:\n<br> \n- использовал на этом устройстве <b style=\"font-weight: 600;\">менее 1 пачки стиков</b> – выберите <b style=\"font-weight: 600;\">\"Стики не тянутся или мало табачного пара\"</b> и порекомендуйте клиенту извлечь и вставить обратно съемный нагревательный модуль,  перезагрузить устройство, а также использовать минимум 20 стиков (1 пачку) \n<br>\n- использовал на этом  устройстве <b style=\"font-weight: 600;\">более 1 пачки стиков</b>, выберите <b style=\"font-weight: 600;\">\"Стики не тянутся или мало табачного пара\"</b>, предложите клиенту воспользоваться сервисом Профессиональная чистка и начислите код PC5-.\n    <br><br>\n    Если в городе нет магазина, в котором предоставляется услуга Профессиональной чистки, необходимо дать клиенту рекомендации по уходу за устройством и задать вопросы из статьи \"Профессиональная чистка IQOS и lil SOLID\".\n\n    <br>\n    <br>\n    <h3>Поломка лезвия</h3>\n    Если клиент говорит о мигающем красном индикаторе и поломке лезвия - выберите <b style=\"font-weight: 600;\">\"Поломка лезвия\"</b>\n     <br>\n     <br>\n    <h3>Замена без L0 подтверждения</h3>\n     Если клиент обращается повторно и говорит о том, что проблема уже была ранее (профессиональная чистка не помогла или плавающая поломка), анализируем УЗ: если за последние 3 месяца есть обращение по аналогичной поломке, выберите <b style=\"font-weight: 600;\">\"Замена без L0 подтверждения\"</b>\n     <br>\n     Если клиент обращается с проблемой по <b style=\"font-weight: 600;\">автостарту</b> впервые, выполните рекомендации из блока \"Подсказки\" и, если проблема сохраняется, выберите <b style=\"font-weight: 600;\">\"Замена без L0 подтверждения\"</b> и оформите замену.\n    \n     <br>\n     <br>\n    <h3>Проблемы с электроникой</h3>\n    <b style=\"font-weight: 600;\">Жалобы, НЕ требующие перезагрузку устройства:</b>\n     <ul style=\"padding-left: 20px;\">\n        <li style=\"list-style: inside;\">Устройство перегревается/сильно нагревается</li>\n        <li style=\"list-style: inside;\">Нет вибрации </li>\n        <li style=\"list-style: inside;\">Устройство не заряжается или не включается после 30 мин. зарядки </li>\n    </ul>Выберите - <b style=\"font-weight: 600;\">\"Проблема с электроникой\"</b>\n    <br>\n    <br>\n    <b style=\"font-weight: 600;\">Жалобы, требующие перезагрузку устройства:</b>\n    <ul style=\"padding-left: 20px;\">\n       <li style=\"list-style: inside;\">Устройство долго заряжается <b style=\"font-weight: 600;\">(норма: 2 часа от 0 до 100%)</b></li>\n       <li style=\"list-style: inside;\">Короткий сеанс <b style=\"font-weight: 600;\">(норма: 6 минут или 14 затяжек)</b></li>\n       <li style=\"list-style: inside;\">Проблемы с индикацией </li>\n     </ul><br><br>\n     <details>\n         <summary>Действия агента при жалобе на проблемы с электроникой</summary>\n         Уточните у клиента, делал ли он перезагрузку согласно рекомендациям ниже. Если нет, перезагрузите устройство вместе с клиентом. Для этого сначала уточните, каким цветом горит индикатор. Если индикатор горит оранжевым или красным светом, устройство необходимо зарядить, чтобы его хватило на перезагрузку)\n        <br>\n        <ul style=\"padding-left: 30px; list-style-type: '-';\">\n            <li> Если заряда недостаточно, сообщи клиенту о необходимости зарядить устройство 30 мин и расскажи, как выполнить перезагрузку самостоятельно. Если проблема сохранится, клиент может обратиться к нам еще раз, пройти диагностику самостоятельно на сайте/в боте или обратиться в фирменный магазин.</li>\n             <li> Если заряда достаточно, выполните перезагрузку вместе с клиентом, объясняя, какие действия нужно для этого сделать: зажать кнопку на устройстве на 8 секунд и не отпускать ее в течение этого времени, даже если начнется вибрация (время перезагрузки может незначительно отличаться в зависимости от условий окружающей среды).</li>\n         Если перезагрузка не была успешно проведена, то устройство дважды провибрирует, а светодиодный индикатор 5 раз загорится оранжевым. После неудачной попытки устройству нужно дать остыть и затем попробовать сделать перезагрузку ещё раз.\n         </ul>\n         <br>\n        Если работа устройства восстановлена выберете <b style=\"font-weight: 600;\">«Рабочее устройство»</b>,\n        если проблема не устранена – <b style=\"font-weight: 600;\">«Проблема с электроникой»</b>\n     </details>\n     <br>\n     <details>\n      <summary>Подсказки</summary>\n         Если клиент сам сообщает об одной из ситуаций ниже, дай ему рекомендации:\n        <br>\n     <ul style=\"padding-left: 30px; list-style-type: '-';\">\n      <li style=\"list-style: inside;\"><b style=\"font-weight: 600;\">У клиента не запускается сеанс/не включается устройство после извлечения нагревательного модуля</b> – рекомендуем перезагрузить устройство после каждого извлечения нагревательного модуля.</li>\n       <li style=\"list-style: inside;\"><b style=\"font-weight: 600;\">Если устройство не включается автоматически,</b> когда вставлен стик, нужно извлечь его и вставить снова. Если устройство по-прежнему не работает, необходимо удерживать кнопку включения в течение 2 секунд. Если проблема не прошла, рекомендуйте клиенту снять съемный нагревательный модуль, провести чистку устройства, уделяя внимание внутренней части камеры нагревания. После этого проверить, что не осталось следов влаги. Затем необходимо надеть съемный нагревательный модуль и осуществить перезагрузку.</li>\n       <li style=\"list-style: inside;\"><b style=\"font-weight: 600;\">Индикатор горит красным светом в течение 3 секунд и дважды последовательно вибрирует</b> – недостаточно заряда аккумулятора, необходимо зарядить устройство.</li>\n       <li style=\"list-style: inside;\"><b style=\"font-weight: 600;\">Индикатор 5 раз мигает красным светом</b> – устройство неисправно, необходима перезагрузка.</li>\n       <li style=\"list-style: inside;\"><b style=\"font-weight: 600;\">Индикатор мигает оранжевым светом в течение 3 секунд</b> – после 3 последовательных сеансов (без перерыва между ними) устройство будет автоматически охлаждаться. Необходимо дождаться стабилизации температуры устройства.</li>\n       <li style=\"list-style: inside;\"><b style=\"font-weight: 600;\">Клиент использовал неоригинальные аксессуары</b> – рекомендуем перезагрузить устройство и зарядить с использованием оригинальных аксессуаров. Если клиент отказывается/проблема не прошла – переходим к оформлению замены по гарантии.</li>\n       <li style=\"list-style: inside;\"><b style=\"font-weight: 600;\">Клиент кастомизировал/модифицировал устройство </b>(путем наложения каких-либо рисунков на покрытые, либо специальной печати/ перебитый или измененный УК, изъятый аккумулятор, микросхема и т.д.) – отказываем в гарантийном обслуживании, выбери поломку «Физические повреждения».</li>\n     </ul><br><br>\n     </details>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "page2",
+      "elements": [
+        {
+          "type": "panel",
+          "name": "panel1",
+          "elements": [
+            {
+              "type": "html",
+              "name": "html_2",
+              "html": "<! -- html_2--> <h3>Что пошло не так?</h3><br>Выберите состояние элементов после проведенной диагностики\n"
+            },
+            {
+              "type": "dropdown",
+              "name": "holder",
+              "title": "Держатель",
+              "showNumber": false,
+              "hideNumber": true,
+              "isRequired": true,
+              "choices": [
+                {
+                  "value": "105",
+                  "text": "Физические повреждения"
+                },
+                {
+                  "value": "106",
+                  "text": "Поломка лезвия"
+                },
+                {
+                  "value": "107",
+                  "text": "Рабочее устройство"
+                },
+                {
+                  "value": "108",
+                  "text": "Проблема с электроникой"
+                },
+                {
+                  "value": "110",
+                  "text": "Стики не тянутся или мало табачного пара"
+                },
+                {
+                  "value": "111",
+                  "text": "Замена без L0 подтверждения"
+                }
+              ]
+            },
+            {
+              "type": "comment",
+              "name": "comment",
+              "title": "Комментарий",
+              "showNumber": false,
+              "hideNumber": true,
+              "requiredIf": "(({holder} == 108) or ({holder} == 111))",
+              "maxLength": 1000
+            },
+            {
+              "type": "html",
+              "name": "html_3",
+              "html": "<! -- html_3 -->\n<div style=\"user-select: text;\">\n    <div onclick=\"document.getElementsByClassName('sd-input sd-comment')[0].value += this.innerHTML.trimStart()+'\\n'; document.getElementsByClassName('sd-input sd-comment')[0].dispatchEvent(new Event('change', { 'bubbles': true }));\" style=\"border: solid 1px gray; border-radius: 10px; padding: 5px 10px; margin: 5px 0px;\">\n        Поломка появляется 1 раз в XX сеансов / XX полных зарядок / каждый раз;</div>\n    <div onclick=\"document.getElementsByClassName('sd-input sd-comment')[0].value += this.innerHTML.trimStart()+'\\n'; document.getElementsByClassName('sd-input sd-comment')[0].dispatchEvent(new Event('change', { 'bubbles': true }));\" style=\"border: solid 1px gray; border-radius: 10px; padding: 5px 10px; margin: 5px 0px;\">\n        Индикация красная / белая / отсутствует / нормальная;</div>\n    <div onclick=\"document.getElementsByClassName('sd-input sd-comment')[0].value += this.innerHTML.trimStart()+'\\n'; document.getElementsByClassName('sd-input sd-comment')[0].dispatchEvent(new Event('change', { 'bubbles': true }));\" style=\"border: solid 1px gray; border-radius: 10px; padding: 5px 10px; margin: 5px 0px;\">\n        Устройство обеспечивает ХХ сеансов подряд / сеанс не начинается;</div>\n    <div onclick=\"document.getElementsByClassName('sd-input sd-comment')[0].value += this.innerHTML.trimStart()+'\\n'; document.getElementsByClassName('sd-input sd-comment')[0].dispatchEvent(new Event('change', { 'bubbles': true }));\" style=\"border: solid 1px gray; border-radius: 10px; padding: 5px 10px; margin: 5px 0px;\">\n        Длительность первого / второго / обоих сеансов ХХ минут / сеанс не начинается;</div>\n    <div onclick=\"document.getElementsByClassName('sd-input sd-comment')[0].value += this.innerHTML.trimStart()+'\\n'; document.getElementsByClassName('sd-input sd-comment')[0].dispatchEvent(new Event('change', { 'bubbles': true }));\" style=\"border: solid 1px gray; border-radius: 10px; padding: 5px 10px; margin: 5px 0px;\">\n        Заряжает держатель на один сеанс / на два сеанса / не заряжает держатель совсем;</div>\n    <div onclick=\"document.getElementsByClassName('sd-input sd-comment')[0].value += this.innerHTML.trimStart()+'\\n'; document.getElementsByClassName('sd-input sd-comment')[0].dispatchEvent(new Event('change', { 'bubbles': true }));\" style=\"border: solid 1px gray; border-radius: 10px; padding: 5px 10px; margin: 5px 0px;\">\n        Устройство обеспечивает ХХ сеансов / сеанс не начинается;</div>\n    <div onclick=\"document.getElementsByClassName('sd-input sd-comment')[0].value += this.innerHTML.trimStart()+'\\n'; document.getElementsByClassName('sd-input sd-comment')[0].dispatchEvent(new Event('change', { 'bubbles': true }));\" style=\"border: solid 1px gray; border-radius: 10px; padding: 5px 10px; margin: 5px 0px;\">\n        Длительность зарядки ХХ минут / не заряжается;</div>\n    <div onclick=\"document.getElementsByClassName('sd-input sd-comment')[0].value += this.innerHTML.trimStart()+'\\n'; document.getElementsByClassName('sd-input sd-comment')[0].dispatchEvent(new Event('change', { 'bubbles': true }));\" style=\"border: solid 1px gray; border-radius: 10px; padding: 5px 10px; margin: 5px 0px;\">\n        Нужно полностью зарядить и разрядить устройство ХХ раз / поместить держатель в зарядное устройство / устройство перегревается при использовании / другое</div>\n</div>"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "showTitle": false,
+  "startSurveyText": {
+    "ru": "Начать"
+  },
+  "pagePrevText": {
+    "ru": "Назад"
+  },
+  "pageNextText": {
+    "ru": "Далее"
+  },
+  "completeText": {
+    "ru": "Завершить"
+  },
+  "previewText": {
+    "ru": "Посмотреть"
+  },
+  "editText": {
+    "ru": "Изменить"
+  },
+  "widthMode": "static",
+  "width": "50rem"
+}

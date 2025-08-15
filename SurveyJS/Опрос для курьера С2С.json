@@ -1,0 +1,65 @@
+{
+    "logoPosition": "right",
+    "pages": [
+        {
+            "name": "page1",
+            "elements": [
+                {
+                    "type": "dropdown",
+                    "name": "question1_1",
+                    "title": "Курьер вернул неисправное устройство в торговую точку?",
+                    "isRequired": true,
+                    "choices": [
+                        {
+                            "value": "TRUE",
+                            "text": "ДА"
+                        },
+                        {
+                            "value": "FALSE",
+                            "text": "НЕТ"
+                        }
+                    ]
+                },
+                {
+                    "type": "dropdown",
+                    "name": "question1_2",
+                    "title": "Заявленная клиентом поломка соответствует?",
+                    "isRequired": true,
+                    "choices": [
+                        {
+                            "value": "TRUE",
+                            "text": "ДА"
+                        },
+                        {
+                            "value": "FALSE",
+                            "text": "НЕТ"
+                        }
+                    ]
+                },
+                {
+                    "type": "comment",
+                    "name": "question2",
+                    "title": "Комментарий",
+                    "enableIf": " {question1_2 = ''FALSE''"
+                },
+                {
+                    "type": "dropdown",
+                    "name": "question1",
+                    "title": "Курьер вернул подписанный клиентом акт?",
+                    "isRequired": true,
+                    "choices": [
+                        {
+                            "value": "TRUE",
+                            "text": "ДА"
+                        },
+                        {
+                            "value": "FALSE",
+                            "text": "НЕТ"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "showCompletedPage": false
+}

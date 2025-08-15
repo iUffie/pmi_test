@@ -1,0 +1,11 @@
+{
+    "ADUserRole": {
+        "PostProcessingClassName": "PmBddmMappingAdUserRoleIntoSysAdminUnitPostProcessingHandler",
+        "ReferenceSchemaName": "SysAdminUnit",
+        "DoNotCreateEmptyRecord": true,
+        "Map": {
+            "Code": "PmExternalCode",
+            "CodeSpace": "PmExternalCodeSpace"
+        }
+    }
+}

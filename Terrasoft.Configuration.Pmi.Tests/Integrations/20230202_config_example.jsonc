@@ -1,0 +1,467 @@
+{
+    "ConsumableBrandVariant": { //BDDM Type
+        "ReferenceSchemaName": "PmBddmConsumableBrandVariant", //CRM Type
+        "SearchColumns": [{"Order": 0, "CrmColumnName": "PmExternalId"}],
+        "Map": { //BDDM Fields -> CRM Fields Mapping
+            "Code": "PmExternalId", //Simple type column
+            "CodeSpace": {
+                "CrmColumnName": "PmBddmCodeSpace",
+                "Type": "CodeSpace"
+            },
+            "Country": { //Complex type column structure
+                "CrmColumnName": "PmCountry", //CRM Column name in PmBddmConsumableBrandVariant
+                "Type": "CountryReference" //BDDM Type
+            },
+            "CreationTime": "PmCreationTime",
+            "UpdateTime": "PmUpdateTime",
+            "IndustryStatus": {
+                "CrmColumnName": "PmIndustryStatus",
+                "Type": "IndustryStatus"
+            },
+            "LifeCycleStatus": {
+                "CrmColumnName": "PmLifeCycleStatus",
+                "Type": "LifeCycleStatus"
+            },
+            "ProductCategory": {
+                "CrmColumnName": "PmProductCategory",
+                "Type": "ProductCategory"
+            },
+            "AlternativeNames": { //Array type column structure
+                "Type": "AlternativeName", //BDDM Type
+                "IsArray": true,
+                "Relation": {
+                    "ReferenceSchemaName": "PmBddmAlternativeNameInConsumableBrandVariant", //CRM Relation Type
+                    "MasterColumnName": "PmConsumableBrandVariant", //CRM Parent Column
+                    "TargetColumnName": "PmAlternativeName" ////CRM Child Column
+                }
+            },
+            "Name": "PmName",
+            "BrandFamily": {
+                "CrmColumnName": "PmBrandFamily",
+                "Type": "BrandFamilyReference"
+            },
+            "BrandGroup": {
+                "CrmColumnName": "PmBrandGroup",
+                "Type": "BrandGroupReference"
+            },
+            "Manufacturer": {
+                "CrmColumnName": "PmManufacturer",
+                "Type": "BrandManufacturerReference"
+            },
+            "Description": "PmDescription",
+            "MRSP": {
+                "Type": "BrandVariantMRSP",
+                "IsArray": true,
+                "Relation": {
+                    "ReferenceSchemaName": "PmBddmBrandVariantMrspInConsumableBrandVariant", 
+                    "MasterColumnName": "PmConsumableBrandVariant",
+                    "TargetColumnName": "PmBrandVariantMrsp"
+                }
+            },
+            "PlatformApplicability": {
+                "Type": "RRPProductGeneration",
+                "IsArray": true,
+                "Relation": {
+                    "ReferenceSchemaName": "PmBddmRrpProductGenerationInConsumableBrandVariant", 
+                    "MasterColumnName": "PmConsumableBrandVariant",
+                    "TargetColumnName": "PmRrpProductGeneration"
+                }
+            },
+            "PriceClass": {
+                "CrmColumnName": "PmPriceClass",
+                "Type": "ProductPriceClass"
+            },
+            "PuffsNumber": "PmPuffsNumber",
+            "SalesSegment": {
+                "CrmColumnName": "PmSalesSegment",
+                "Type": "BrandVariantSalesSegment"
+            },
+            "Taste": {
+                "CrmColumnName": "PmTaste",
+                "Type": "BrandVariantTaste"
+            }
+        }
+    },
+    "CodeSpace": {
+        "IsEnum": true,
+        "ReferenceSchemaName": "PmBddmCodeSpace",
+        "SearchColumns": [{"Order": 0, "CrmColumnName": "PmExternalId"}]
+    },
+    "IndustryStatus": {
+        "IsEnum": true,
+        "ReferenceSchemaName": "PmBddmIndustryStatus",
+        "SearchColumns": [{"Order": 0, "CrmColumnName": "PmExternalId"}],
+    },
+    "LifeCycleStatus": {
+        "IsEnum": true,
+        "ReferenceSchemaName": "PmBddmLifeCycleStatus",
+        "SearchColumns": [{"Order": 0, "CrmColumnName": "PmExternalId"}],
+    },
+    "ProductCategory": {
+        "ReferenceSchemaName": "PmBddmProductCategory",
+        "SearchColumns": [{"Order": 0, "CrmColumnName": "PmExternalId"}],
+        "Map": {
+            "Code": "PmExternalId",
+            "Name": "PmName",
+            "Type": {
+                "CrmColumnName": "Type",
+                "Type": "ProductCategoryType"
+            }
+        }
+    },
+    "ProductCategoryType": {
+        "IsEnum": true,
+        "ReferenceSchemaName": "PmBddmProductCategoryType",
+        "SearchColumns": [{"Order": 0, "CrmColumnName": "PmExternalId"}]
+    },
+    "AlternativeName": {
+        "ReferenceSchemaName": "PmBddmAlternativeName",
+        "SearchColumns": [{"Order": 0, "CrmColumnName": "PmExternalId"}],
+        "Map": {
+            "Name": "PmName",
+            "AltType": {
+                "Type": "AlternativeNameType",
+                "CrmColumnName": "PmType"
+            }
+        }
+    },
+    "AlternativeNameType": {
+        "IsEnum": true,
+        "ReferenceSchemaName": "PmBddmAlternativeNameType",
+        "SearchColumns": [{"Order": 0, "CrmColumnName": "PmExternalId"}],
+        // Now it's hardcode
+        // "Map": {
+        //     "Code": "PmExternalId",
+        //     "Name": "PmName"
+        // }
+    },
+    "BrandFamilyReference": {
+        "ReferenceSchemaName": "PmBddmBrandFamily",
+        "SearchColumns": [{"Order": 0, "CrmColumnName": "PmExternalId"}],
+        "Map": {
+            "Code": "PmExternalId",
+            "CodeSpace": {
+                "CrmColumnName": "PmBddmCodeSpace",
+                "Type": "CodeSpace"
+            },
+            // "Country": {
+            //     "CrmColumnName": "PmCountry",
+            //     "Type": "CountryReference"
+            // },  
+            // "CreationTime": "PmCreationTime",
+            // "UpdateTime": "PmUpdateTime",
+            // "IndustryStatus": {
+            //     "CrmColumnName": "PmIndustryStatus",
+            //     "Type": "IndustryStatus"
+            // },
+            // "LifeCycleStatus": {
+            //     "CrmColumnName": "PmLifeCycleStatus",
+            //     "Type": "LifeCycleStatus"
+            // },
+            // "ProductCategory": {
+            //     "CrmColumnName": "PmProductCategory",
+            //     "Type": "ProductCategory"
+            // },
+            // "GlobalBrandFamily": {
+            //     "Type": "GlobalBrandFamily",
+            //     "IsArray": true,
+            //     "Relation": {
+            //         "ReferenceSchemaName": "PmBddmGlobalBrandFamilyInBrandFamily",
+            //         "MasterColumnName": "PmBrandFamily",
+            //         "TargetColumnName": "PmGlobalBrandFamily"
+            //     }
+            // },
+            // "Manufacturers": {
+            //     "Type": "BrandManufacturerReference",
+            //     "IsArray": true,
+            //     "Relation": {
+            //         "ReferenceSchemaName": "PmBddmBrandManufacturerInBrandFamily",
+            //         "MasterColumnName": "PmBrandFamily",
+            //         "TargetColumnName": "PmBrandManufacturer"
+            //     }
+            // },
+            "Name": "PmName"
+        }
+    },
+    "GlobalBrandFamily": {
+        "ReferenceSchemaName": "PmBddmGlobalBrandFamily",
+        "SearchColumns": [{"Order": 0, "CrmColumnName": "PmExternalId"}],
+        "Map": {
+            "Code": "PmExternalId",
+            "Name": "PmName",
+            "Parent": "PmParent"
+        }
+    },
+    "BrandManufacturerReference": {
+        "ReferenceSchemaName": "PmBddmBrandManufacturer",
+        "SearchColumns": [{"Order": 0, "CrmColumnName": "PmExternalId"}],
+        "Map": {
+            "Code": "PmExternalId",
+            "CodeSpace": {
+                "CrmColumnName": "PmBddmCodeSpace",
+                "Type": "CodeSpace"
+            },
+            // "Country": {
+            //     "CrmColumnName": "PmCountry",
+            //     "Type": "CountryReference"
+            // },  
+            // "CreationTime": "PmCreationTime",
+            // "UpdateTime": "PmUpdateTime",
+            // "IndustryStatus": {
+            //     "CrmColumnName": "PmIndustryStatus",
+            //     "Type": "IndustryStatus"
+            // },
+            // "LifeCycleStatus": {
+            //     "CrmColumnName": "PmLifeCycleStatus",
+            //     "Type": "LifeCycleStatus"
+            // },
+            // "ProductCategory": {
+            //     "CrmColumnName": "PmProductCategory",
+            //     "Type": "ProductCategory"
+            // },
+            // "Companies":  {
+            //     "Type": "CompanyReference",
+            //     "IsArray": true,
+            //     "Relation": {
+            //         "ReferenceSchemaName": "PmBddmCompanyInBrandManufacturer",
+            //         "MasterColumnName": "PmBrandManufacturer",
+            //         "TargetColumnName": "PmCompany"
+            //     }
+            // },
+            "Name": "PmName"
+        }
+    },
+    "CompanyReference": {
+        "ReferenceSchemaName": "PmBddmCompany",
+        "SearchColumns": [{"Order": 0, "CrmColumnName": "PmExternalId"}],
+        "Map": {
+            "Code": "PmExternalId",
+            "CodeSpace": {
+                "CrmColumnName": "PmBddmCodeSpace",
+                "Type": "CodeSpace"
+            },
+            // "Country": {
+            //     "CrmColumnName": "PmCountry",
+            //     "Type": "CountryReference"
+            // },            
+            // "CreationTime": "PmCreationTime",
+            // "UpdateTime": "PmUpdateTime",
+            // "IsActive": "PmIsActive",
+            //TODO "LegalEntities": {
+            //
+            //},
+            "Name": "PmName"
+        }
+    },
+    "CountryReference": {
+        "ReferenceSchemaName": "PmBddmCountry",
+        "SearchColumns": [{"Order": 0, "CrmColumnName": "PmExternalId"}],
+        "Map": {
+            "Code": "PmExternalId",
+            "CodeSpace": {
+                "CrmColumnName": "PmBddmCodeSpace",
+                "Type": "CodeSpace"
+            },
+            // "CreationTime": "PmCreationTime",
+            // "UpdateTime": "PmUpdateTime",
+            // "AlternativeNames": {
+            //     "CrmColumnName": "PmAlternativeNames",
+            //     "Type": "AlternativeName"
+            // },
+            // "IsActive": "PmIsActive",
+            // "IsoExtended": "PmIsoExtended",
+            "Name": "PmName",
+            // "OfficialCurrency": {
+            //     "CrmColumnName": "PmOfficialCurrency",
+            //     "Type": "Currency"
+            // }
+        }
+    },
+    "Currency": {
+        "ReferenceSchemaName": "PmBddmCurrency",
+        "SearchColumns": [{"Order": 0, "CrmColumnName": "PmExternalId"}],
+        "Map": {
+            "Code": "PmCode",
+            "CodeSpace": {
+                "CrmColumnName": "PmBddmCodeSpace",
+                "Type": "CodeSpace"
+            },
+            "CreationTime": "PmCreationTime",
+            "UpdateTime": "PmUpdateTime",
+            "AlternativeName": {
+                "CrmColumnName": "PmAlternativeName",
+                "Type": "AlternativeName"
+            },
+            "Name": "PmName",
+            "NumericCode": "PmNumericCode",
+            "Status": {
+                "CrmColumnName": "PmStatus",
+                "Type": "CurrencyStatus"
+            }
+        }
+    },
+    "CurrencyStatus": {
+        "IsEnum": true,
+        "ReferenceSchemaName": "PmBddmCurrencyStatus",
+        "SearchColumns": [{"Order": 0, "CrmColumnName": "PmExternalId"}],
+    },
+    "BrandGroupReference": {
+        "ReferenceSchemaName": "PmBddmBrandGroup",
+        "SearchColumns": [{"Order": 0, "CrmColumnName": "PmExternalId"}],
+        "Map": {
+            "Code": "PmExternalId",
+            "CodeSpace": {
+                "CrmColumnName": "PmBddmCodeSpace",
+                "Type": "CodeSpace"
+            },
+            // "Country": {
+            //     "CrmColumnName": "PmCountry",
+            //     "Type": "CountryReference"
+            // },  
+            // "CreationTime": "PmCreationTime",
+            // "UpdateTime": "PmUpdateTime",
+            // "IndustryStatus": {
+            //     "CrmColumnName": "PmIndustryStatus",
+            //     "Type": "IndustryStatus"
+            // },
+            // "LifeCycleStatus": {
+            //     "CrmColumnName": "PmLifeCycleStatus",
+            //     "Type": "LifeCycleStatus"
+            // },
+            // "ProductCategory": {
+            //     "CrmColumnName": "PmProductCategory",
+            //     "Type": "ProductCategory"
+            // },
+            // "Manufacturer": {
+            //     "CrmColumnName": "PmManufacturer",
+            //     "Type": "BrandManufacturerReference"
+            // },
+            "Name": "PmName"
+        }
+    },
+    "BrandVariantMRSP": {
+        "ReferenceSchemaName": "PmBddmBrandVariantMrsp",
+        "SearchColumns": [{"Order": 0, "CrmColumnName": "PmExternalId"}],
+        "Map": {
+            "MRSP": {
+                "CrmColumnName": "PmMrsp",
+                "Type": "Price"
+            },
+            "StartDate": "PmStartDate",
+            "Type": {
+                "CrmColumnName": "PmType",
+                "Type": "BrandVariantMRSPType"
+            }
+        }
+    },
+    "Price": {
+        "ReferenceSchemaName": "PmBddmPrice",
+        "SearchColumns": [{"Order": 0, "CrmColumnName": "PmExternalId"}],
+        "Map": {
+            "Currency": "PmCurrencyCode",
+            "Value": "PmValue"
+        }
+    },
+    "BrandVariantMRSPType": {
+        "IsEnum": true,
+        "ReferenceSchemaName": "PmBddmBrandVariantMrspType",
+        "SearchColumns": [{"Order": 0, "CrmColumnName": "PmExternalId"}]
+    },
+    "RRPProductGeneration": {
+        "ReferenceSchemaName": "PmBddmRrpProductGeneration",
+        "SearchColumns": [{"Order": 0, "CrmColumnName": "PmExternalId"}],
+        "Map": {
+            "Code": "PmCode",
+            "Name": "PmName",
+            "Parent": "PmParent"
+        }
+    },
+    "ProductPriceClass": {
+        "IsEnum": true,
+        "ReferenceSchemaName": "PmBddmProductPriceClass",
+        "SearchColumns": [{"Order": 0, "CrmColumnName": "PmExternalId"}]
+    },
+    "BrandVariantSalesSegment": {
+        "ReferenceSchemaName": "PmBddmBrandVariantSalesSegment",
+        "SearchColumns": [{"Order": 0, "CrmColumnName": "PmExternalId"}],
+        "Map": {
+            "Code": "PmCode",
+            "Name": "PmName",
+            "Parent": "PmParent"
+        }
+    },
+    "BrandVariantTaste": {
+        "ReferenceSchemaName": "PmBddmBrandVariantTaste",
+        "SearchColumns": [{"Order": 0, "CrmColumnName": "PmExternalId"}],
+        "Map": {
+            "Code": "PmCode",
+            "Name": "PmName",
+            "Parent": "PmParent"
+        }
+    },
+    "EquipmentBrandVariant": {
+        "ReferenceSchemaName": "PmBddmEquipmentBrandVariant",
+        "Map": {
+            "Code": "PmExternalId",
+            "CodeSpace": {
+                "CrmColumnName": "PmBddmCodeSpace",
+                "Type": "CodeSpace"
+            },
+            "Country": {
+                "CrmColumnName": "PmCountry",
+                "Type": "CountryReference"
+            },
+            "CreationTime": "PmCreationTime",
+            "UpdateTime": "PmUpdateTime",
+            "IndustryStatus": {
+                "CrmColumnName": "PmIndustryStatus",
+                "Type": "IndustryStatus"
+            },
+            "LifeCycleStatus": {
+                "CrmColumnName": "PmLifeCycleStatus",
+                "Type": "LifeCycleStatus"
+            },
+            "ProductCategory": {
+                "CrmColumnName": "PmProductCategory",
+                "Type": "ProductCategory"
+            },
+            "AlternativeNames": {
+                "Type": "AlternativeName",
+                "IsArray": true,
+                "Relation": {
+                    "ReferenceSchemaName": "PmBddmAlternativeNameInPmEquipmentBrandVariant",
+                    "MasterColumnName": "PmEquipmentBrandVariant",
+                    "TargetColumnName": "PmAlternativeName"
+                }
+            },
+            "Name": "PmName",
+            "BrandFamily": {
+                "CrmColumnName": "PmBrandFamily",
+                "Type": "BrandFamilyReference"
+            },
+            "BrandGroup": {
+                "CrmColumnName": "PmBrandGroup",
+                "Type": "BrandGroupReference"
+            },
+            "Manufacturer": {
+                "CrmColumnName": "PmManufacturer",
+                "Type": "BrandManufacturerReference"
+            },
+            "AlternativeColorName": {
+                "CrmColumnName": "PmAlternativeColorName",
+                "Type": "AlternativeName"
+            },
+            "Color": "PmColor",
+            "LimitedEdition": "PmIsLimitedEdition",
+            "Platform": {
+                "Type": "RRPProductGeneration",
+                "IsArray": true,
+                "Relation": {
+                    "ReferenceSchemaName": "PmBddmRrpProductGenerationInEquipmentBrandVariant",
+                    "MasterColumnName": "PmEquipmentBrandVariant",
+                    "TargetColumnName": "PmRrpProductGeneration"
+                },
+            }
+        }
+    },
+}

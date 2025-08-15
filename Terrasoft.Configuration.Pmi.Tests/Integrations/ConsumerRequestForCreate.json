@@ -1,0 +1,10 @@
+{
+    "Consumer": {
+        "Map": {
+            "Code": "PmExternalCode"
+        },
+        "PostProcessingClassName": "PmBddmMappingConsumerRequestForCreatePostProcessingHandler",
+        "ReferenceSchemaName": "PmClient",
+        "IndexRegister": "UpperCase"
+    }
+}

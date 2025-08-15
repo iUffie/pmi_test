@@ -1,0 +1,292 @@
+{
+    "locale": "ru",
+    "title": "Диагностика lil HYBRID 3.0",
+    "logoPosition": "right",
+    "focusFirstQuestionAutomatic": false,
+    "pages": [
+        {
+            "name": "page1",
+            "elements": [
+                {
+                    "type": "image",
+                    "name": "question1",
+                    "title": "Что не так с держателем",
+                    "imageLink": "https://iqos.speedsize.com/8dc60dcf-a0ba-480a-bfc8-3a5d9683eb12/demo.speedsize.com/iqos/Diagnostic_Lil_Hybrid.png",
+                    "imageFit": "fill",
+                    "imageHeight": "",
+                    "imageWidth": ""
+                },
+                {
+                    "type": "dropdown",
+                    "name": "holder",
+                    "title": "Что не так с держателем?",
+                    "hideNumber": true,
+                    "valueName": "holder",
+                    "renderAs": "select",
+                    "choices": [
+                        {
+                            "value": "108",
+                            "text": "Проблемы с электроникой"
+                        },
+                        {
+                            "value": "110",
+                            "text": "Стики не тянутся или мало табачного пара"
+                        },
+                        {
+                            "value": "105",
+                            "text": "Физические повреждения"
+                        }
+                    ],
+                    "placeholder": {
+                        "ru": "Выбрать..."
+                    }
+                }
+            ],
+            "title": "Онлайн-диагностика",
+            "description": "Понятные советы и рекомендации, которые позволят самостоятельно наладить корректную работу устройства."
+        },
+        {
+            "name": "page2",
+            "elements": [
+                {
+                    "type": "image",
+                    "name": "question5",
+                    "title": "1. Аккуратно почистите устройство при помощи чистящего устройства и палочек для чистки.",
+                    "hideNumber": true,
+                    "imageLink": "https://iqos.speedsize.com/8dc60dcf-a0ba-480a-bfc8-3a5d9683eb12/demo.speedsize.com/iqos/Lil_Hybrid_3.png",
+                    "imageFit": "cover",
+                    "imageHeight": "",
+                    "imageWidth": ""
+                },
+                {
+                    "type": "expression",
+                    "name": "question14",
+                    "title": "lil HYBRID 3.0 – устройство с передовыми технологиями. Если что-то пошло не так, то на дисплее вы увидите проблему. Ниже иконки с неполадками и рекомендации, как их устранить.\r\n",
+                    "hideNumber": true
+                },
+                {
+                    "type": "image",
+                    "name": "question9",
+                    "title": "3. Если на устройстве не горят индикаторы, проверьте, включено ли оно.",
+                    "imageLink": "https://iqos.speedsize.com/8dc60dcf-a0ba-480a-bfc8-3a5d9683eb12/demo.speedsize.com/iqos/slider_3.png",
+                    "contentMode": "image",
+                    "imageFit": "fill",
+                    "imageHeight": "",
+                    "imageWidth": ""
+                },
+                {
+                    "type": "expression",
+                    "name": "question6",
+                    "title": "- Устройство перегрето: охлаждение устройства займет 3 минуты 30 секунд, после чего вы сможете начать следующий сеанс.\r\n",
+                    "hideNumber": true
+                },
+                {
+                    "type": "expression",
+                    "name": "question8",
+                    "title": "- Обнаружен неподходящий стик или он вставлен неверно: пожалуйста, вставьте стик  MIIX. Стик должен быть вставлен фильтром вверх.\n",
+                    "hideNumber": true
+                },
+                {
+                    "type": "expression",
+                    "name": "question10",
+                    "title": "- Вставлен уже использованный стик: если вы вставите уже использованный стик в устройство, отобразится экран с ошибкой, а устройство не будет работать.  Чтобы решить данную проблему, вставьте новый, не использованный ранее стик MIIX.\n",
+                    "hideNumber": true
+                },
+                {
+                    "type": "expression",
+                    "name": "question11",
+                    "title": "- Уровень заряда аккумулятора или картриджа у устройства низкий: зарядите устройство или замените картридж.\r\n",
+                    "hideNumber": true
+                },
+                {
+                    "type": "expression",
+                    "name": "question16",
+                    "title": "- Низкий уровень заряда: необходимо зарядить устройство.\r\n",
+                    "hideNumber": true
+                },
+                {
+                    "type": "expression",
+                    "name": "question18",
+                    "title": "- Возникла проблема с электроникой: необходима перезагрузка устройства.\r\n",
+                    "hideNumber": true
+                },
+                {
+                    "type": "expression",
+                    "name": "question23",
+                    "title": "Если рекомендации выше не помогли или вы столкнулись с другой проблемой, например, устройство не включается/не заряжается, нет вибрации, не работает авто-старт или не работает дисплей, воспользуйтесь рекомендациями ниже.\r\n",
+                    "hideNumber": true
+                },
+                {
+                    "type": "expression",
+                    "name": "question24",
+                    "title": "Зарядите устройство минимум 30 минут от сети оригинальными аксессуарами.\r\n",
+                    "hideNumber": true
+                },
+                {
+                    "type": "image",
+                    "name": "question2",
+                    "imageLink": "https://iqos.speedsize.com/8dc60dcf-a0ba-480a-bfc8-3a5d9683eb12/demo.speedsize.com/iqos/Lil-Hybrid.gif",
+                    "imageFit": "cover",
+                    "imageHeight": "",
+                    "imageWidth": ""
+                },
+                {
+                    "type": "expression",
+                    "name": "question4",
+                    "title": "Перезагрузите устройство. Для этого удерживайте кнопку на устройстве 8 секунд. Продолжайте удерживать кнопку, несмотря на вибрацию. Устройство провибрирует, и на экране отобразится \"lil\". Когда устройство перезагрузится, вы увидите главный экран. Перезагрузка успешно выполнена.",
+                    "hideNumber": true
+                },
+                {
+                    "type": "image",
+                    "name": "question7",
+                    "imageLink": "https://iqos.speedsize.com/8dc60dcf-a0ba-480a-bfc8-3a5d9683eb12/demo.speedsize.com/iqos/Lil-Hybrid-reboot.gif",
+                    "imageFit": "cover",
+                    "imageHeight": "",
+                    "imageWidth": ""
+                },
+                {
+                    "type": "dropdown",
+                    "name": "holder1",
+                    "title": "Удалось решить проблему?",
+                    "hideNumber": true,
+                    "valueName": "holder",
+                    "renderAs": "select",
+                    "choices": [
+                        {
+                            "value": "107",
+                            "text": "Да, устройство работает"
+                        },
+                        {
+                            "value": "108",
+                            "text": "Нет, нужна помощь"
+                        }
+                    ],
+                    "placeholder": {
+                        "ru": "Выбрать..."
+                    }
+                }
+            ],
+            "visibleIf": "{holder} = '108'",
+            "title": "Давайте попробуем восстановить работу вашего устройства:",
+            "description": "   "
+        },
+        {
+            "name": "page3",
+            "elements": [
+                {
+                    "type": "image",
+                    "name": "question3",
+                    "title": "Ваш IQOS нуждается в регулярном уходе, ведь от этого зависит качество вкуса и полнота ощущений.",
+                    "hideNumber": true,
+                    "imageLink": "https://iqos.speedsize.com/8dc60dcf-a0ba-480a-bfc8-3a5d9683eb12/demo.speedsize.com/iqos/Lil_Hybrid_2.png",
+                    "imageFit": "cover",
+                    "imageHeight": "",
+                    "imageWidth": ""
+                },
+                {
+                    "type": "expression",
+                    "name": "question13",
+                    "title": "lil HYBRID 3.0 – устройство с тремя режимами работы. Вы можете регулировать насыщенность вкуса и уровень пара самостоятельно. \u000b\r\n",
+                    "hideNumber": true
+                },
+                {
+                    "type": "image",
+                    "name": "question12",
+                    "title": "Если не чистить устройство 7 дней, то вам может показаться, что вкус стал другим, пара стало меньше, а стики хуже тянутся. А если целый месяц - стик будет вставляется не до конца, а время сеанса казаться короче.",
+                    "hideNumber": true,
+                    "imageLink": "https://iqos.speedsize.com/8dc60dcf-a0ba-480a-bfc8-3a5d9683eb12/demo.speedsize.com/iqos/Lil-Hybrid-mode.gif",
+                    "imageFit": "cover",
+                    "imageHeight": "",
+                    "imageWidth": ""
+                },
+                {
+                    "type": "expression",
+                    "name": "question22",
+                    "title": "lil HYBRID 3.0 – устройство с передовыми технологиями. Если что-то пошло не так, то на дисплее вы увидите проблему. Чаще всего проблема \"Мало пара или стики не тянутся\" связана с тем, что жидкость в картридже закончилась или вы используете неподходящий стик. Ниже иконки с неполадками и рекомендации, как их устранить.\r\n",
+                    "hideNumber": true
+                },
+                {
+                    "type": "image",
+                    "name": "question15",
+                    "title": "https://cloud.mc.iqos.ru/video-regular-cleaning-iqos3duos?qs=2ed1163c7c27af1bd99a204f0a5081848f14495a5eade41f9e578d91990fc98c95f99081f6492d2a94606d23d9472ec68faee2d86beca60b6d6786aaf24df3d17ee73b075236aa28483e2305c0adc89176a3ad55997374039c375f508f3b5943629039df91b7d0d44d95d9122273e8b7e734ea90b3e42acccbe0f6772fa4c846a36e509e7876184a7ebb1a2258244c5f0e68688dec99c7e9b2174a9a07160603e9e9ac77b245fbddc5c912b38273db6facc152f161d9308a858aa75cf2f873e187ad99eef6da6733b161432d2e0b999096ff1bc02857ec8e58c7b1f8c296654f9d8896930e7ff10392d545c42f877e5b7acb3d5c25cc6be8",
+                    "imageLink": "https://iqos.speedsize.com/8dc60dcf-a0ba-480a-bfc8-3a5d9683eb12/demo.speedsize.com/iqos/slider_4.png",
+                    "contentMode": "image",
+                    "imageFit": "cover",
+                    "imageHeight": "",
+                    "imageWidth": ""
+                },
+                {
+                    "type": "expression",
+                    "name": "question17",
+                    "title": "- Уровень картриджа у устройства низкий: необходимо заменить картридж.\r\n",
+                    "hideNumber": true
+                },
+                {
+                    "type": "expression",
+                    "name": "question25",
+                    "title": "- Обнаружен неподходящий стик или он вставлен неверно: пожалуйста, вставьте стик  MIIX. Стик должен быть вставлен фильтром вверх.\r\n",
+                    "hideNumber": true
+                },
+                {
+                    "type": "expression",
+                    "name": "question26",
+                    "title": "- Вставлен уже использованный стик: если вы вставите уже использованный стик в устройство, отобразится экран с ошибкой, а устройство не будет работать. Чтобы решить данную проблему, вставьте новый, не использованный ранее стик MIIX.",
+                    "hideNumber": true
+                },
+                {
+                    "type": "expression",
+                    "name": "question27",
+                    "title": "Если советы выше не решили проблему, то рекомендуем обратиться в фирменный магазин для комплексной диагностики устройства нашими экспертами.\r\n",
+                    "hideNumber": true
+                }
+            ],
+            "visibleIf": "{holder} = '110'",
+            "title": "Мало пара"
+        },
+        {
+            "name": "page4",
+            "elements": [
+                {
+                    "type": "image",
+                    "name": "question19",
+                    "hideNumber": true,
+                    "imageLink": "https://iqos.speedsize.com/8dc60dcf-a0ba-480a-bfc8-3a5d9683eb12/demo.speedsize.com/iqos/05_%D0%A4%D0%B8%D0%B7%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5 %D0%BF%D0%BE%D0%B2%D1%80%D0%B5%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F/lil_Physical_1.png",
+                    "imageFit": "cover",
+                    "imageHeight": "",
+                    "imageWidth": ""
+                },
+                {
+                    "type": "expression",
+                    "name": "question20",
+                    "title": "Если вы планируете приобрести новое устройство, обратите внимание, что модель lil HYBRID 3.0 представлена в 2 цветах.",
+                    "hideNumber": true
+                },
+                {
+                    "type": "image",
+                    "name": "question21",
+                    "imageLink": "https://iqos.speedsize.com/8dc60dcf-a0ba-480a-bfc8-3a5d9683eb12/demo.speedsize.com/iqos/iqos_advantages.png",
+                    "imageFit": "cover",
+                    "imageHeight": "",
+                    "imageWidth": ""
+                }
+            ],
+            "visibleIf": "{holder} = '105'",
+            "title": "Физические повреждения"
+        }
+    ],
+    "showTitle": false,
+    "showCompletedPage": false,
+    "goNextPageAutomatic": true,
+    "startSurveyText": {
+        "ru": "Начать"
+    },
+    "pagePrevText": {
+        "ru": "Назад"
+    },
+    "pageNextText": {
+        "ru": "Далее"
+    },
+    "completeText": {
+        "ru": "Завершить"
+    }
+}

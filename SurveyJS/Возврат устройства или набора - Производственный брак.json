@@ -1,0 +1,61 @@
+{
+    "title": "Производственный брак",
+    "logoPosition": "right",
+    "pages": [
+        {
+            "name": "page1",
+            "elements": [
+                {
+                    "type": "dropdown",
+                    "name": "question1_1",
+                    "title": "Товар неисправен и отсутствуют следы: 1) физического повреждения (сколы /царапины/поломка лезвия/крышки) 2) воздействия огня и воды?",
+                    "isRequired": true,
+                    "choices": [
+                        {
+                            "value": "TRUE",
+                            "text": "ДА"
+                        },
+                        {
+                            "value": "FALSE",
+                            "text": "НЕТ"
+                        }
+                    ]
+                },
+                {
+                    "type": "dropdown",
+                    "name": "question1_2",
+                    "title": "После чистки контактов, перезагрузки, устройство не работает?",
+                    "isRequired": true,
+                    "choices": [
+                        {
+                            "value": "TRUE",
+                            "text": "ДА"
+                        },
+                        {
+                            "value": "FALSE",
+                            "text": "НЕТ"
+                        }
+                    ]
+                },
+                {
+                    "type": "dropdown",
+                    "name": "question1_3",
+                    "title": "Серийный номер элементов на корпусе устройства соответствует данным в программе USU?",
+                    "isRequired": true,
+                    "choices": [
+                        {
+                            "value": "TRUE",
+                            "text": "ДА"
+                        },
+                        {
+                            "value": "FALSE",
+                            "text": "НЕТ"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "showTitle": false,
+    "showCompletedPage": false
+}

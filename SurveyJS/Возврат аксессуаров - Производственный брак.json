@@ -1,0 +1,61 @@
+{
+    "title": "Производственный брак",
+    "logoPosition": "right",
+    "pages": [
+        {
+            "name": "page1",
+            "elements": [
+                {
+                    "type": "dropdown",
+                    "name": "question1_1",
+                    "title": "Товар неисправен?",
+                    "isRequired": true,
+                    "choices": [
+                        {
+                            "value": "TRUE",
+                            "text": "ДА"
+                        },
+                        {
+                            "value": "FALSE",
+                            "text": "НЕТ"
+                        }
+                    ]
+                },
+                {
+                    "type": "dropdown",
+                    "name": "question1_2",
+                    "title": "На товаре отсутствуют следы физического повреждения? (сколы /царапины/ вмятины/сломанный пластик)",
+                    "isRequired": true,
+                    "choices": [
+                        {
+                            "value": "TRUE",
+                            "text": "ДА"
+                        },
+                        {
+                            "value": "FALSE",
+                            "text": "НЕТ"
+                        }
+                    ]
+                },
+                {
+                    "type": "dropdown",
+                    "name": "question1_3",
+                    "title": "На устройстве отсутствуют следы воздействия огня и воды?",
+                    "isRequired": true,
+                    "choices": [
+                        {
+                            "value": "TRUE",
+                            "text": "ДА"
+                        },
+                        {
+                            "value": "FALSE",
+                            "text": "НЕТ"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "showTitle": false,
+    "showCompletePage": false
+}

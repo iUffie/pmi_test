@@ -1,0 +1,104 @@
+{
+  "title": "Чекап опрос для IQOS 3, IQOS 3 DUOS, IQOS 3 DUOS ORIGINALS",
+  "pages": [
+    {
+      "name": "page1",
+      "elements": [
+        {
+          "type": "boolean",
+          "name": "question1",
+          "title": "Отсутствуют следы попадания влаги?",
+          "isRequired": true,
+          "labelTrue": "Да",
+          "labelFalse": "Нет"
+        },
+        {
+          "type": "boolean",
+          "name": "question2",
+          "title": "Отсутствуют физические повреждения",
+          "isRequired": true,
+          "labelTrue": "Да",
+          "labelFalse": "Нет"
+        },
+        {
+          "type": "boolean",
+          "name": "question3",
+          "title": "Нагревательный элемент НЕ поврежден?",
+          "isRequired": true,
+          "labelTrue": "Да",
+          "labelFalse": "Нет"
+        },
+        {
+          "type": "boolean",
+          "name": "question4",
+          "title": "Корректное потребление тока в режиме ожидания?",
+          "isRequired": true,
+          "labelTrue": "Да",
+          "labelFalse": "Нет"
+        },
+        {
+          "type": "boolean",
+          "name": "question5",
+          "title": "Корректная работа индикации?",
+          "isRequired": true,
+          "labelTrue": "Да",
+          "labelFalse": "Нет"
+        },
+        {
+          "type": "boolean",
+          "name": "question6",
+          "title": "Емкость зарядного устройства соответствует норме?",
+          "isRequired": true,
+          "labelTrue": "Да",
+          "labelFalse": "Нет"
+        },
+        {
+          "type": "boolean",
+          "name": "question7",
+          "title": "Держатель обеспечивает корректную работу в течение 14 затяжек?",
+          "isRequired": true,
+          "labelTrue": "Да",
+          "labelFalse": "Нет"
+        },
+        {
+          "type": "boolean",
+          "name": "question8",
+          "title": "Другие проблемы электроники отсутствуют?",
+          "isRequired": true,
+          "labelTrue": "Да",
+          "labelFalse": "Нет"
+        },
+        {
+          "type": "boolean",
+          "name": "question9",
+          "title": "Длительность сеанса соответствует норме?",
+          "isRequired": true,
+          "labelTrue": "Да",
+          "labelFalse": "Нет"
+        },
+        {
+          "type": "text",
+          "name": "question10",
+          "title": "Количество сеансов",
+          "isRequired": true,
+          "inputType": "number",
+          "min": 0
+        },
+        {
+          "type": "dropdown",
+          "name": "question11",
+          "title": "Степень загрязнения устройства",
+          "isRequired": true,
+          "choices": [
+            "0",
+            "1",
+            "2"
+          ]
+        }
+      ]
+    }
+  ],
+  "showTitle": false,
+  "showCompletePage": false,
+  "headerView": "advanced"
+}

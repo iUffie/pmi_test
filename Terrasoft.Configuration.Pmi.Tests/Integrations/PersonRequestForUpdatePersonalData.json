@@ -1,0 +1,14 @@
+{
+    "Person": {
+        "PostProcessingClassName": "PmBddmMappingPersonRequestForUpdatePersonalDataPostProcessingHandler",
+        "ReferenceSchemaName": "PmClient",
+        "IndexRegister": "UpperCase",
+        "UniqueColumn": {
+            "CrmColumnName": "PmPersonId",
+            "BddmColumnName": "Code"
+        },
+        "Map": {
+            "Code": "PmPersonId"
+        }
+    }
+}

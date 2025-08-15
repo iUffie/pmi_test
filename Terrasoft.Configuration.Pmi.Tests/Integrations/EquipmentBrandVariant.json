@@ -1,0 +1,799 @@
+{
+    "MaxDepth": 2,
+    "Entities": {
+        "EquipmentBrandVariant": {
+            "ReferenceSchemaName": "PmBddmEquipmentBrandVariant",
+            "Map": {
+                "Code": "PmCode",
+                "CodeSpace": {
+                    "IsEnum": true,
+                    "CrmColumnName": "PmBddmCodeSpace",
+                    "BddmTypeName": "CodeSpace",
+                    "ReferenceSchemaName": "PmBddmCodeSpace"
+                },
+                "Country": {
+                    "CrmColumnName": "PmCountry",
+                    "BddmTypeName": "CountryReference",
+                    "ReferenceSchemaName": "PmBddmCountry",
+                    "Map": {
+                        "Code": "PmCode",
+                        "CodeSpace": {
+                            "IsEnum": true,
+                            "CrmColumnName": "PmBddmCodeSpace",
+                            "BddmTypeName": "CodeSpace",
+                            "ReferenceSchemaName": "PmBddmCodeSpace"
+                        },
+                        "Name": "PmName"
+                    },
+                    "TODO_ReferenceTypeStrategy": {
+                        "CreationTime": "PmCreationTime",
+                        "UpdateTime": "PmUpdateTime",
+                        "AlternativeNames": {
+                            "CrmColumnName": "PmAlternativeNames",
+                            "BddmTypeName": "AlternativeName",
+                            "ReferenceSchemaName": "PmBddmAlternativeName",
+                            "Map": {
+                                "Name": "PmName",
+                                "AltType": {
+                                    "IsEnum": true,
+                                    "CrmColumnName": "PmAltType",
+                                    "BddmTypeName": "AlternativeNameType",
+                                    "ReferenceSchemaName": "PmBddmAlternativeNameType"
+                                }
+                            }
+                        },
+                        "IsActive": "PmIsActive",
+                        "IsoExtended": "PmIsoExtended",
+                        "OfficialCurrency": {
+                            "CrmColumnName": "PmOfficialCurrency",
+                            "BddmTypeName": "Currency",
+                            "ReferenceSchemaName": "PmBddmCurrency",
+                            "Map": {
+                                "Code": "PmCode",
+                                "CodeSpace": {
+                                    "IsEnum": true,
+                                    "CrmColumnName": "PmBddmCodeSpace",
+                                    "BddmTypeName": "CodeSpace",
+                                    "ReferenceSchemaName": "PmBddmCodeSpace"
+                                },
+                                "CreationTime": "PmCreationTime",
+                                "UpdateTime": "PmUpdateTime",
+                                "AlternativeName": {
+                                    "CrmColumnName": "PmAlternativeName",
+                                    "BddmTypeName": "AlternativeName",
+                                    "ReferenceSchemaName": "PmBddmAlternativeName",
+                                    "Map": {
+                                        "Name": "PmName",
+                                        "AltType": {
+                                            "IsEnum": true,
+                                            "CrmColumnName": "PmAltType",
+                                            "BddmTypeName": "AlternativeNameType",
+                                            "ReferenceSchemaName": "PmBddmAlternativeNameType"
+                                        }
+                                    }
+                                },
+                                "Name": "PmName",
+                                "NumericCode": "PmNumericCode",
+                                "Status": {
+                                    "IsEnum": true,
+                                    "CrmColumnName": "PmStatus",
+                                    "BddmTypeName": "CurrencyStatus",
+                                    "ReferenceSchemaName": "PmBddmCurrencyStatus"
+                                }
+                            }
+                        }
+                    }
+                },
+                "CreationTime": "PmCreationTime",
+                "UpdateTime": "PmUpdateTime",
+                "IndustryStatus": {
+                    "CrmColumnName": "PmIndustryStatus",
+                    "BddmTypeName": "IndustryStatus",
+                    "ReferenceSchemaName": "PmBddmIndustryStatus",
+                    "IsEnum": true
+                },
+                "LifeCycleStatus": {
+                    "CrmColumnName": "PmLifeCycleStatus",
+                    "BddmTypeName": "LifeCycleStatus",
+                    "ReferenceSchemaName": "PmBddmLifeCycleStatus",
+                    "IsEnum": true
+                },
+                "ProductCategory": {
+                    "CrmColumnName": "PmProductCategory",
+                    "ReferenceSchemaName": "PmBddmProductCategory",
+                    "Map": {
+                        "Code": "PmCode",
+                        "Name": "PmName",
+                        "Type": {
+                            "CrmColumnName": "ProductCategoryType",
+                            "BddmTypeName": "ProductCategoryType",
+                            "ReferenceSchemaName": "PmBddmProductCategoryType",
+                            "IsEnum": true
+                        }
+                    }
+                },
+                "Name": "PmName",
+                "BrandFamily": {
+                    "CrmColumnName": "PmBrandFamily",
+                    "BddmTypeName": "BrandFamilyReference",
+                    "ReferenceSchemaName": "PmBddmBrandFamily",
+                    "Map": {
+                        "Name": "PmName",
+                        "GlobalBrandFamily": {
+                            "BddmTypeName": "GlobalBrandFamily",
+                            "ReferenceSchemaName": "PmBddmBrandFamily",
+                            "IsArray": true,
+                            "Relation": {
+                                "ReferenceSchemaName": "PmBddmGlobalBrandFamilyInBrandFamily",
+                                "MasterColumnName": "PmBrandFamily",
+                                "TargetColumnName": "PmGlobalBrandFamily"
+                            },
+                            "Map": {
+                                "Code": "PmCode",
+                                "Name": "PmName",
+                                "Parent": "PmParent"
+                            }
+                        },
+                        "Manufacturers": {
+                            "BddmTypeName": "BrandManufacturerReference",
+                            "ReferenceSchemaName": "PmBddmBrandManufacturer",
+                            "IsArray": true,
+                            "Relation": {
+                                "ReferenceSchemaName": "PmBddmBrandManufacturerInBrandFamily",
+                                "MasterColumnName": "PmBrandFamily",
+                                "TargetColumnName": "PmBrandManufacturer"
+                            },
+                            "Map": {
+                                "Code": "PmCode",
+                                "CodeSpace": {
+                                    "IsEnum": true,
+                                    "CrmColumnName": "PmBddmCodeSpace",
+                                    "BddmTypeName": "CodeSpace",
+                                    "ReferenceSchemaName": "PmBddmCodeSpace"
+                                },
+                                "Name": "PmName"
+                            },
+                            "TODO_ReferenceTypeStrategy": {
+                                "Companies":  {
+                                    "BddmTypeName": "Company",
+                                    "ReferenceSchemaName": "PmBddmCompany",
+                                    "IsArray": true,
+                                    "Relation": {
+                                        "ReferenceSchemaName": "PmBddmCompanyInBrandManufacturer",
+                                        "MasterColumnName": "PmBrandManufacturer",
+                                        "TargetColumnName": "PmCompany"
+                                    },
+                                    "Map": {
+                                        "Code": "PmCode",
+                                        "CodeSpace": {
+                                            "IsEnum": true,
+                                            "CrmColumnName": "PmBddmCodeSpace",
+                                            "BddmTypeName": "CodeSpace",
+                                            "ReferenceSchemaName": "PmBddmCodeSpace"
+                                        },
+                                        "Country": {
+                                            "CrmColumnName": "PmCountry",
+                                            "BddmTypeName": "Country",
+                                            "ReferenceSchemaName": "PmBddmCountry",
+                                            "Map": {
+                                                "Code": "PmCode",
+                                                "CodeSpace": {
+                                                    "IsEnum": true,
+                                                    "CrmColumnName": "PmBddmCodeSpace",
+                                                    "BddmTypeName": "CodeSpace",
+                                                    "ReferenceSchemaName": "PmBddmCodeSpace"
+                                                },
+                                                "CreationTime": "PmCreationTime",
+                                                "UpdateTime": "PmUpdateTime",
+                                                "AlternativeNames": {
+                                                    "CrmColumnName": "PmAlternativeNames",
+                                                    "BddmTypeName": "AlternativeName",
+                                                    "ReferenceSchemaName": "PmBddmAlternativeName",
+                                                    "Map": {
+                                                        "Name": "PmName",
+                                                        "AltType": {
+                                                            "IsEnum": true,
+                                                            "CrmColumnName": "PmAltType",
+                                                            "BddmTypeName": "AlternativeNameType",
+                                                            "ReferenceSchemaName": "PmBddmAlternativeNameType"
+                                                        }
+                                                    }
+                                                },
+                                                "IsActive": "PmIsActive",
+                                                "IsoExtended": "PmIsoExtended",
+                                                "Name": "PmName",
+                                                "OfficialCurrency": {
+                                                    "CrmColumnName": "PmOfficialCurrency",
+                                                    "BddmTypeName": "Currency",
+                                                    "ReferenceSchemaName": "PmBddmCurrency",
+                                                    "Map": {
+                                                        "Code": "PmCode",
+                                                        "CodeSpace": {
+                                                            "IsEnum": true,
+                                                            "CrmColumnName": "PmBddmCodeSpace",
+                                                            "BddmTypeName": "CodeSpace",
+                                                            "ReferenceSchemaName": "PmBddmCodeSpace"
+                                                        },
+                                                        "CreationTime": "PmCreationTime",
+                                                        "UpdateTime": "PmUpdateTime",
+                                                        "AlternativeName": {
+                                                            "CrmColumnName": "PmAlternativeName",
+                                                            "BddmTypeName": "AlternativeName",
+                                                            "ReferenceSchemaName": "PmBddmAlternativeName",
+                                                            "Map": {
+                                                                "Name": "PmName",
+                                                                "AltType": {
+                                                                    "IsEnum": true,
+                                                                    "CrmColumnName": "PmAltType",
+                                                                    "BddmTypeName": "AlternativeNameType",
+                                                                    "ReferenceSchemaName": "PmBddmAlternativeNameType"
+                                                                }
+                                                            }
+                                                        },
+                                                        "Name": "PmName",
+                                                        "NumericCode": "PmNumericCode",
+                                                        "Status": {
+                                                            "IsEnum": true,
+                                                            "CrmColumnName": "PmStatus",
+                                                            "BddmTypeName": "CurrencyStatus",
+                                                            "ReferenceSchemaName": "PmBddmCurrencyStatus"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "CreationTime": "PmCreationTime",
+                                        "UpdateTime": "PmUpdateTime",
+                                        "IsActive": "PmIsActive",
+                                        "LegalEntities": {
+                                            "TODO": "TODO"
+                                        },
+                                        "Name": "PmName"
+                                    }
+                                },
+                                "Name": "PmName"
+                            }
+                        }
+                    }
+                },
+                "BrandGroup": {
+                    "CrmColumnName": "PmBrandGroup",
+                    "BddmTypeName": "BrandGroupReference",
+                    "ReferenceSchemaName": "PmBddmBrandGroup",
+                    "Map": {
+                        "Code": "PmCode",
+                        "CodeSpace": {
+                            "IsEnum": true,
+                            "CrmColumnName": "PmBddmCodeSpace",
+                            "BddmTypeName": "CodeSpace",
+                            "ReferenceSchemaName": "PmBddmCodeSpace"
+                        },
+                        "Name": "PmName"
+                    }
+                },
+                "Manufacturer": {
+                    "CrmColumnName": "PmManufacturer",
+                    "BddmTypeName": "BrandManufacturerManufacturer",
+                    "ReferenceSchemaName": "PmBddmBrandManufacturer",
+                    "Map": {
+                        "Code": "PmCode",
+                        "CodeSpace": {
+                            "IsEnum": true,
+                            "CrmColumnName": "PmBddmCodeSpace",
+                            "BddmTypeName": "CodeSpace",
+                            "ReferenceSchemaName": "PmBddmCodeSpace"
+                        },
+                        "Name": "PmName"
+                    }
+                },
+                "AlternativeColorName": {
+                    "CrmColumnName": "PmAlternativeColorName",
+                    "BddmTypeName": "AlternativeName",
+                    "ReferenceSchemaName": "PmBddmAlternativeName",
+                    "Map": {
+                        "Name": "PmName",
+                        "AltType": {
+                            "IsEnum": true,
+                            "CrmColumnName": "PmAltType",
+                            "BddmTypeName": "AlternativeNameType",
+                            "ReferenceSchemaName": "PmBddmAlternativeNameType"
+                        }
+                    }
+                },
+                "Color": "PmColor",
+                "LimitedEdition": "PmIsLimitedEdition",
+                "Platform": {
+                    "BddmTypeName": "RRPProductGeneration",
+                    "ReferenceSchemaName": "PmBddmRrpProductGeneration",
+                    "IsArray": true,
+                    "Relation": {
+                        "ReferenceSchemaName": "PmBddmRrpProductGenerationInEquipmentBrandVariant",
+                        "MasterColumnName": "PmEquipmentBrandVariant",
+                        "TargetColumnName": "PmRrpProductGeneration"
+                    },
+                    "Map": {
+                        "Code": "PmCode",
+                        "Name": "PmName",
+                        "Parent": "PmParent"
+                    }
+                }
+            }
+        },
+        "ConsumableBrandVariant": {
+            "ReferenceSchemaName": "PmBddmConsumableBrandVariant",
+            "Map": {
+                "AlternativeNames": {
+                    "BddmTypeName": "AlternativeName",
+                    "ReferenceSchemaName": "PmBddmAlternativeName",
+                    "IsArray": true,
+                    "Relation": {
+                        "ReferenceSchemaName": "PmBddmAlternativeNameInConsumableBrandVariant",
+                        "MasterColumnName": "PmConsumableBrandVariant",
+                        "TargetColumnName": "PmAlternativeName"
+                    },
+                    "Map": {
+                        "Name": "PmName",
+                        "AltType": {
+                            "IsEnum": true,
+                            "CrmColumnName": "PmAltType",
+                            "BddmTypeName": "AlternativeNameType",
+                            "ReferenceSchemaName": "PmBddmAlternativeNameType"
+                        }
+                    }
+                },
+                "Code": "PmCode",
+                "CodeSpace": {
+                    "IsEnum": true,
+                    "CrmColumnName": "PmBddmCodeSpace",
+                    "BddmTypeName": "CodeSpace",
+                    "ReferenceSchemaName": "PmBddmCodeSpace"
+                },
+                "Country": {
+                    "CrmColumnName": "PmCountry",
+                    "BddmTypeName": "Country",
+                    "ReferenceSchemaName": "PmBddmCountry",
+                    "Map": {
+                        "Code": "PmCode",
+                        "CodeSpace": {
+                            "IsEnum": true,
+                            "CrmColumnName": "PmBddmCodeSpace",
+                            "BddmTypeName": "CodeSpace",
+                            "ReferenceSchemaName": "PmBddmCodeSpace"
+                        },
+                        "CreationTime": "PmCreationTime",
+                        "UpdateTime": "PmUpdateTime",
+                        "AlternativeNames": {
+                            "CrmColumnName": "PmAlternativeNames",
+                            "BddmTypeName": "AlternativeName",
+                            "ReferenceSchemaName": "PmBddmAlternativeName",
+                            "Map": {
+                                "Name": "PmName",
+                                "AltType": {
+                                    "IsEnum": true,
+                                    "CrmColumnName": "PmAltType",
+                                    "BddmTypeName": "AlternativeNameType",
+                                    "ReferenceSchemaName": "PmBddmAlternativeNameType"
+                                }
+                            }
+                        },
+                        "IsActive": "PmIsActive",
+                        "IsoExtended": "PmIsoExtended",
+                        "Name": "PmName",
+                        "OfficialCurrency": {
+                            "CrmColumnName": "PmOfficialCurrency",
+                            "BddmTypeName": "Currency",
+                            "ReferenceSchemaName": "PmBddmCurrency",
+                            "Map": {
+                                "Code": "PmCode",
+                                "CodeSpace": {
+                                    "IsEnum": true,
+                                    "CrmColumnName": "PmBddmCodeSpace",
+                                    "BddmTypeName": "CodeSpace",
+                                    "ReferenceSchemaName": "PmBddmCodeSpace"
+                                },
+                                "CreationTime": "PmCreationTime",
+                                "UpdateTime": "PmUpdateTime",
+                                "AlternativeName": {
+                                    "CrmColumnName": "PmAlternativeName",
+                                    "BddmTypeName": "AlternativeName",
+                                    "ReferenceSchemaName": "PmBddmAlternativeName",
+                                    "Map": {
+                                        "Name": "PmName",
+                                        "AltType": {
+                                            "IsEnum": true,
+                                            "CrmColumnName": "PmAltType",
+                                            "BddmTypeName": "AlternativeNameType",
+                                            "ReferenceSchemaName": "PmBddmAlternativeNameType"
+                                        }
+                                    }
+                                },
+                                "Name": "PmName",
+                                "NumericCode": "PmNumericCode",
+                                "Status": {
+                                    "IsEnum": true,
+                                    "CrmColumnName": "PmStatus",
+                                    "BddmTypeName": "CurrencyStatus",
+                                    "ReferenceSchemaName": "PmBddmCurrencyStatus"
+                                }
+                            }
+                        }
+                    }
+                },
+                "CreationTime": "PmCreationTime",
+                "UpdateTime": "PmUpdateTime",
+                "IndustryStatus": {
+                    "CrmColumnName": "PmIndustryStatus",
+                    "BddmTypeName": "IndustryStatus",
+                    "ReferenceSchemaName": "PmBddmIndustryStatus",
+                    "IsEnum": true
+                },
+                "LifeCycleStatus": {
+                    "CrmColumnName": "PmLifeCycleStatus",
+                    "BddmTypeName": "LifeCycleStatus",
+                    "ReferenceSchemaName": "PmBddmLifeCycleStatus",
+                    "IsEnum": true
+                },
+                "ProductCategory": {
+                    "CrmColumnName": "PmProductCategory",
+                    "ReferenceSchemaName": "PmBddmProductCategory",
+                    "Map": {
+                        "Code": "PmCode",
+                        "Name": "PmName",
+                        "Type": {
+                            "CrmColumnName": "ProductCategoryType",
+                            "BddmTypeName": "ProductCategoryType",
+                            "ReferenceSchemaName": "PmBddmProductCategoryType",
+                            "IsEnum": true
+                        }
+                    }
+                },
+                "Name": "PmName",
+                "BrandFamily": {
+                    "CrmColumnName": "PmBrandFamily",
+                    "BddmTypeName": "BrandFamilyReference",
+                    "ReferenceSchemaName": "PmBddmBrandFamily",
+                    "Map": {
+                        "Name": "PmName",
+                        "GlobalBrandFamily": {
+                            "BddmTypeName": "GlobalBrandFamily",
+                            "ReferenceSchemaName": "PmBddmBrandFamily",
+                            "IsArray": true,
+                            "Relation": {
+                                "ReferenceSchemaName": "PmBddmGlobalBrandFamilyInBrandFamily",
+                                "MasterColumnName": "PmBrandFamily",
+                                "TargetColumnName": "PmGlobalBrandFamily"
+                            },
+                            "Map": {
+                                "Code": "PmCode",
+                                "Name": "PmName",
+                                "Parent": "PmParent"
+                            }
+                        },
+                        "Manufacturers": {
+                            "BddmTypeName": "BrandManufacturerReference",
+                            "ReferenceSchemaName": "PmBddmBrandManufacturer",
+                            "IsArray": true,
+                            "Relation": {
+                                "ReferenceSchemaName": "PmBddmBrandManufacturerInBrandFamily",
+                                "MasterColumnName": "PmBrandFamily",
+                                "TargetColumnName": "PmBrandManufacturer"
+                            },
+                            "Map": {
+                                "Code": "PmCode",
+                                "CodeSpace": {
+                                    "IsEnum": true,
+                                    "CrmColumnName": "PmBddmCodeSpace",
+                                    "BddmTypeName": "CodeSpace",
+                                    "ReferenceSchemaName": "PmBddmCodeSpace"
+                                },
+                                "Name": "PmName"
+                            },
+                            "TODO_ReferenceTypeStrategy": {
+                                "Companies":  {
+                                    "BddmTypeName": "Company",
+                                    "ReferenceSchemaName": "PmBddmCompany",
+                                    "IsArray": true,
+                                    "Relation": {
+                                        "ReferenceSchemaName": "PmBddmCompanyInBrandManufacturer",
+                                        "MasterColumnName": "PmBrandManufacturer",
+                                        "TargetColumnName": "PmCompany"
+                                    },
+                                    "Map": {
+                                        "Code": "PmCode",
+                                        "CodeSpace": {
+                                            "IsEnum": true,
+                                            "CrmColumnName": "PmBddmCodeSpace",
+                                            "BddmTypeName": "CodeSpace",
+                                            "ReferenceSchemaName": "PmBddmCodeSpace"
+                                        },
+                                        "Country": {
+                                            "CrmColumnName": "PmCountry",
+                                            "BddmTypeName": "Country",
+                                            "ReferenceSchemaName": "PmBddmCountry",
+                                            "Map": {
+                                                "Code": "PmCode",
+                                                "CodeSpace": {
+                                                    "IsEnum": true,
+                                                    "CrmColumnName": "PmBddmCodeSpace",
+                                                    "BddmTypeName": "CodeSpace",
+                                                    "ReferenceSchemaName": "PmBddmCodeSpace"
+                                                },
+                                                "CreationTime": "PmCreationTime",
+                                                "UpdateTime": "PmUpdateTime",
+                                                "AlternativeNames": {
+                                                    "CrmColumnName": "PmAlternativeNames",
+                                                    "BddmTypeName": "AlternativeName",
+                                                    "ReferenceSchemaName": "PmBddmAlternativeName",
+                                                    "Map": {
+                                                        "Name": "PmName",
+                                                        "AltType": {
+                                                            "IsEnum": true,
+                                                            "CrmColumnName": "PmAltType",
+                                                            "BddmTypeName": "AlternativeNameType",
+                                                            "ReferenceSchemaName": "PmBddmAlternativeNameType"
+                                                        }
+                                                    }
+                                                },
+                                                "IsActive": "PmIsActive",
+                                                "IsoExtended": "PmIsoExtended",
+                                                "Name": "PmName",
+                                                "OfficialCurrency": {
+                                                    "CrmColumnName": "PmOfficialCurrency",
+                                                    "BddmTypeName": "Currency",
+                                                    "ReferenceSchemaName": "PmBddmCurrency",
+                                                    "Map": {
+                                                        "Code": "PmCode",
+                                                        "CodeSpace": {
+                                                            "IsEnum": true,
+                                                            "CrmColumnName": "PmBddmCodeSpace",
+                                                            "BddmTypeName": "CodeSpace",
+                                                            "ReferenceSchemaName": "PmBddmCodeSpace"
+                                                        },
+                                                        "CreationTime": "PmCreationTime",
+                                                        "UpdateTime": "PmUpdateTime",
+                                                        "AlternativeName": {
+                                                            "CrmColumnName": "PmAlternativeName",
+                                                            "BddmTypeName": "AlternativeName",
+                                                            "ReferenceSchemaName": "PmBddmAlternativeName",
+                                                            "Map": {
+                                                                "Name": "PmName",
+                                                                "AltType": {
+                                                                    "IsEnum": true,
+                                                                    "CrmColumnName": "PmAltType",
+                                                                    "BddmTypeName": "AlternativeNameType",
+                                                                    "ReferenceSchemaName": "PmBddmAlternativeNameType"
+                                                                }
+                                                            }
+                                                        },
+                                                        "Name": "PmName",
+                                                        "NumericCode": "PmNumericCode",
+                                                        "Status": {
+                                                            "IsEnum": true,
+                                                            "CrmColumnName": "PmStatus",
+                                                            "BddmTypeName": "CurrencyStatus",
+                                                            "ReferenceSchemaName": "PmBddmCurrencyStatus"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "CreationTime": "PmCreationTime",
+                                        "UpdateTime": "PmUpdateTime",
+                                        "IsActive": "PmIsActive",
+                                        "LegalEntities": {
+                                            "TODO": "TODO"
+                                        },
+                                        "Name": "PmName"
+                                    }
+                                },
+                                "Name": "PmName"
+                            }
+                        }
+                    }
+                },
+                "BrandGroup": {
+                    "CrmColumnName": "PmBrandGroup",
+                    "BddmTypeName": "BrandGroupReference",
+                    "ReferenceSchemaName": "PmBddmBrandGroup",
+                    "Map": {
+                        "Code": "PmCode",
+                        "CodeSpace": {
+                            "IsEnum": true,
+                            "CrmColumnName": "PmBddmCodeSpace",
+                            "BddmTypeName": "CodeSpace",
+                            "ReferenceSchemaName": "PmBddmCodeSpace"
+                        },
+                        "Name": "PmName"
+                    }
+                },
+                "Manufacturer": {
+                    "CrmColumnName": "PmManufacturer",
+                    "BddmTypeName": "BrandManufacturerReference",
+                    "ReferenceSchemaName": "PmBddmBrandManufacturer",
+                    "Map": {
+                        "Code": "PmCode",
+                        "CodeSpace": {
+                            "IsEnum": true,
+                            "CrmColumnName": "PmBddmCodeSpace",
+                            "BddmTypeName": "CodeSpace",
+                            "ReferenceSchemaName": "PmBddmCodeSpace"
+                        },
+                        "Name": "PmName"
+                    },
+                    
+                    "TODO_ReferenceTypeStrategy": {
+                        "Companies":  {
+                            "BddmTypeName": "Company",
+                            "ReferenceSchemaName": "PmBddmCompany",
+                            "IsArray": true,
+                            "Relation": {
+                                "ReferenceSchemaName": "PmBddmCompanyInBrandManufacturer",
+                                "MasterColumnName": "PmBrandManufacturer",
+                                "TargetColumnName": "PmCompany"
+                            },
+                            "Map": {
+                                "Code": "PmCode",
+                                "CodeSpace": {
+                                    "IsEnum": true,
+                                    "CrmColumnName": "PmBddmCodeSpace",
+                                    "BddmTypeName": "CodeSpace",
+                                    "ReferenceSchemaName": "PmBddmCodeSpace"
+                                },
+                                "Country": {
+                                    "CrmColumnName": "PmCountry",
+                                    "BddmTypeName": "Country",
+                                    "ReferenceSchemaName": "PmBddmCountry",
+                                    "Map": {
+                                        "Code": "PmCode",
+                                        "CodeSpace": {
+                                            "IsEnum": true,
+                                            "CrmColumnName": "PmBddmCodeSpace",
+                                            "BddmTypeName": "CodeSpace",
+                                            "ReferenceSchemaName": "PmBddmCodeSpace"
+                                        },
+                                        "CreationTime": "PmCreationTime",
+                                        "UpdateTime": "PmUpdateTime",
+                                        "AlternativeNames": {
+                                            "CrmColumnName": "PmAlternativeNames",
+                                            "BddmTypeName": "AlternativeName",
+                                            "ReferenceSchemaName": "PmBddmAlternativeName",
+                                            "Map": {
+                                                "Name": "PmName",
+                                                "AltType": {
+                                                    "IsEnum": true,
+                                                    "CrmColumnName": "PmAltType",
+                                                    "BddmTypeName": "AlternativeNameType",
+                                                    "ReferenceSchemaName": "PmBddmAlternativeNameType"
+                                                }
+                                            }
+                                        },
+                                        "IsActive": "PmIsActive",
+                                        "IsoExtended": "PmIsoExtended",
+                                        "Name": "PmName",
+                                        "OfficialCurrency": {
+                                            "CrmColumnName": "PmOfficialCurrency",
+                                            "BddmTypeName": "Currency",
+                                            "ReferenceSchemaName": "PmBddmCurrency",
+                                            "Map": {
+                                                "Code": "PmCode",
+                                                "CodeSpace": {
+                                                    "IsEnum": true,
+                                                    "CrmColumnName": "PmBddmCodeSpace",
+                                                    "BddmTypeName": "CodeSpace",
+                                                    "ReferenceSchemaName": "PmBddmCodeSpace"
+                                                },
+                                                "CreationTime": "PmCreationTime",
+                                                "UpdateTime": "PmUpdateTime",
+                                                "AlternativeName": {
+                                                    "CrmColumnName": "PmAlternativeName",
+                                                    "BddmTypeName": "AlternativeName",
+                                                    "ReferenceSchemaName": "PmBddmAlternativeName",
+                                                    "Map": {
+                                                        "Name": "PmName",
+                                                        "AltType": {
+                                                            "IsEnum": true,
+                                                            "CrmColumnName": "PmAltType",
+                                                            "BddmTypeName": "AlternativeNameType",
+                                                            "ReferenceSchemaName": "PmBddmAlternativeNameType"
+                                                        }
+                                                    }
+                                                },
+                                                "Name": "PmName",
+                                                "NumericCode": "PmNumericCode",
+                                                "Status": {
+                                                    "IsEnum": true,
+                                                    "CrmColumnName": "PmStatus",
+                                                    "BddmTypeName": "CurrencyStatus",
+                                                    "ReferenceSchemaName": "PmBddmCurrencyStatus"
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "CreationTime": "PmCreationTime",
+                                "UpdateTime": "PmUpdateTime",
+                                "IsActive": "PmIsActive",
+                                "LegalEntities": {
+                                    "TODO": "TODO"
+                                },
+                                "Name": "PmName"
+                            }
+                        },
+                        "Name": "PmName"
+                    }
+                },
+                "Description": "PmDescription",
+                "MRSP": {
+                    "BddmTypeName": "BrandVariantMRSP",
+                    "ReferenceSchemaName": "PmBddmBrandVariantMrsp",
+                    "IsArray": true,
+                    "Relation": {
+                        "ReferenceSchemaName": "PmBddmBrandVariantMrspInConsumableBrandVariant",
+                        "MasterColumnName": "PmConsumableBrandVariant",
+                        "TargetColumnName": "PmBrandVariantMrsp"
+                    },
+                    "Map": {
+                        "MRSP": {
+                            "CrmColumnName": "PmMrsp",
+                            "BddmTypeName": "Price",
+                            "ReferenceSchemaName": "PmBddmPrice",
+                            "Map": {
+                                "Currency": "CurrencyCode",
+                                "Value": "PmValue"
+                            }
+                        },
+                        "StartDate": "PmStartDate",
+                        "Type": {
+                            "IsEnum": true,
+                            "CrmColumnName": "PmType",
+                            "BddmTypeName": "BrandVariantMRSPType",
+                            "ReferenceSchemaName": "PmBddmBrandVariantMrspType"
+                        }
+                    }
+                },
+                "PlatformApplicability": {
+                    "BddmTypeName": "RRPProductGeneration",
+                    "ReferenceSchemaName": "PmBddmRrpProductGeneration",
+                    "IsArray": true,
+                    "Relation": {
+                        "ReferenceSchemaName": "PmBddmRrpProductGenerationInConsumableBrandVariant",
+                        "MasterColumnName": "PmConsumableBrandVariant",
+                        "TargetColumnName": "PmRrpProductGeneration"
+                    },
+                    "Map": {
+                        "Code": "PmCode",
+                        "Name": "PmName",
+                        "Parent": "PmParent"
+                    }
+                },
+                "PriceClass": {
+                    "IsEnum": true,
+                    "CrmColumnName": "PmPriceClass",
+                    "BddmTypeName": "ProductPriceClass",
+                    "ReferenceSchemaName": "PmBddmProductPriceClass"
+                },
+                "PuffsNumber": "PmPuffsNumber",
+                "SalesSegment": {
+                    "CrmColumnName": "PmSalesSegment",
+                    "BddmTypeName": "BrandVariantSalesSegment",
+                    "ReferenceSchemaName": "PmBddmBrandVariantSalesSegment",
+                    "Map": {
+                        "Code": "PmCode",
+                        "Name": "PmName",
+                        "Parent": "PmParent"
+                    }
+                },
+                "Taste": {
+                    "CrmColumnName": "PmTaste",
+                    "BddmTypeName": "BrandVariantTaste",
+                    "ReferenceSchemaName": "PmBddmBrandVariantTaste",
+                    "Map": {
+                        "Code": "PmCode",
+                        "Name": "PmName",
+                        "Parent": "PmParent"
+                    }
+                }
+            }
+        }
+    }
+}
