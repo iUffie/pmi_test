@@ -1,0 +1,17 @@
+{
+    "name" : "Test Mock /api/Promotioncodes/GetPromoOffers 200",
+    "request":
+	{
+        "urlPath": "/api/Promotioncodes/GetPromoOffers",
+        "method": "POST"
+    },
+    "response":
+	{
+        "status": 200,
+        "body" : "{  \"$type\": \"PMI.BDDM.Transactionaldata.PromotionCodeTemplate+GetPromoOffers_Response\",  \"$version\": \"2.30.0.0\",  \"PromotionCodeTemplate\": [    {      \"BarcodeType\": \"Unrecognized\",      \"RuleConfigurations\": [        {          \"ConfigurationsProductInfo\": [            {              \"Products\": [                {                  \"$type\": \"PMI.BDDM.Staticdata.BrandFamilyReference\",                  \"Code\": \"BV103109\",                  \"Name\": \"HEETS GREEN ZING MNT S50 SLI TBA\"                }              ]            }          ],          \"DiscountAmount\": 100,          \"DiscountType\": \"TargetPrice\"        }      ],      \"Code\": \"PCT-0000000170\",      \"TemplateName\": \"NamePromoQreg\",      \"TemplateStatus\": \"Approved\"    }  ]}",
+        "headers" :
+		{
+          "Content-Type" : "application/json; charset=utf-8"
+        }
+    }
+}

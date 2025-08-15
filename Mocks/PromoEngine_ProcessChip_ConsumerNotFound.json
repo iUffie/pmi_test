@@ -1,0 +1,22 @@
+{
+    "name" : "Test Mock /api/ProcessChip ConsumerNotFound",
+    "request":
+	{
+        "urlPath": "/api/ProcessChip",
+        "method": "POST",
+        "bodyPatterns": [
+            {
+                "contains": "PC-ConsumerNotFound"
+            }
+        ]
+    },
+    "response":
+	{
+        "status": 400,
+        "body" : "{\r\n    \"$type\": \"PMI.BDDM.Common.PromoEngineException\",\r\n    \"$version\": \"2.67.2.0\",\r\n    \"ExtendedCode\": \"ConsumerNotFound\",\r\n    \"Code\": \"NotFound\",\r\n    \"Message\": \"Клиент не найден. (422)\",\r\n    \"Uid\": \"f56e9fea-b122-47c6-93c0-1f3536bff2fe\"\r\n}",
+        "headers" :
+		{
+          "Content-Type" : "application/json; charset=utf-8"
+        }
+    }
+}

@@ -1,0 +1,1426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.5">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.tearDown_on_shutdown">true</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="false">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">100</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration">0</stringProp>
+        <stringProp name="ThreadGroup.delay">15</stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="Get promocodes parameters" enabled="false">
+          <collectionProp name="Arguments.arguments">
+            <elementProp name="consumer" elementType="Argument">
+              <stringProp name="Argument.name">consumer</stringProp>
+              <stringProp name="Argument.value">CONS8670</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+          </collectionProp>
+        </Arguments>
+        <hashTree/>
+        <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="Данные стенда local" enabled="false">
+          <collectionProp name="Arguments.arguments">
+            <elementProp name="creatioUrl" elementType="Argument">
+              <stringProp name="Argument.name">creatioUrl</stringProp>
+              <stringProp name="Argument.value">localhost</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.desc">${__property(creatioUrl,,)}</stringProp>
+            </elementProp>
+            <elementProp name="creatioPort" elementType="Argument">
+              <stringProp name="Argument.name">creatioPort</stringProp>
+              <stringProp name="Argument.value">8005</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.desc">${__property(creatioPort,,)}</stringProp>
+            </elementProp>
+            <elementProp name="creatioProtocol" elementType="Argument">
+              <stringProp name="Argument.name">creatioProtocol</stringProp>
+              <stringProp name="Argument.value">http</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.desc">${__property(creatioProtocol,,)}</stringProp>
+            </elementProp>
+            <elementProp name="userName" elementType="Argument">
+              <stringProp name="Argument.name">userName</stringProp>
+              <stringProp name="Argument.value">Supervisor</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.desc">${__property(userName,,)}</stringProp>
+            </elementProp>
+            <elementProp name="userPassword" elementType="Argument">
+              <stringProp name="Argument.name">userPassword</stringProp>
+              <stringProp name="Argument.value">Supervisor</stringProp>
+              <stringProp name="Argument.desc">${__property(userPassword,,)}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="httpBasicUserName" elementType="Argument">
+              <stringProp name="Argument.name">httpBasicUserName</stringProp>
+              <stringProp name="Argument.value">pos</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="httpBasicUserPassword" elementType="Argument">
+              <stringProp name="Argument.name">httpBasicUserPassword</stringProp>
+              <stringProp name="Argument.value">pos</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+          </collectionProp>
+        </Arguments>
+        <hashTree/>
+        <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="Данные стенда CI/CD" enabled="false">
+          <collectionProp name="Arguments.arguments">
+            <elementProp name="creatioUrl" elementType="Argument">
+              <stringProp name="Argument.name">creatioUrl</stringProp>
+              <stringProp name="Argument.value">${__property(creatioUrl,,)}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.desc">${__property(creatioUrl,,)}</stringProp>
+            </elementProp>
+            <elementProp name="creatioPort" elementType="Argument">
+              <stringProp name="Argument.name">creatioPort</stringProp>
+              <stringProp name="Argument.value">${__property(creatioPort,,)}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.desc">${__property(creatioPort,,)}</stringProp>
+            </elementProp>
+            <elementProp name="creatioProtocol" elementType="Argument">
+              <stringProp name="Argument.name">creatioProtocol</stringProp>
+              <stringProp name="Argument.value">${__property(creatioProtocol,,)}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.desc">${__property(creatioProtocol,,)}</stringProp>
+            </elementProp>
+            <elementProp name="userName" elementType="Argument">
+              <stringProp name="Argument.name">userName</stringProp>
+              <stringProp name="Argument.value">${__property(userName,,)}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.desc">${__property(userName,,)}</stringProp>
+            </elementProp>
+            <elementProp name="userPassword" elementType="Argument">
+              <stringProp name="Argument.name">userPassword</stringProp>
+              <stringProp name="Argument.value">${__property(userPassword,,)}</stringProp>
+              <stringProp name="Argument.desc">${__property(userPassword,,)}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="httpBasicUserName" elementType="Argument">
+              <stringProp name="Argument.name">httpBasicUserName</stringProp>
+              <stringProp name="Argument.value">${__property(httpBasicUserName,,)}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="httpBasicUserPassword" elementType="Argument">
+              <stringProp name="Argument.name">httpBasicUserPassword</stringProp>
+              <stringProp name="Argument.value">${__property(httpBasicUserPassword,,)}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="identityUrl" elementType="Argument">
+              <stringProp name="Argument.name">identityUrl</stringProp>
+              <stringProp name="Argument.value">${__property(identityUrl,,)}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="identityPort" elementType="Argument">
+              <stringProp name="Argument.name">identityPort</stringProp>
+              <stringProp name="Argument.value">${__property(identityPort,,)}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="identityProtocol" elementType="Argument">
+              <stringProp name="Argument.name">identityProtocol</stringProp>
+              <stringProp name="Argument.value">${__property(identityProtocol,,)}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="clientId" elementType="Argument">
+              <stringProp name="Argument.name">clientId</stringProp>
+              <stringProp name="Argument.value">${__property(clientId,,)}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="clientSecret" elementType="Argument">
+              <stringProp name="Argument.name">clientSecret</stringProp>
+              <stringProp name="Argument.value">${__property(clientSecret,,)}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+          </collectionProp>
+        </Arguments>
+        <hashTree/>
+        <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="Данные стенда DEV1" enabled="false">
+          <collectionProp name="Arguments.arguments">
+            <elementProp name="creatioUrl" elementType="Argument">
+              <stringProp name="Argument.name">creatioUrl</stringProp>
+              <stringProp name="Argument.value">10.13.20.9</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.desc">${__property(creatioUrl,,)}</stringProp>
+            </elementProp>
+            <elementProp name="creatioPort" elementType="Argument">
+              <stringProp name="Argument.name">creatioPort</stringProp>
+              <stringProp name="Argument.value">9001</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.desc">${__property(creatioPort,,)}</stringProp>
+            </elementProp>
+            <elementProp name="creatioProtocol" elementType="Argument">
+              <stringProp name="Argument.name">creatioProtocol</stringProp>
+              <stringProp name="Argument.value">http</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.desc">${__property(creatioProtocol,,)}</stringProp>
+            </elementProp>
+            <elementProp name="userName" elementType="Argument">
+              <stringProp name="Argument.name">userName</stringProp>
+              <stringProp name="Argument.value">Supervisor</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.desc">${__property(userName,,)}</stringProp>
+            </elementProp>
+            <elementProp name="userPassword" elementType="Argument">
+              <stringProp name="Argument.name">userPassword</stringProp>
+              <stringProp name="Argument.value">Supervisor</stringProp>
+              <stringProp name="Argument.desc">${__property(userPassword,,)}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="httpBasicUserName" elementType="Argument">
+              <stringProp name="Argument.name">httpBasicUserName</stringProp>
+              <stringProp name="Argument.value">pos</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="httpBasicUserPassword" elementType="Argument">
+              <stringProp name="Argument.name">httpBasicUserPassword</stringProp>
+              <stringProp name="Argument.value">pos</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="identityUrl" elementType="Argument">
+              <stringProp name="Argument.name">identityUrl</stringProp>
+              <stringProp name="Argument.value">10.13.20.8</stringProp>
+              <stringProp name="Argument.desc">${__property(identityUrl,,)}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="identityPort" elementType="Argument">
+              <stringProp name="Argument.name">identityPort</stringProp>
+              <stringProp name="Argument.value">8991</stringProp>
+              <stringProp name="Argument.desc">${__property(identityPort,,)}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="identityProtocol" elementType="Argument">
+              <stringProp name="Argument.name">identityProtocol</stringProp>
+              <stringProp name="Argument.value">http</stringProp>
+              <stringProp name="Argument.desc">${__property(identityProtocol,,)}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="clientId" elementType="Argument">
+              <stringProp name="Argument.name">clientId</stringProp>
+              <stringProp name="Argument.value">6702C7B8C843EBA4655E4DF80C0BB100</stringProp>
+              <stringProp name="Argument.desc">${__property(clientId,,)}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="clientSecret" elementType="Argument">
+              <stringProp name="Argument.name">clientSecret</stringProp>
+              <stringProp name="Argument.value">4397BBF2D7331F75CE9602AB46E5615D664B2DC80046C520F6A926275214E837</stringProp>
+              <stringProp name="Argument.desc">${__property(clientSecret,,)}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+          </collectionProp>
+        </Arguments>
+        <hashTree/>
+        <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="Данные стенда DEV2" enabled="false">
+          <collectionProp name="Arguments.arguments">
+            <elementProp name="creatioUrl" elementType="Argument">
+              <stringProp name="Argument.name">creatioUrl</stringProp>
+              <stringProp name="Argument.value">10.13.20.9</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.desc">${__property(creatioUrl,,)}</stringProp>
+            </elementProp>
+            <elementProp name="creatioPort" elementType="Argument">
+              <stringProp name="Argument.name">creatioPort</stringProp>
+              <stringProp name="Argument.value">9002</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.desc">${__property(creatioPort,,)}</stringProp>
+            </elementProp>
+            <elementProp name="creatioProtocol" elementType="Argument">
+              <stringProp name="Argument.name">creatioProtocol</stringProp>
+              <stringProp name="Argument.value">http</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.desc">${__property(creatioProtocol,,)}</stringProp>
+            </elementProp>
+            <elementProp name="userName" elementType="Argument">
+              <stringProp name="Argument.name">userName</stringProp>
+              <stringProp name="Argument.value">Supervisor</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.desc">${__property(userName,,)}</stringProp>
+            </elementProp>
+            <elementProp name="userPassword" elementType="Argument">
+              <stringProp name="Argument.name">userPassword</stringProp>
+              <stringProp name="Argument.value">Supervisor</stringProp>
+              <stringProp name="Argument.desc">${__property(userPassword,,)}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="httpBasicUserName" elementType="Argument">
+              <stringProp name="Argument.name">httpBasicUserName</stringProp>
+              <stringProp name="Argument.value">pos</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="httpBasicUserPassword" elementType="Argument">
+              <stringProp name="Argument.name">httpBasicUserPassword</stringProp>
+              <stringProp name="Argument.value">pos</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="identityUrl" elementType="Argument">
+              <stringProp name="Argument.name">identityUrl</stringProp>
+              <stringProp name="Argument.value">10.13.20.8</stringProp>
+              <stringProp name="Argument.desc">${__property(identityUrl,,)}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="identityPort" elementType="Argument">
+              <stringProp name="Argument.name">identityPort</stringProp>
+              <stringProp name="Argument.value">8992</stringProp>
+              <stringProp name="Argument.desc">${__property(identityPort,,)}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="identityProtocol" elementType="Argument">
+              <stringProp name="Argument.name">identityProtocol</stringProp>
+              <stringProp name="Argument.value">http</stringProp>
+              <stringProp name="Argument.desc">${__property(identityProtocol,,)}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="clientId" elementType="Argument">
+              <stringProp name="Argument.name">clientId</stringProp>
+              <stringProp name="Argument.value">6702C7B8C843EBA4655E4DF80C0BB100</stringProp>
+              <stringProp name="Argument.desc">${__property(clientId,,)}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="clientSecret" elementType="Argument">
+              <stringProp name="Argument.name">clientSecret</stringProp>
+              <stringProp name="Argument.value">4397BBF2D7331F75CE9602AB46E5615D664B2DC80046C520F6A926275214E837</stringProp>
+              <stringProp name="Argument.desc">${__property(clientSecret,,)}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+          </collectionProp>
+        </Arguments>
+        <hashTree/>
+        <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="Данные стенда DEV3" enabled="false">
+          <collectionProp name="Arguments.arguments">
+            <elementProp name="creatioUrl" elementType="Argument">
+              <stringProp name="Argument.name">creatioUrl</stringProp>
+              <stringProp name="Argument.value">10.13.20.9</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.desc">${__property(creatioUrl,,)}</stringProp>
+            </elementProp>
+            <elementProp name="creatioPort" elementType="Argument">
+              <stringProp name="Argument.name">creatioPort</stringProp>
+              <stringProp name="Argument.value">9003</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.desc">${__property(creatioPort,,)}</stringProp>
+            </elementProp>
+            <elementProp name="creatioProtocol" elementType="Argument">
+              <stringProp name="Argument.name">creatioProtocol</stringProp>
+              <stringProp name="Argument.value">http</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.desc">${__property(creatioProtocol,,)}</stringProp>
+            </elementProp>
+            <elementProp name="userName" elementType="Argument">
+              <stringProp name="Argument.name">userName</stringProp>
+              <stringProp name="Argument.value">Supervisor</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.desc">${__property(userName,,)}</stringProp>
+            </elementProp>
+            <elementProp name="userPassword" elementType="Argument">
+              <stringProp name="Argument.name">userPassword</stringProp>
+              <stringProp name="Argument.value">Supervisor</stringProp>
+              <stringProp name="Argument.desc">${__property(userPassword,,)}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="httpBasicUserName" elementType="Argument">
+              <stringProp name="Argument.name">httpBasicUserName</stringProp>
+              <stringProp name="Argument.value">pos</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="httpBasicUserPassword" elementType="Argument">
+              <stringProp name="Argument.name">httpBasicUserPassword</stringProp>
+              <stringProp name="Argument.value">pos</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="identityUrl" elementType="Argument">
+              <stringProp name="Argument.name">identityUrl</stringProp>
+              <stringProp name="Argument.value">10.13.20.8</stringProp>
+              <stringProp name="Argument.desc">${__property(identityUrl,,)}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="identityPort" elementType="Argument">
+              <stringProp name="Argument.name">identityPort</stringProp>
+              <stringProp name="Argument.value">8993</stringProp>
+              <stringProp name="Argument.desc">${__property(identityPort,,)}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="identityProtocol" elementType="Argument">
+              <stringProp name="Argument.name">identityProtocol</stringProp>
+              <stringProp name="Argument.value">http</stringProp>
+              <stringProp name="Argument.desc">${__property(identityProtocol,,)}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="clientId" elementType="Argument">
+              <stringProp name="Argument.name">clientId</stringProp>
+              <stringProp name="Argument.value">CDE34E6D4936F0B95ECB3E87F769FF4E</stringProp>
+              <stringProp name="Argument.desc">${__property(clientId,,)}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="clientSecret" elementType="Argument">
+              <stringProp name="Argument.name">clientSecret</stringProp>
+              <stringProp name="Argument.value">F228E74ABF86458905EA8EF38E742F7EA8F831133F3FDEF252DE0D986D456A0B</stringProp>
+              <stringProp name="Argument.desc">${__property(clientSecret,,)}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+          </collectionProp>
+        </Arguments>
+        <hashTree/>
+        <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="Данные стенда UAT" enabled="false">
+          <collectionProp name="Arguments.arguments">
+            <elementProp name="creatioUrl" elementType="Argument">
+              <stringProp name="Argument.name">creatioUrl</stringProp>
+              <stringProp name="Argument.value">b2ccrm-uat.myizapps.com</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.desc">${__property(creatioUrl,,)}</stringProp>
+            </elementProp>
+            <elementProp name="creatioPort" elementType="Argument">
+              <stringProp name="Argument.name">creatioPort</stringProp>
+              <stringProp name="Argument.value">443</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.desc">${__property(creatioPort,,)}</stringProp>
+            </elementProp>
+            <elementProp name="creatioProtocol" elementType="Argument">
+              <stringProp name="Argument.name">creatioProtocol</stringProp>
+              <stringProp name="Argument.value">https</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.desc">${__property(creatioProtocol,,)}</stringProp>
+            </elementProp>
+            <elementProp name="userName" elementType="Argument">
+              <stringProp name="Argument.name">userName</stringProp>
+              <stringProp name="Argument.value">Supervisor</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.desc">${__property(userName,,)}</stringProp>
+            </elementProp>
+            <elementProp name="userPassword" elementType="Argument">
+              <stringProp name="Argument.name">userPassword</stringProp>
+              <stringProp name="Argument.value">Supervisor</stringProp>
+              <stringProp name="Argument.desc">${__property(userPassword,,)}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="httpBasicUserName" elementType="Argument">
+              <stringProp name="Argument.name">httpBasicUserName</stringProp>
+              <stringProp name="Argument.value">pos</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="httpBasicUserPassword" elementType="Argument">
+              <stringProp name="Argument.name">httpBasicUserPassword</stringProp>
+              <stringProp name="Argument.value">pos</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="identityUrl" elementType="Argument">
+              <stringProp name="Argument.name">identityUrl</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.desc">${__property(identityUrl,,)}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="identityPort" elementType="Argument">
+              <stringProp name="Argument.name">identityPort</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.desc">${__property(identityPort,,)}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="identityProtocol" elementType="Argument">
+              <stringProp name="Argument.name">identityProtocol</stringProp>
+              <stringProp name="Argument.value">http</stringProp>
+              <stringProp name="Argument.desc">${__property(identityProtocol,,)}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="clientId" elementType="Argument">
+              <stringProp name="Argument.name">clientId</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.desc">${__property(clientId,,)}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="clientSecret" elementType="Argument">
+              <stringProp name="Argument.name">clientSecret</stringProp>
+              <stringProp name="Argument.value"></stringProp>
+              <stringProp name="Argument.desc">${__property(clientSecret,,)}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+          </collectionProp>
+        </Arguments>
+        <hashTree/>
+        <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="Данные стенда PREPROD" enabled="true">
+          <collectionProp name="Arguments.arguments">
+            <elementProp name="creatioUrl" elementType="Argument">
+              <stringProp name="Argument.name">creatioUrl</stringProp>
+              <stringProp name="Argument.value">10.14.20.56</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.desc">${__property(creatioUrl,,)}</stringProp>
+            </elementProp>
+            <elementProp name="creatioPort" elementType="Argument">
+              <stringProp name="Argument.name">creatioPort</stringProp>
+              <stringProp name="Argument.value">8005</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.desc">${__property(creatioPort,,)}</stringProp>
+            </elementProp>
+            <elementProp name="creatioProtocol" elementType="Argument">
+              <stringProp name="Argument.name">creatioProtocol</stringProp>
+              <stringProp name="Argument.value">http</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.desc">${__property(creatioProtocol,,)}</stringProp>
+            </elementProp>
+            <elementProp name="userName" elementType="Argument">
+              <stringProp name="Argument.name">userName</stringProp>
+              <stringProp name="Argument.value">Supervisor</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.desc">${__property(userName,,)}</stringProp>
+            </elementProp>
+            <elementProp name="userPassword" elementType="Argument">
+              <stringProp name="Argument.name">userPassword</stringProp>
+              <stringProp name="Argument.value">01svS9F25OrD</stringProp>
+              <stringProp name="Argument.desc">${__property(userPassword,,)}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="httpBasicUserName" elementType="Argument">
+              <stringProp name="Argument.name">httpBasicUserName</stringProp>
+              <stringProp name="Argument.value">telecontact</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="httpBasicUserPassword" elementType="Argument">
+              <stringProp name="Argument.name">httpBasicUserPassword</stringProp>
+              <stringProp name="Argument.value">telecontact</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="identityUrl" elementType="Argument">
+              <stringProp name="Argument.name">identityUrl</stringProp>
+              <stringProp name="Argument.value">10.14.20.18</stringProp>
+              <stringProp name="Argument.desc">${__property(identityUrl,,)}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="identityPort" elementType="Argument">
+              <stringProp name="Argument.name">identityPort</stringProp>
+              <stringProp name="Argument.value">30105</stringProp>
+              <stringProp name="Argument.desc">${__property(identityPort,,)}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="identityProtocol" elementType="Argument">
+              <stringProp name="Argument.name">identityProtocol</stringProp>
+              <stringProp name="Argument.value">http</stringProp>
+              <stringProp name="Argument.desc">${__property(identityProtocol,,)}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="clientId" elementType="Argument">
+              <stringProp name="Argument.name">clientId</stringProp>
+              <stringProp name="Argument.value">0F0EA3927795FD18640B67E3FF80FAC3</stringProp>
+              <stringProp name="Argument.desc">${__property(clientId,,)}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="clientSecret" elementType="Argument">
+              <stringProp name="Argument.name">clientSecret</stringProp>
+              <stringProp name="Argument.value">34C4761669A410F5924A89A0D935545C4B3E327C040FE42C5ED0A88FB3D8DC3E</stringProp>
+              <stringProp name="Argument.desc">${__property(clientSecret,,)}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+          </collectionProp>
+        </Arguments>
+        <hashTree/>
+        <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain"></stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </ConfigTestElement>
+        <hashTree/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Подготовить данные" enabled="true"/>
+        <hashTree>
+          <AuthManager guiclass="AuthPanel" testclass="AuthManager" testname="HTTP Authorization Manager" enabled="false">
+            <collectionProp name="AuthManager.auth_list">
+              <elementProp name="" elementType="Authorization">
+                <stringProp name="Authorization.url"></stringProp>
+                <stringProp name="Authorization.username">${httpBasicUserName}</stringProp>
+                <stringProp name="Authorization.password">${httpBasicUserPassword}</stringProp>
+                <stringProp name="Authorization.domain"></stringProp>
+                <stringProp name="Authorization.realm"></stringProp>
+              </elementProp>
+            </collectionProp>
+            <boolProp name="AuthManager.controlledByThreadGroup">false</boolProp>
+          </AuthManager>
+          <hashTree/>
+          <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager Forms Auth" enabled="true">
+            <collectionProp name="CookieManager.cookies"/>
+            <boolProp name="CookieManager.clearEachIteration">false</boolProp>
+            <boolProp name="CookieManager.controlledByThreadGroup">false</boolProp>
+          </CookieManager>
+          <hashTree/>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">BPMCSRF</stringProp>
+                <stringProp name="Header.value">${COOKIE_BPMCSRF}</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate, br</stringProp>
+              </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">ru</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <OnceOnlyController guiclass="OnceOnlyControllerGui" testclass="OnceOnlyController" testname="Auth" enabled="true"/>
+          <hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Creatio Forms Auth" enabled="true">
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">{&#xd;
+    &quot;UserName&quot;: &quot;${userName}&quot;,&#xd;
+    &quot;UserPassword&quot;: &quot;${userPassword}&quot;&#xd;
+}</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">rrpcrm-preprod.pmru.local</stringProp>
+              <stringProp name="HTTPSampler.port"></stringProp>
+              <stringProp name="HTTPSampler.protocol">https</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">/ServiceModel/AuthService.svc/Login</stringProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Auth Assertion" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="-369921856">System.Security.SecurityException</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.custom_message"></stringProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">6</intProp>
+                <stringProp name="Scope.variable"></stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Создать Диагностику" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&#xd;
+    &quot;rootSchemaName&quot;: &quot;PmDiagnostic&quot;,&#xd;
+    &quot;operationType&quot;: 1,&#xd;
+    &quot;includeProcessExecutionData&quot;: true,&#xd;
+    &quot;columnValues&quot;: {&#xd;
+        &quot;items&quot;: {&#xd;
+            &quot;Id&quot;: {&#xd;
+                &quot;expressionType&quot;: 2,&#xd;
+                &quot;parameter&quot;: {&#xd;
+                    &quot;dataValueType&quot;: 0,&#xd;
+                    &quot;value&quot;: &quot;${__UUID}&quot;&#xd;
+                }&#xd;
+            },&#xd;
+            &quot;PmExternalCode&quot;: {&#xd;
+                &quot;expressionType&quot;: 2,&#xd;
+                &quot;parameter&quot;: {&#xd;
+                    &quot;dataValueType&quot;: 1,&#xd;
+                    &quot;value&quot;: &quot;TETSD-${__RandomString(8,1234567890,)}&quot;&#xd;
+                }&#xd;
+            },&#xd;
+            &quot;PmExternalCodeSpace&quot;: {&#xd;
+                &quot;expressionType&quot;: 2,&#xd;
+                &quot;parameter&quot;: {&#xd;
+                    &quot;dataValueType&quot;: 1,&#xd;
+                    &quot;value&quot;: &quot;B2CCRM&quot;&#xd;
+                }&#xd;
+            },&#xd;
+            &quot;PmBDDMType&quot;: {&#xd;
+                &quot;expressionType&quot;: 2,&#xd;
+                &quot;parameter&quot;: {&#xd;
+                    &quot;dataValueType&quot;: 1,&#xd;
+                    &quot;value&quot;: &quot;PMI.BDDM.Transactionaldata.ProductInspection&quot;&#xd;
+                }&#xd;
+            }&#xd;
+        }&#xd;
+    }&#xd;
+}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">rrpcrm-preprod.pmru.local</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">dataservice/json/reply/InsertQuery</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="diagnosticId" enabled="true">
+              <stringProp name="JSONPostProcessor.referenceNames">diagnosticId</stringProp>
+              <stringProp name="JSONPostProcessor.jsonPathExprs">$.id</stringProp>
+              <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
+            </JSONPostProcessor>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Создать Товар диагностики" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&#xd;
+    &quot;rootSchemaName&quot;: &quot;PmDiagnosticDevice&quot;,&#xd;
+    &quot;operationType&quot;: 1,&#xd;
+    &quot;includeProcessExecutionData&quot;: true,&#xd;
+    &quot;columnValues&quot;: {&#xd;
+        &quot;items&quot;: {&#xd;
+            &quot;Id&quot;: {&#xd;
+                &quot;expressionType&quot;: 2,&#xd;
+                &quot;parameter&quot;: {&#xd;
+                    &quot;dataValueType&quot;: 0,&#xd;
+                    &quot;value&quot;: &quot;${__UUID}&quot;&#xd;
+                }&#xd;
+            },&#xd;
+            &quot;PmExternalCode&quot;: {&#xd;
+                &quot;expressionType&quot;: 2,&#xd;
+                &quot;parameter&quot;: {&#xd;
+                    &quot;dataValueType&quot;: 1,&#xd;
+                    &quot;value&quot;: &quot;TETSDP-${__RandomString(8,1234567890,)}&quot;&#xd;
+                }&#xd;
+            },&#xd;
+            &quot;PmDiagnostic&quot;: {&#xd;
+                &quot;expressionType&quot;: 2,&#xd;
+                &quot;parameter&quot;: {&#xd;
+                    &quot;dataValueType&quot;: 0,&#xd;
+                    &quot;value&quot;: &quot;${diagnosticId}&quot;&#xd;
+                }&#xd;
+            },&#xd;
+            &quot;PmProduct&quot;: {&#xd;
+                &quot;expressionType&quot;: 2,&#xd;
+                &quot;parameter&quot;: {&#xd;
+                    &quot;dataValueType&quot;: 0,&#xd;
+                    &quot;value&quot;: &quot;e14a095a-0828-46c5-9f41-a75414cb7df7&quot;&#xd;
+                }&#xd;
+            },&#xd;
+            &quot;PmDevice&quot;: {&#xd;
+                &quot;expressionType&quot;: 2,&#xd;
+                &quot;parameter&quot;: {&#xd;
+                    &quot;dataValueType&quot;: 0,&#xd;
+                    &quot;value&quot;: &quot;5ce12deb-4f13-44ed-b832-d9951d5b59dd&quot;&#xd;
+                }&#xd;
+            }&#xd;
+        }&#xd;
+    }&#xd;
+}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">rrpcrm-preprod.pmru.local</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">dataservice/json/reply/InsertQuery</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree/>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Создать Запрос" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&#xd;
+    &quot;rootSchemaName&quot;: &quot;Case&quot;,&#xd;
+    &quot;operationType&quot;: 1,&#xd;
+    &quot;includeProcessExecutionData&quot;: true,&#xd;
+    &quot;columnValues&quot;: {&#xd;
+        &quot;items&quot;: {&#xd;
+            &quot;Id&quot;: {&#xd;
+                &quot;expressionType&quot;: 2,&#xd;
+                &quot;parameter&quot;: {&#xd;
+                    &quot;dataValueType&quot;: 0,&#xd;
+                    &quot;value&quot;: &quot;${__UUID}&quot;&#xd;
+                }&#xd;
+            },&#xd;
+            &quot;PmExternalCode&quot;: {&#xd;
+                &quot;expressionType&quot;: 2,&#xd;
+                &quot;parameter&quot;: {&#xd;
+                    &quot;dataValueType&quot;: 1,&#xd;
+                    &quot;value&quot;: &quot;TESTDP-${__RandomString(8,1234567890,)}&quot;&#xd;
+                }&#xd;
+            },&#xd;
+            &quot;PmExternalCodeSpace&quot;: {&#xd;
+                &quot;expressionType&quot;: 2,&#xd;
+                &quot;parameter&quot;: {&#xd;
+                    &quot;dataValueType&quot;: 1,&#xd;
+                    &quot;value&quot;: &quot;B2CCRM&quot;&#xd;
+                }&#xd;
+            },&#xd;
+            &quot;PmBDDMType&quot;: {&#xd;
+                &quot;expressionType&quot;: 2,&#xd;
+                &quot;parameter&quot;: {&#xd;
+                    &quot;dataValueType&quot;: 1,&#xd;
+                    &quot;value&quot;: &quot;PMI.BDDM.Transactionaldata.ProductInstanceChangeRequest&quot;&#xd;
+                }&#xd;
+            },&#xd;
+            &quot;PmDiagnosticWithApprovedSolution&quot;: {&#xd;
+                &quot;expressionType&quot;: 2,&#xd;
+                &quot;parameter&quot;: {&#xd;
+                    &quot;dataValueType&quot;: 0,&#xd;
+                    &quot;value&quot;: &quot;${diagnosticId}&quot;&#xd;
+                }&#xd;
+            },&#xd;
+            &quot;PmClient&quot;: {&#xd;
+                &quot;expressionType&quot;: 2,&#xd;
+                &quot;parameter&quot;: {&#xd;
+                    &quot;dataValueType&quot;: 0,&#xd;
+                    &quot;value&quot;: &quot;27b0e44f-c6f9-45ec-8c31-61d05e464286&quot;&#xd;
+                }&#xd;
+            }&#xd;
+        }&#xd;
+    }&#xd;
+}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">rrpcrm-preprod.pmru.local</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">dataservice/json/reply/InsertQuery</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="caseId" enabled="true">
+              <stringProp name="JSONPostProcessor.referenceNames">caseId</stringProp>
+              <stringProp name="JSONPostProcessor.jsonPathExprs">$.id</stringProp>
+              <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
+            </JSONPostProcessor>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Получить PmExternalCode запроса" enabled="false">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&#xd;
+    &quot;rootSchemaName&quot;: &quot;Case&quot;,&#xd;
+    &quot;operationType&quot;: 0,&#xd;
+    &quot;includeProcessExecutionData&quot;: true,&#xd;
+    &quot;filters&quot;: {&#xd;
+        &quot;items&quot;: {&#xd;
+            &quot;e8121659-2a1e-42a5-9242-33fff7736e7c&quot;: {&#xd;
+                &quot;items&quot;: {&#xd;
+                    &quot;FixedFilters&quot;: {&#xd;
+                        &quot;items&quot;: {},&#xd;
+                        &quot;logicalOperation&quot;: 0,&#xd;
+                        &quot;isEnabled&quot;: true,&#xd;
+                        &quot;filterType&quot;: 6&#xd;
+                    },&#xd;
+                    &quot;CustomFilters&quot;: {&#xd;
+                        &quot;items&quot;: {&#xd;
+                            &quot;customFilterNumber_Case&quot;: {&#xd;
+                                &quot;filterType&quot;: 1,&#xd;
+                                &quot;comparisonType&quot;: 11,&#xd;
+                                &quot;isEnabled&quot;: true,&#xd;
+                                &quot;trimDateTimeParameterToDate&quot;: false,&#xd;
+                                &quot;leftExpression&quot;: {&#xd;
+                                    &quot;expressionType&quot;: 0,&#xd;
+                                    &quot;columnPath&quot;: &quot;Id&quot;&#xd;
+                                },&#xd;
+                                &quot;rightExpression&quot;: {&#xd;
+                                    &quot;expressionType&quot;: 2,&#xd;
+                                    &quot;parameter&quot;: {&#xd;
+                                        &quot;dataValueType&quot;: &quot;1&quot;,&#xd;
+                                        &quot;value&quot;: &quot;${caseId}&quot;&#xd;
+                                    }&#xd;
+                                }&#xd;
+                            }&#xd;
+                        },&#xd;
+                        &quot;logicalOperation&quot;: 0,&#xd;
+                        &quot;isEnabled&quot;: true,&#xd;
+                        &quot;filterType&quot;: 6&#xd;
+                    }&#xd;
+                },&#xd;
+                &quot;logicalOperation&quot;: 0,&#xd;
+                &quot;isEnabled&quot;: true,&#xd;
+                &quot;filterType&quot;: 6&#xd;
+            }&#xd;
+        },&#xd;
+        &quot;logicalOperation&quot;: 0,&#xd;
+        &quot;isEnabled&quot;: true,&#xd;
+        &quot;filterType&quot;: 6&#xd;
+    },&#xd;
+    &quot;columns&quot;: {&#xd;
+        &quot;items&quot;: {&#xd;
+            &quot;PmExternalCode&quot;: {&#xd;
+                &quot;caption&quot;: &quot;Номер&quot;,&#xd;
+                &quot;orderDirection&quot;: 0,&#xd;
+                &quot;orderPosition&quot;: -1,&#xd;
+                &quot;isVisible&quot;: true,&#xd;
+                &quot;expression&quot;: {&#xd;
+                    &quot;expressionType&quot;: 0,&#xd;
+                    &quot;columnPath&quot;: &quot;PmExternalCode&quot;&#xd;
+                }&#xd;
+            }&#xd;
+        }&#xd;
+    },&#xd;
+    &quot;isDistinct&quot;: false,&#xd;
+    &quot;rowCount&quot;: 30,&#xd;
+    &quot;rowsOffset&quot;: 0,&#xd;
+    &quot;isPageable&quot;: true,&#xd;
+    &quot;allColumns&quot;: false,&#xd;
+    &quot;useLocalization&quot;: true,&#xd;
+    &quot;useRecordDeactivation&quot;: false,&#xd;
+    &quot;serverESQCacheParameters&quot;: {&#xd;
+        &quot;cacheLevel&quot;: 0,&#xd;
+        &quot;cacheGroup&quot;: &quot;&quot;,&#xd;
+        &quot;cacheItemName&quot;: &quot;&quot;&#xd;
+    },&#xd;
+    &quot;queryOptimize&quot;: false,&#xd;
+    &quot;useMetrics&quot;: false,&#xd;
+    &quot;adminUnitRoleSources&quot;: 0,&#xd;
+    &quot;querySource&quot;: 0,&#xd;
+    &quot;ignoreDisplayValues&quot;: true,&#xd;
+    &quot;conditionalValues&quot;: null,&#xd;
+    &quot;isHierarchical&quot;: false&#xd;
+}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${creatioUrl}</stringProp>
+            <stringProp name="HTTPSampler.port">${creatioPort}</stringProp>
+            <stringProp name="HTTPSampler.protocol">${creatioProtocol}</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">dataservice/json/reply/SelectQuery</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="caseCode" enabled="true">
+              <stringProp name="JSONPostProcessor.referenceNames">caseCode</stringProp>
+              <stringProp name="JSONPostProcessor.jsonPathExprs">$.rows[0].PmExternalCode</stringProp>
+              <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
+            </JSONPostProcessor>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+      </hashTree>
+      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="jp@gc - Ultimate Thread Group" enabled="true">
+        <collectionProp name="ultimatethreadgroupdata">
+          <collectionProp name="1581290358">
+            <stringProp name="48625">100</stringProp>
+            <stringProp name="0">0</stringProp>
+            <stringProp name="1629">30</stringProp>
+            <stringProp name="50547">300</stringProp>
+            <stringProp name="1572">15</stringProp>
+          </collectionProp>
+        </collectionProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <intProp name="LoopController.loops">-1</intProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+      </kg.apc.jmeter.threads.UltimateThreadGroup>
+      <hashTree>
+        <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="Данные стенда local" enabled="false">
+          <collectionProp name="Arguments.arguments">
+            <elementProp name="creatioUrl" elementType="Argument">
+              <stringProp name="Argument.name">creatioUrl</stringProp>
+              <stringProp name="Argument.value">localhost</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.desc">${__property(creatioUrl,,)}</stringProp>
+            </elementProp>
+            <elementProp name="creatioPort" elementType="Argument">
+              <stringProp name="Argument.name">creatioPort</stringProp>
+              <stringProp name="Argument.value">8005</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.desc">${__property(creatioPort,,)}</stringProp>
+            </elementProp>
+            <elementProp name="creatioProtocol" elementType="Argument">
+              <stringProp name="Argument.name">creatioProtocol</stringProp>
+              <stringProp name="Argument.value">http</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.desc">${__property(creatioProtocol,,)}</stringProp>
+            </elementProp>
+            <elementProp name="userName" elementType="Argument">
+              <stringProp name="Argument.name">userName</stringProp>
+              <stringProp name="Argument.value">Supervisor</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.desc">${__property(userName,,)}</stringProp>
+            </elementProp>
+            <elementProp name="userPassword" elementType="Argument">
+              <stringProp name="Argument.name">userPassword</stringProp>
+              <stringProp name="Argument.value">Supervisor</stringProp>
+              <stringProp name="Argument.desc">${__property(userPassword,,)}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="httpBasicUserName" elementType="Argument">
+              <stringProp name="Argument.name">httpBasicUserName</stringProp>
+              <stringProp name="Argument.value">pos</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="httpBasicUserPassword" elementType="Argument">
+              <stringProp name="Argument.name">httpBasicUserPassword</stringProp>
+              <stringProp name="Argument.value">pos</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+          </collectionProp>
+        </Arguments>
+        <hashTree/>
+        <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="Данные стенда PREPROD" enabled="true">
+          <collectionProp name="Arguments.arguments">
+            <elementProp name="creatioUrl" elementType="Argument">
+              <stringProp name="Argument.name">creatioUrl</stringProp>
+              <stringProp name="Argument.value">10.14.20.56</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.desc">${__property(creatioUrl,,)}</stringProp>
+            </elementProp>
+            <elementProp name="creatioPort" elementType="Argument">
+              <stringProp name="Argument.name">creatioPort</stringProp>
+              <stringProp name="Argument.value">8005</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.desc">${__property(creatioPort,,)}</stringProp>
+            </elementProp>
+            <elementProp name="creatioProtocol" elementType="Argument">
+              <stringProp name="Argument.name">creatioProtocol</stringProp>
+              <stringProp name="Argument.value">http</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.desc">${__property(creatioProtocol,,)}</stringProp>
+            </elementProp>
+            <elementProp name="userName" elementType="Argument">
+              <stringProp name="Argument.name">userName</stringProp>
+              <stringProp name="Argument.value">Supervisor</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+              <stringProp name="Argument.desc">${__property(userName,,)}</stringProp>
+            </elementProp>
+            <elementProp name="userPassword" elementType="Argument">
+              <stringProp name="Argument.name">userPassword</stringProp>
+              <stringProp name="Argument.value">01svS9F25OrD</stringProp>
+              <stringProp name="Argument.desc">${__property(userPassword,,)}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="httpBasicUserName" elementType="Argument">
+              <stringProp name="Argument.name">httpBasicUserName</stringProp>
+              <stringProp name="Argument.value">telecontact</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="httpBasicUserPassword" elementType="Argument">
+              <stringProp name="Argument.name">httpBasicUserPassword</stringProp>
+              <stringProp name="Argument.value">telecontact</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="identityUrl" elementType="Argument">
+              <stringProp name="Argument.name">identityUrl</stringProp>
+              <stringProp name="Argument.value">10.14.20.18</stringProp>
+              <stringProp name="Argument.desc">${__property(identityUrl,,)}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="identityPort" elementType="Argument">
+              <stringProp name="Argument.name">identityPort</stringProp>
+              <stringProp name="Argument.value">30105</stringProp>
+              <stringProp name="Argument.desc">${__property(identityPort,,)}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="identityProtocol" elementType="Argument">
+              <stringProp name="Argument.name">identityProtocol</stringProp>
+              <stringProp name="Argument.value">http</stringProp>
+              <stringProp name="Argument.desc">${__property(identityProtocol,,)}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="clientId" elementType="Argument">
+              <stringProp name="Argument.name">clientId</stringProp>
+              <stringProp name="Argument.value">9487BBAE7E2DA064289A6DA5D4B209BE</stringProp>
+              <stringProp name="Argument.desc">${__property(clientId,,)}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="clientSecret" elementType="Argument">
+              <stringProp name="Argument.name">clientSecret</stringProp>
+              <stringProp name="Argument.value">CEA413F0D6C3384836A0A5222D3D00CEAF9220723EC373B840F905D6322E8612</stringProp>
+              <stringProp name="Argument.desc">${__property(clientSecret,,)}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+          </collectionProp>
+        </Arguments>
+        <hashTree/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Создать заказ" enabled="true"/>
+        <hashTree>
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="GET cases data" enabled="true">
+            <stringProp name="filename">cases.csv</stringProp>
+            <stringProp name="fileEncoding">UTF-8</stringProp>
+            <stringProp name="variableNames">caseCode</stringProp>
+            <boolProp name="ignoreFirstLine">false</boolProp>
+            <stringProp name="delimiter">,</stringProp>
+            <boolProp name="quotedData">false</boolProp>
+            <boolProp name="recycle">true</boolProp>
+            <boolProp name="stopThread">false</boolProp>
+            <stringProp name="shareMode">shareMode.all</stringProp>
+          </CSVDataSet>
+          <hashTree/>
+          <AuthManager guiclass="AuthPanel" testclass="AuthManager" testname="HTTP Authorization Manager BASIC" enabled="false">
+            <collectionProp name="AuthManager.auth_list">
+              <elementProp name="" elementType="Authorization">
+                <stringProp name="Authorization.url"></stringProp>
+                <stringProp name="Authorization.username">${httpBasicUserName}</stringProp>
+                <stringProp name="Authorization.password">${httpBasicUserPassword}</stringProp>
+                <stringProp name="Authorization.domain"></stringProp>
+                <stringProp name="Authorization.realm"></stringProp>
+              </elementProp>
+            </collectionProp>
+            <boolProp name="AuthManager.controlledByThreadGroup">false</boolProp>
+          </AuthManager>
+          <hashTree/>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/x-www-form-urlencoded</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+          <OnceOnlyController guiclass="OnceOnlyControllerGui" testclass="OnceOnlyController" testname="OAuth 2.0 Authorization" enabled="true"/>
+          <hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="OAuth 2.0 Authorization" enabled="true">
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="grant_type" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">client_credentials</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                    <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                    <stringProp name="Argument.name">grant_type</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">10.14.20.10</stringProp>
+              <stringProp name="HTTPSampler.port">30067</stringProp>
+              <stringProp name="HTTPSampler.protocol">http</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">/connect/token</stringProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <AuthManager guiclass="AuthPanel" testclass="AuthManager" testname="HTTP Authorization Manager" enabled="true">
+                <collectionProp name="AuthManager.auth_list">
+                  <elementProp name="" elementType="Authorization">
+                    <stringProp name="Authorization.url"></stringProp>
+                    <stringProp name="Authorization.username">${clientId}</stringProp>
+                    <stringProp name="Authorization.password">${clientSecret}</stringProp>
+                    <stringProp name="Authorization.domain"></stringProp>
+                    <stringProp name="Authorization.realm"></stringProp>
+                  </elementProp>
+                </collectionProp>
+                <boolProp name="AuthManager.controlledByThreadGroup">false</boolProp>
+              </AuthManager>
+              <hashTree/>
+              <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="Access_token" enabled="true">
+                <stringProp name="JSONPostProcessor.referenceNames">Access_token</stringProp>
+                <stringProp name="JSONPostProcessor.jsonPathExprs">$.access_token</stringProp>
+                <stringProp name="JSONPostProcessor.match_numbers"></stringProp>
+              </JSONPostProcessor>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Запрос" enabled="true"/>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager OAuth 2.0" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer ${Access_token}</stringProp>
+                </elementProp>
+                <elementProp name="" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Запрос на создание заказа" enabled="true">
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">{&#xd;
+  &quot;ReplacementOrder&quot;: {&#xd;
+    &quot;$type&quot;: &quot;PMI.BDDM.Transactionaldata.RetailReplacementOrder&quot;,&#xd;
+    &quot;CreatedBy&quot;: {&#xd;
+      &quot;$type&quot;: &quot;PMI.BDDM.Staticdata.ADUserReference&quot;,&#xd;
+      &quot;Code&quot;: &quot;MMYIZHORA\\rrozenfe&quot;,&#xd;
+      &quot;CodeSpace&quot;: &quot;ActiveDirectory&quot;&#xd;
+    },&#xd;
+    &quot;DeliveryInfo&quot;: {&#xd;
+      &quot;Cost&quot;: {&#xd;
+        &quot;Currency&quot;: &quot;RUB&quot;,&#xd;
+        &quot;Value&quot;: 62.67&#xd;
+      },&#xd;
+      &quot;CourierCompany&quot;: {&#xd;
+        &quot;Code&quot;: &quot;Code Value&quot;,&#xd;
+        &quot;Name&quot;: &quot;Name Value&quot;&#xd;
+      },&#xd;
+      &quot;ParcelDeclaredValue&quot;: {&#xd;
+        &quot;Currency&quot;: &quot;RUB&quot;,&#xd;
+        &quot;Value&quot;: 63.81&#xd;
+      },&#xd;
+      &quot;DeliveryPoint&quot;: {&#xd;
+        &quot;Address&quot;: {&#xd;
+          &quot;AddressLine&quot;: &quot;AddressLine Value&quot;,&#xd;
+          &quot;City&quot;: &quot;City Value&quot;,&#xd;
+          &quot;Country&quot;: &quot;Country Value&quot;,&#xd;
+          &quot;ZipCode&quot;: &quot;ZipCode Value&quot;&#xd;
+        },&#xd;
+        &quot;KLADR&quot;: &quot;KLADR Value&quot;,&#xd;
+        &quot;PickUpPointCode&quot;: &quot;PickUpPointCode Value&quot;&#xd;
+      },&#xd;
+      &quot;PlannedDeliveryInterval&quot;: {&#xd;
+        &quot;EndDate&quot;: &quot;2023-07-24T22:40:23.3363678+03:00&quot;,&#xd;
+        &quot;StartDate&quot;: &quot;2023-06-24T22:40:23.3363686+03:00&quot;&#xd;
+      },&#xd;
+      &quot;DeliveryType&quot;: &quot;Standard&quot;,&#xd;
+      &quot;DeliveryTimeZone&quot;: &quot;+03:00&quot;,&#xd;
+      &quot;MaximumDeliveryDate&quot;: &quot;2023-07-24T22:40:23.3363553+03:00&quot;,&#xd;
+      &quot;TargetShippingDate&quot;: &quot;2023-07-24T22:40:23.3363769+03:00&quot;&#xd;
+    },&#xd;
+    &quot;SourcePoint&quot;: {&#xd;
+      &quot;$type&quot;: &quot;PMI.BDDM.Staticdata.DigitalPOSReference&quot;,&#xd;
+      &quot;Code&quot;: &quot;MS280355&quot;,&#xd;
+      &quot;CodeSpace&quot;: &quot;MDM&quot;,&#xd;
+      &quot;Name&quot;: &quot;Тестовая точка продажи&quot;&#xd;
+    },&#xd;
+    &quot;ProcessedPoint&quot;: {&#xd;
+      &quot;$type&quot;: &quot;PMI.BDDM.Staticdata.DigitalPOSReference&quot;,&#xd;
+      &quot;Code&quot;: &quot;MS280355&quot;,&#xd;
+      &quot;CodeSpace&quot;: &quot;MDM&quot;,&#xd;
+    },&#xd;
+    &quot;ProvidedItems&quot;: [&#xd;
+      {&#xd;
+        &quot;ItemCode&quot;: &quot;4b0ecb44-ebde-4e95-91d2-cc4051c38c61&quot;,&#xd;
+        &quot;Product&quot;: {&#xd;
+          &quot;$type&quot;: &quot;PMI.BDDM.Staticdata.EquipmentBrandVariantReference&quot;,&#xd;
+          &quot;Code&quot;: &quot;BV122805&quot;,&#xd;
+          &quot;CodeSpace&quot;: &quot;MDM&quot;,&#xd;
+          &quot;Name&quot;: &quot;1228 lil SOLID 2 Держатель&quot;&#xd;
+        },&#xd;
+        &quot;Quantity&quot;: {&#xd;
+          &quot;UOM&quot;: &quot;Piece&quot;,&#xd;
+          &quot;Value&quot;: 2&#xd;
+        }&#xd;
+      }&#xd;
+    ]&#xd;
+  },&#xd;
+  &quot;ConsumerRequest&quot;: {&#xd;
+    &quot;$type&quot;: &quot;PMI.BDDM.Transactionaldata.ConsumerProductInspectionRequest&quot;,&#xd;
+    &quot;Code&quot;: &quot;${caseCode}&quot;,&#xd;
+    &quot;CodeSpace&quot;: &quot;B2CCRM&quot;,&#xd;
+    &quot;FulfillmentType&quot;: &quot;CourierDelivery&quot;&#xd;
+  },&#xd;
+  &quot;Channel&quot;: &quot;Web&quot;&#xd;
+}</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">rrpcrm-preprod.pmru.local</stringProp>
+              <stringProp name="HTTPSampler.port"></stringProp>
+              <stringProp name="HTTPSampler.protocol">https</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+              <stringProp name="HTTPSampler.path">/0/rest/selfService/consumerDevices/createRetailReplacementOrder</stringProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            </HTTPSamplerProxy>
+            <hashTree/>
+          </hashTree>
+          <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="true">
+            <boolProp name="displayJMeterProperties">false</boolProp>
+            <boolProp name="displayJMeterVariables">true</boolProp>
+            <boolProp name="displaySystemProperties">false</boolProp>
+          </DebugSampler>
+          <hashTree/>
+        </hashTree>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename">C:\BPM\JMeter\apache-jmeter-6.0.0-SNAPSHOT\csv\summary_20240214_3.csv</stringProp>
+        </ResultCollector>
+        <hashTree/>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

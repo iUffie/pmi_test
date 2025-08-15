@@ -1,0 +1,22 @@
+{
+    "id": "f4358970-a676-4af3-aec8-b0bd11790eea",
+    "name": "Test Mock /api/Transaction/SendSMS 404",
+    "request": {
+        "urlPath": "/api/Transaction/SendSMS",
+        "method": "POST",
+        "bodyPatterns": [
+            {
+                "contains": "79991445567"
+            }
+        ]
+    },
+    "response": {
+        "status": 404,
+        "body": "{\"type\":\"https://tools.ietf.org/html/rfc7231#section-6.5.4\",\"title\":\"Not Found\",\"status\":404,\"traceId\": \"|a8ff578-42bf0130f4f7afca.\"}",
+        "headers": {
+            "Content-Type": "application/problem+json; charset=utf-8"
+        }
+    },
+    "uuid": "f4358970-a676-4af3-aec8-b0bd11790eea",
+    "priority": 2
+}

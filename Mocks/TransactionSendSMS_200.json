@@ -1,0 +1,15 @@
+{
+    "name" : "Test Mock /api/Transaction/SendSMS 200",
+	"priority": 3,
+    "request": {
+        "urlPath": "/api/Transaction/SendSMS",
+        "method": "POST"
+    },
+    "response": {
+        "status": 200,
+        "body" : "4",
+        "headers" : {
+          "Content-Type" : "application/json; charset=utf-8"
+        }
+    }
+}

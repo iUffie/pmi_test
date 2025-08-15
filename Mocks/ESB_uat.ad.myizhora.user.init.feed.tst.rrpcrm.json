@@ -1,0 +1,15 @@
+{
+    "name" : "ESB receive uat.ad.myizhora.user.init.feed.tst.rrpcrm",
+    "request" : {
+      "url" : "/messaging/q.uat.ad.myizhora.user.init.feed.tst.rrpcrm/receive",
+      "method" : "GET"
+    },
+    "response" : {
+      "status" : 200,
+      "body" : "{\n\t\"BusinessEvent\": {\n\t\t\"$type\": \"PMI.BDDM.Common.Update\",\n\t\t\"EventTime\": \"2023-03-22T15:08:09.1389502+03:00\",\n\t\t\"BusinessEntity\": {\n\t\t\t\"$type\": \"PMI.BDDM.Staticdata.ADUser\",\n\t\t\t\"Company\": \"9999 Temporary onsite contractors\",\n\t\t\t\"ContactInfo\": {\n\t\t\t\t\"Addresses\": [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"AddressLine\": \"7 Volkhonskoye shosse Gorelovo Industrial zone, Block 2 7; block No.2; industrial zone Gorelovo\",\n\t\t\t\t\t\t\"City\": \"Leningrad Region\",\n\t\t\t\t\t\t\"Country\": \"Russian Fed.\",\n\t\t\t\t\t\t\"Region\": \"The Leningrad Area\",\n\t\t\t\t\t\t\"Type\": \"Residence\",\n\t\t\t\t\t\t\"ZipCode\": \"198323\"\n\t\t\t\t\t}\n\t\t\t\t],\n\t\t\t\t\"Bots\": [],\n\t\t\t\t\"EMails\": [],\n\t\t\t\t\"IMs\": [],\n\t\t\t\t\"Name\": \"Vadim\",\n\t\t\t\t\"PhoneNumbers\": [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"Number\": \"+7 (960) 799 2000\",\n\t\t\t\t\t\t\"Type\": \"Mobile\"\n\t\t\t\t\t}\n\t\t\t\t],\n\t\t\t\t\"SocialNetworks\": [],\n\t\t\t\t\"Surname\": \"Davydov_MyIzhora\",\n\t\t\t\t\"WebPages\": []\n\t\t\t},\n\t\t\t\"CostCenter\": {\n\t\t\t\t\"AlternateCodes\": [],\n\t\t\t\t\"Code\": \"11057290IZ\",\n\t\t\t\t\"CodeSpace\": \"IMDL\"\n\t\t\t},\n\t\t\t\"Domain\": \"MYIZHORA\",\n\t\t\t\"Employee\": {\n\t\t\t\t\"AlternateCodes\": [],\n\t\t\t\t\"Code\": \"EM215687\",\n\t\t\t\t\"CodeSpace\": \"MDM\"\n\t\t\t},\n\t\t\t\"EmployeeType\": \"Contractor\",\n\t\t\t\"IMDLCode\": \"1000648848\",\n\t\t\t\"IsBlocked\": false,\n\t\t\t\"Manager\": {\n\t\t\t\t\"AlternateCodes\": [],\n\t\t\t\t\"Code\": \"MYIZHORA.dkekin\",\n\t\t\t\t\"CodeSpace\": \"ActiveDirectory\"\n\t\t\t},\n\t\t\t\"PrincipalName\": \"a-vdavydov4@myizhora.net\",\n\t\t\t\"SID\": \"S-1-5-21-4015412936-601195142-142754800-1506\",\n\t\t\t\"Alias\": \"a-vdavydov4\",\n\t\t\t\"DisplayName\": \"Davydov_MyIzhora, Vadim (contracted admin)\",\n\t\t\t\"Person\": [\n\t\t\t\t{\n\t\t\t\t\t\"Code\": \"PERS060820231732\"\n\t\t\t\t}\n\t\t\t],\n\t\t\t\"Status\": \"Active\",\n\t\t\t\"AlternateCodes\": [\n\t\t\t\t{\n\t\t\t\t\t\"Code\": \"1000648848\",\n\t\t\t\t\t\"CodeSpace\": \"IMDL\"\n\t\t\t\t}\n\t\t\t],\n\t\t\t\"Code\": \"MYIZHORAa-vdavydov4\",\n\t\t\t\"CodeSpace\": \"ActiveDirectory\",\n\t\t\t\"Country\": {\n\t\t\t\t\"AlternateCodes\": [],\n\t\t\t\t\"Code\": \"RU\",\n\t\t\t\t\"CodeSpace\": \"ActiveDirectory\",\n\t\t\t\t\"Name\": \"Russian Fed.\"\n\t\t\t},\n\t\t\t\"CreationTime\": \"2022-11-18T21:06:11\",\n\t\t\t\"UpdateTime\": \"2023-07-21T21:00:07\"\n\t\t}\n\t}\n}",
+      "headers" : {
+        "Content-Type" : "application/json",
+        "PMI-Messaging-ID" : "{{randomValue length=10 type='NUMERIC'}}"
+      }
+    }
+}

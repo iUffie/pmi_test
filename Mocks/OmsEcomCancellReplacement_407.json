@@ -1,0 +1,17 @@
+{
+    "id": "cf660e61-49c7-4c1f-8ceb-1a0322c73628",
+    "name": "OMS Cancel Replacement Order with Error for RE-001517",
+    "request": {
+        "urlPath": "/api/ecom/retailreplacementorders/RE-001517",
+        "method": "PATCH"
+    },
+    "response": {
+        "status": 400,
+        "body": "{\"$type\":\"PMI.BDDM.Common.OMSException\",\"$version\":\"2.41.2.0\",\"ExtendedCode\":\"CanBeCancelledOnlyByCourierCompany\",\"Code\":\"BadRequest\",\"Message\":\"Order status cannot be changed from Cancelled to Cancelled\",\"Uid\":\"be247690-f770-4914-bc28-d1bc1588b15d\"}",
+        "headers": {
+            "Content-Type": "application/json"
+        }
+    },
+    "uuid": "cf660e61-49c7-4c1f-8ceb-1a0322c73628",
+    "priority": 1
+}

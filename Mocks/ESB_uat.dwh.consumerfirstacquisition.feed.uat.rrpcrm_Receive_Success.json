@@ -1,0 +1,15 @@
+{
+  "name" : "ESB receive uat.dwh.consumerfirstacquisition.feed.uat.rrpcrm",
+    "request" : {
+      "url" : "/messaging/q.uat.dwh.consumerfirstacquisition.feed.uat.rrpcrm/receive",
+      "method" : "GET"
+    },
+    "response": {
+      "status" : 200,
+      "body" : "{\n    \"BusinessEvent\": {\n        \"$type\": \"PMI.BDDM.Common.Create\",\n        \"EventTime\": \"2023-07-27T14:22:15.657+03:00\",\n        \"BusinessEntity\": {\n            \"$type\": \"PMI.BDDM.Transactionaldata.Metrics.ConsumerFirstAcquisition\",\n            \"Country\": {\n                \"$type\": \"PMI.BDDM.Staticdata.CountryReference\",\n                \"Code\": \"RU\",\n                \"CodeSpace\": \"MDM\"\n            },\n            \"Type\": \"Actual\",\n            \"Code\": \"MTR-ConsumerFirstAcquisition-CONS33376727-20221016051333-99991231235959\",\n            \"CodeSpace\": \"DWH\",\n            \"PeriodStart\": \"2022-10-16T05:13:33.000+03:00\",\n            \"PeriodEnd\": \"9999-12-31T23:59:59.999+03:00\",\n            \"Value\": \"2022-10-16T05:21:52.000+03:00\",\n            \"CreationTime\": \"2023-07-27T14:13:20.242+03:00\",\n            \"UpdateTime\": \"2023-07-27T14:13:20.242+03:00\",\n            \"Basis\": {\n                \"$type\": \"PMI.BDDM.Transactionaldata.RetailSaleOrderReference\",\n                \"Code\": \"EO-2126884\",\n                \"CodeSpace\": \"Bitrix\"\n            },\n            \"Subjects\": [\n                {\n                    \"$type\": \"PMI.BDDM.Staticdata.ConsumerReference\",\n                    \"Code\": \"CONS33376727\",\n                    \"CodeSpace\": \"RRPSF\"\n                }\n            ]\n        }\n    }\n}",
+      "headers" : {
+        "Content-Type" : "application/json",
+        "PMI-Messaging-ID" : "{{randomValue length=10 type='NUMERIC'}}"
+      }
+    }
+}

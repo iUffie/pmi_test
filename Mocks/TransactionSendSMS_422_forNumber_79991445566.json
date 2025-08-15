@@ -1,0 +1,22 @@
+{
+    "id": "1e60ad89-821a-4f4b-933b-424815ecbfa2",
+    "name": "Test Mock /api/Transaction/SendSMS 422",
+    "request": {
+        "urlPath": "/api/Transaction/SendSMS",
+        "method": "POST",
+        "bodyPatterns": [
+            {
+                "contains": "79991445566"
+            }
+        ]
+    },
+    "response": {
+        "status": 422,
+        "body": "0000 is not valid.",
+        "headers": {
+            "Content-Type": "text/plain; charset=utf-8"
+        }
+    },
+    "uuid": "1e60ad89-821a-4f4b-933b-424815ecbfa2",
+    "priority": 1
+}

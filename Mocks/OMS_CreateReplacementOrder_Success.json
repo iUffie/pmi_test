@@ -1,0 +1,639 @@
+{
+    "name": "OMS Create Replacement Order Success",
+    "request":
+    {
+        "urlPath": "/api/ecom/retailreplacementorders",
+        "method": "POST"
+    },
+    "response":
+    {
+        "status": 200,
+        "jsonBody":
+        {
+            "$type": "PMI.BDDM.Transactionaldata.RetailReplacementOrder",
+            "ActualReturnedItems":
+            [
+                {
+                    "ProductCode": "ProductCode Value",
+                    "SerialNumber": "SerialNumber Value"
+                },
+                {
+                    "ProductCode": "ProductCode Value",
+                    "SerialNumber": "SerialNumber Value"
+                }
+            ],
+            "ConsumerHandOverNote":
+            {
+                "$type": "PMI.BDDM.Staticdata.RetailAcceptanceActReference",
+                "Code": "Code Value",
+                "CodeSpace": "SegmentationTool",
+                "Name": "Name Value"
+            },
+            "ProvidedItems":
+            [
+                {
+                    "Instances":
+                    [
+                        {
+                            "$type": "PMI.BDDM.Transactionaldata.RetailProductOrderItemProductInstance",
+                            "EAN": "EAN Value",
+                            "InstanceCode": "InstanceCode Value",
+                            "SerialNumber": "SerialNumber Value",
+                            "UnsuccessfulDeliveryStatus": "Diagnostics",
+                            "ProductInstance":
+                            {
+                                "$type": "PMI.BDDM.Staticdata.EquipmentProductInstanceReference",
+                                "Code": "value",
+                                "CodeSpace": "OMS",
+                                "Name": "value"
+                            }
+                        },
+                        {
+                            "$type": "PMI.BDDM.Transactionaldata.RetailProductOrderItemAccessoryInstance",
+                            "EAN": "EAN Value",
+                            "InstanceCode": "InstanceCode Value",
+                            "SerialNumber": "SerialNumber Value",
+                            "UnsuccessfulDeliveryStatus": "TechnicalReturn",
+                            "ProductInstance":
+                            {
+                                "$type": "PMI.BDDM.Staticdata.EquipmentProductInstanceReference",
+                                "Code": "value",
+                                "CodeSpace": "MDM",
+                                "Name": "value"
+                            }
+                        }
+                    ],
+                    "ProductEAN": "ProductEAN Value",
+                    "ProductInstance":
+                    {
+                        "$type": "PMI.BDDM.Staticdata.KitProductInstanceReference",
+                        "Code": "Code Value",
+                        "CodeSpace": "CompetitorTrackingTool",
+                        "Name": "Name Value"
+                    },
+                    "ItemCode": "ItemCode Value",
+                    "Price":
+                    {
+                        "Currency": "Currency Value",
+                        "Value": 51.7
+                    },
+                    "Product":
+                    {
+                        "$type": "PMI.BDDM.Transactionaldata.TradeAccountCostPlanProductReference",
+                        "Code": "Code Value",
+                        "CodeSpace": "IR",
+                        "Name": "Name Value"
+                    },
+                    "Quantity":
+                    {
+                        "Multiplicity": 10.2,
+                        "UnitOfMeasure": "UnitOfMeasure Value",
+                        "UOM": "Pack",
+                        "Value": 12.48
+                    }
+                },
+                {
+                    "Instances":
+                    [
+                        {
+                            "$type": "PMI.BDDM.Transactionaldata.RetailProductOrderItemAccessoryInstance",
+                            "EAN": "EAN Value",
+                            "InstanceCode": "InstanceCode Value",
+                            "SerialNumber": "SerialNumber Value",
+                            "UnsuccessfulDeliveryStatus": "Damaged"
+                        },
+                        {
+                            "$type": "PMI.BDDM.Transactionaldata.RetailProductOrderItemAccessoryInstance",
+                            "EAN": "EAN Value",
+                            "InstanceCode": "InstanceCode Value",
+                            "SerialNumber": "SerialNumber Value",
+                            "UnsuccessfulDeliveryStatus": "Damaged"
+                        }
+                    ],
+                    "ProductEAN": "ProductEAN Value",
+                    "ProductInstance":
+                    {
+                        "$type": "PMI.BDDM.Staticdata.KitProductInstanceReference",
+                        "Code": "Code Value",
+                        "CodeSpace": "Anaplan",
+                        "Name": "Name Value"
+                    },
+                    "ItemCode": "ItemCode Value",
+                    "Price":
+                    {
+                        "Currency": "Currency Value",
+                        "Value": 88.27
+                    },
+                    "Product":
+                    {
+                        "$type": "PMI.BDDM.Transactionaldata.TradeAccountCostPlanProductReference",
+                        "Code": "Code Value",
+                        "CodeSpace": "AgencyPerformanceTrackingTool",
+                        "Name": "Name Value"
+                    },
+                    "Quantity":
+                    {
+                        "Multiplicity": 33.79,
+                        "UnitOfMeasure": "UnitOfMeasure Value",
+                        "UOM": "Pack",
+                        "Value": 0.25
+                    }
+                }
+            ],
+            "ReplacementRequest":
+            {
+                "Code": "Code Value",
+                "CodeSpace": "FACEDTE",
+                "Name": "Name Value"
+            },
+            "RequestAndActualReturnItemsNotMatched": true,
+            "ReturnedItems":
+            [
+                {
+                    "Instances":
+                    [
+                        {
+                            "$type": "PMI.BDDM.Transactionaldata.RetailProductOrderItemAccessoryInstance",
+                            "EAN": "EAN Value",
+                            "InstanceCode": "InstanceCode Value",
+                            "SerialNumber": "SerialNumber Value",
+                            "UnsuccessfulDeliveryStatus": "TechnicalReturn",
+                            "ProductInstance":
+                            {
+                                "$type": "PMI.BDDM.Staticdata.EquipmentProductInstanceReference",
+                                "Code": "value",
+                                "CodeSpace": "MDM",
+                                "Name": "value"
+                            }
+                        },
+                        {
+                            "$type": "PMI.BDDM.Transactionaldata.RetailProductOrderItemAccessoryInstance",
+                            "EAN": "EAN Value",
+                            "InstanceCode": "InstanceCode Value",
+                            "SerialNumber": "SerialNumber Value",
+                            "UnsuccessfulDeliveryStatus": "Diagnostics",
+                            "ProductInstance":
+                            {
+                                "$type": "PMI.BDDM.Staticdata.EquipmentProductInstanceReference",
+                                "Code": "value",
+                                "CodeSpace": "MDM",
+                                "Name": "value"
+                            }
+                        }
+                    ],
+                    "ProductEAN": "ProductEAN Value",
+                    "ProductInstance":
+                    {
+                        "$type": "PMI.BDDM.Staticdata.KitProductInstanceReference",
+                        "Code": "Code Value",
+                        "CodeSpace": "GCTS",
+                        "Name": "Name Value"
+                    },
+                    "ItemCode": "ItemCode Value",
+                    "Price":
+                    {
+                        "Currency": "Currency Value",
+                        "Value": 0.65
+                    },
+                    "Product":
+                    {
+                        "$type": "PMI.BDDM.Transactionaldata.TradeAccountCostPlanProductReference",
+                        "Code": "Code Value",
+                        "CodeSpace": "Equeo",
+                        "Name": "Name Value"
+                    },
+                    "Quantity":
+                    {
+                        "Multiplicity": 37.47,
+                        "UnitOfMeasure": "UnitOfMeasure Value",
+                        "UOM": "Case",
+                        "Value": 97.26
+                    }
+                },
+                {
+                    "Instances":
+                    [
+                        {
+                            "$type": "PMI.BDDM.Transactionaldata.RetailProductOrderItemAccessoryInstance",
+                            "EAN": "EAN Value",
+                            "InstanceCode": "InstanceCode Value",
+                            "SerialNumber": "SerialNumber Value",
+                            "UnsuccessfulDeliveryStatus": "TechnicalReturn"
+                        },
+                        {
+                            "$type": "PMI.BDDM.Transactionaldata.RetailProductOrderItemAccessoryInstance",
+                            "EAN": "EAN Value",
+                            "InstanceCode": "InstanceCode Value",
+                            "SerialNumber": "SerialNumber Value",
+                            "UnsuccessfulDeliveryStatus": "Diagnostics"
+                        }
+                    ],
+                    "ProductEAN": "ProductEAN Value",
+                    "ProductInstance":
+                    {
+                        "$type": "PMI.BDDM.Staticdata.KitProductInstanceReference",
+                        "Code": "Code Value",
+                        "CodeSpace": "MES",
+                        "Name": "Name Value"
+                    },
+                    "ItemCode": "ItemCode Value",
+                    "Price":
+                    {
+                        "Currency": "Currency Value",
+                        "Value": 7.86
+                    },
+                    "Product":
+                    {
+                        "$type": "PMI.BDDM.Transactionaldata.TradeAccountCostPlanProductReference",
+                        "Code": "Code Value",
+                        "CodeSpace": "MerchandiseServiceTracking",
+                        "Name": "Name Value"
+                    },
+                    "Quantity":
+                    {
+                        "Multiplicity": 47.84,
+                        "UnitOfMeasure": "UnitOfMeasure Value",
+                        "UOM": "Carton",
+                        "Value": 33.94
+                    }
+                }
+            ],
+            "SFDCReplacementOrderID": "SFDCReplacementOrderID Value",
+            "Status": "ReturnsShippedToWarehouse",
+            "Type": "Warranty",
+            "AssignedTo":
+            {
+                "$type": "PMI.BDDM.Staticdata.UserReference",
+                "Code": "Code Value",
+                "CodeSpace": "DWH",
+                "Name": "Name Value"
+            },
+            "AssistedBy":
+            {
+                "$type": "PMI.BDDM.Staticdata.UserReference",
+                "Code": "Code Value",
+                "CodeSpace": "CPP",
+                "Name": "Name Value"
+            },
+            "Basis":
+            {
+                "$type": "PMI.BDDM.Transactionaldata.RetailSaleOrderReference",
+                "Code": "Code Value",
+                "CodeSpace": "SegmentationTool",
+                "Name": "Name Value"
+            },
+            "BitrixCreatedDate": "2023-08-02T17:30:52.5661257+03:00",
+            "CancellationInfo":
+            {
+                "Channel": "Website",
+                "Comment": "Comment Value",
+                "ConfirmationDate": "2023-08-02T17:30:52.5661488+03:00",
+                "Initiator": "Consumer",
+                "ProcessingCompanyPackagingStage": "PackagingInProgress",
+                "Reason": "NoStock",
+                "RequestDate": "2023-08-02T17:30:52.5661841+03:00",
+                "WaitingForProcessingCompanyConfirmation": false
+            },
+            "CloseDate": "2023-08-02T17:30:52.5661907+03:00",
+            "Consumer":
+            {
+                "Code": "Code Value",
+                "CodeSpace": "DWH",
+                "Name": "Name Value"
+            },
+            "ConsumerAgeVerificationStatus": "AV0",
+            "ContactEmail":
+            {
+                "Address": "Address Value",
+                "IsVerified": false,
+                "VerifiedDate": "2023-08-02T17:30:52.5662298+03:00"
+            },
+            "ContactPhone":
+            {
+                "IsVerified": false,
+                "Label": "Label Value",
+                "Number": "#ENC.PDP:N5YBqlgO7yvpWG0bHYT2EKGmPfTGWq6I2aHPXo/fLwgHBn3zK+LRoExdO3ZUAeR9GU1ne3lQl/rg5mzYRk592WVOpHxyivPcqiZ83NQVogF+zIxTEvREmuCCjAl9WGdnlkQMlrwruuPS4UkoZw660+8xG8RvvpSwX57la4bZ3UsA0lt448MUucBtIuiCwipFJA3ZBycE/2haGuGsRmT2q2GmlLVF9iQWR7v85YJm/o2pGUd6/vY8aTW8/id4pbmwcIWgaVdmOIowT2YRc2tEgIyNR3oRDJUYdp8bFapRUxnqoHr+Z7/zGIAqh916aDMpeY98SbJda1jQNpIJ6kgw1A==",
+                "Type": "Alternative",
+                "VerifiedDate": "2023-08-02T17:30:52.5662458+03:00"
+            },
+            "CreatedByEmail":
+            {
+                "Address": "Address Value",
+                "IsVerified": false,
+                "VerifiedDate": "2023-08-02T17:30:52.5662502+03:00"
+            },
+            "CustomerNote": "CustomerNote Value",
+            "DeliveryInfo":
+            {
+                "ActualDeliveryDate": "2023-08-02T17:30:52.5662584+03:00",
+                "ActualShippingDate": "2023-08-02T17:30:52.5662601+03:00",
+                "AssembledBy":
+                {
+                    "$type": "PMI.BDDM.Staticdata.UserReference",
+                    "Code": "Code Value",
+                    "CodeSpace": "XRM",
+                    "Name": "Name Value"
+                },
+                "AssemblingEndDate": "2023-08-02T17:30:52.5665009+03:00",
+                "AssemblingStartDate": "2023-07-02T17:30:52.5665024+03:00",
+                "AtlasDeliveryOrderID": "AtlasDeliveryOrderID Value",
+                "AtlasOrderCreatedDate": "2023-08-02T17:30:52.5665057+03:00",
+                "CollectFromConsumerComment": "CollectFromConsumerComment Value",
+                "ConsumerCollectedItemsReturnDate": "2023-08-02T17:30:52.5665084+03:00",
+                "Cost":
+                {
+                    "Currency": "Currency Value",
+                    "Value": 46.06
+                },
+                "Courier":
+                {
+                    "$type": "PMI.BDDM.Staticdata.UserReference",
+                    "Code": "Code Value",
+                    "CodeSpace": "SmartIQOS",
+                    "Name": "Name Value"
+                },
+                "CourierArrivalDate": "2023-08-02T17:30:52.5667323+03:00",
+                "CourierCompany":
+                {
+                    "Code": "Code Value",
+                    "Name": "Name Value",
+                    "Parent": "Parent Value",
+                    "ParentItem":
+                    {
+                        "$type": "PMI.BDDM.Transactionaldata.IMSChannel",
+                        "Code": "#0002",
+                        "Name": "Name Value",
+                        "Parent": "Parent Value",
+                        "ParentItem":
+                        {
+                            "$type": "PMI.BDDM.Transactionaldata.IMSChannel",
+                            "Code": "#0003",
+                            "Name": "Name Value",
+                            "Parent": "Parent Value"
+                        }
+                    }
+                },
+                "CourierHandOverNote":
+                {
+                    "$type": "PMI.BDDM.Staticdata.RetailAcceptanceActReference",
+                    "Code": "Code Value",
+                    "CodeSpace": "SNOW",
+                    "Name": "Name Value"
+                },
+                "DeliveryComment": "DeliveryComment Value",
+                "DeliveryInterval":
+                {
+                    "EndDate": "2023-08-02T17:30:52.5673839+03:00",
+                    "StartDate": "2023-07-02T17:30:52.5673856+03:00"
+                },
+                "DeliveryPoint":
+                {
+                    "Address":
+                    {
+                        "AddressCode":
+                        {
+                            "$type": "PMI.BDDM.Staticdata.FIASCodeReference",
+                            "Code": "Code Value",
+                            "CodeSpace": "IMDL",
+                            "Name": "Name Value"
+                        },
+                        "AddressLine": "AddressLine Value",
+                        "Apartment": "Apartment Value",
+                        "Building": "Building Value",
+                        "City": "City Value",
+                        "Comment": "Comment Value",
+                        "Country": "Country Value",
+                        "FIAS":
+                        {
+                            "Code": "Code Value",
+                            "CodeSpace": "UBE",
+                            "Name": "Name Value"
+                        },
+                        "FIASLevel": "FIASLevel Value",
+                        "FullAddress": "FullAddress Value",
+                        "GAR":
+                        {
+                            "Code": "Code Value",
+                            "CodeSpace": "Shopmetrics",
+                            "Name": "Name Value"
+                        },
+                        "GeoCoordinates":
+                        {
+                            "Accuracy": 49,
+                            "Latitude": 60.44,
+                            "Longitude": 7.7
+                        },
+                        "KLADR":
+                        {
+                            "Code": "Code Value",
+                            "CodeSpace": "MarketingCloud",
+                            "Name": "Name Value"
+                        },
+                        "Region": "Region Value",
+                        "Street": "Street Value",
+                        "Type": "Registration",
+                        "ZipCode": "ZipCode Value"
+                    },
+                    "GeoCoordinates":
+                    {
+                        "Accuracy": 6,
+                        "Latitude": 10.52,
+                        "Longitude": 16.65
+                    },
+                    "KLADR": "KLADR Value",
+                    "PickUpPointCode": "PickUpPointCode Value",
+                    "SalePoint":
+                    {
+                        "$type": "PMI.BDDM.Staticdata.POSReference",
+                        "Code": "Code Value",
+                        "CodeSpace": "CETool",
+                        "Name": "Name Value"
+                    }
+                },
+                "DeliveryType": "Standard",
+                "MaximumDeliveryDate": "2023-08-02T17:30:52.5679139+03:00",
+                "Method": "MobileCourier",
+                "ParcelDeclaredValue":
+                {
+                    "Currency": "Currency Value",
+                    "Value": 94.1
+                },
+                "PickUpPointDeliveryDate": "2023-08-02T17:30:52.5679266+03:00",
+                "PlannedDeliveryDate": "2023-08-02T17:30:52.5679282+03:00",
+                "PlannedDeliveryInterval":
+                {
+                    "EndDate": "2023-08-02T17:30:52.5679304+03:00",
+                    "StartDate": "2023-07-02T17:30:52.5679311+03:00"
+                },
+                "PostponementInfo":
+                {
+                    "DeliveryInterval":
+                    {
+                        "EndDate": "2023-08-02T17:30:52.5679346+03:00",
+                        "StartDate": "2023-07-02T17:30:52.5679352+03:00"
+                    },
+                    "Reason": "Reason Value",
+                    "RequestDate": "2023-08-02T17:30:52.5679368+03:00"
+                },
+                "ReverseTrackingNumber": "ReverseTrackingNumber Value",
+                "TargetShippingDate": "2023-08-02T17:30:52.5679393+03:00",
+                "TrackingLink": "TrackingLink Value",
+                "TrackingNumber": "TrackingNumber Value",
+                "DeliveryTimeZone": "UTC+03:00"
+            },
+            "DTEParticipant":
+            {
+                "Code": "Code Value",
+                "CodeSpace": "KAListing",
+                "Name": "Name Value"
+            },
+            "Mechanic": "PremiumPartnerMobileCourier",
+            "PaymentInfo":
+            {
+                "BankCardTokenCreated": false,
+                "ElectronicReceipt": false,
+                "InstallmentPeriod": 93,
+                "InstallmentProvider": "Tinkoff",
+                "OnlinePaymentInfo":
+                {
+                    "FundsReservationDate": "2023-08-02T17:30:52.5679966+03:00",
+                    "Provider": "CloudPayments",
+                    "ProviderTransactionID": "ProviderTransactionID Value"
+                },
+                "PaymentDate": "2023-08-02T17:30:52.5680043+03:00",
+                "PaymentStatus": "FundsUnblockRequested",
+                "PaymentStatusReason": "PaymentStatusReason Value",
+                "PaymentType": "OnlineTwoStage",
+                "RefundDate": "2023-08-02T17:30:52.5680239+03:00",
+                "Subscription":
+                {
+                    "Code": "Code Value",
+                    "CodeSpace": "Navicon",
+                    "Name": "Name Value"
+                }
+            },
+            "PickedBy":
+            {
+                "$type": "PMI.BDDM.Staticdata.UserReference",
+                "Code": "Code Value",
+                "CodeSpace": "DWH",
+                "Name": "Name Value"
+            },
+            "PickingEndDate": "2023-08-02T17:30:52.5682815+03:00",
+            "PickingStartDate": "2023-07-02T17:30:52.5682848+03:00",
+            "ProcessedBy":
+            {
+                "$type": "PMI.BDDM.Staticdata.UserReference",
+                "Code": "Code Value",
+                "CodeSpace": "Rice",
+                "Name": "Name Value"
+            },
+            "ProcessedLegalEntity":
+            {
+                "Code": "Code Value",
+                "CodeSpace": "HR2U",
+                "Name": "Name Value"
+            },
+            "ProcessedPoint":
+            {
+                "$type": "PMI.BDDM.Staticdata.POSReference",
+                "Code": "Code Value",
+                "CodeSpace": "KeyAccount",
+                "Name": "Name Value"
+            },
+            "ProcessedRRPAgency":
+            {
+                "Code": "Code Value",
+                "CodeSpace": "ActiveDirectory",
+                "Name": "Name Value"
+            },
+            "ProductSource":
+            {
+                "$type": "PMI.BDDM.Staticdata.WarehouseReference",
+                "Code": "Code Value",
+                "CodeSpace": "CPP",
+                "Name": "Name Value"
+            },
+            "ServiceRequest":
+            {
+                "Code": "Code Value",
+                "CodeSpace": "IR",
+                "Name": "Name Value"
+            },
+            "SourcePoint":
+            {
+                "$type": "PMI.BDDM.Staticdata.WarehouseReference",
+                "Code": "Code Value",
+                "CodeSpace": "RRPSF",
+                "Name": "Name Value"
+            },
+            "StatusReason": "StatusReason Value",
+            "SerializationStatusReasons":
+            [
+                "UndefinedEnumValue",
+                "UndefinedEnumValue"
+            ],
+            "Customer":
+            {
+                "$type": "PMI.BDDM.Transactionaldata.ConsumerParty",
+                "Consumer":
+                {
+                    "Code": "Code Value",
+                    "CodeSpace": "PromoEngine",
+                    "Name": "Name Value"
+                },
+                "Code": "Code Value",
+                "CodeSpace": "SmacX",
+                "Country":
+                {
+                    "Code": "Code Value",
+                    "CodeSpace": "UCRM",
+                    "Name": "Name Value"
+                },
+                "CreationTime": "2023-07-02T17:30:52.569514+03:00",
+                "UpdateTime": "2023-08-02T17:30:52.5695159+03:00"
+            },
+            "Description": "Description Value",
+            "OrderDate": "2023-08-02T17:30:52.5695209+03:00",
+            "CreatedBy":
+            {
+                "$type": "PMI.BDDM.Staticdata.UserReference",
+                "Code": "Code Value",
+                "CodeSpace": "Rice",
+                "Name": "Name Value"
+            },
+            "UpdatedBy":
+            {
+                "$type": "PMI.BDDM.Staticdata.UserReference",
+                "Code": "Code Value",
+                "CodeSpace": "HCM",
+                "Name": "Name Value"
+            },
+            "AlternateCodes":
+            [
+                {
+                    "Code": "#0001",
+                    "CodeSpace": "Rice"
+                },
+                {
+                    "Code": "#0002",
+                    "CodeSpace": "KeyAccount"
+                }
+            ],
+            "Code": "TESTRB-{{randomValue length=20 type='NUMERIC'}}",
+            "CodeSpace": "SNOW",
+            "Country":
+            {
+                "Code": "Code Value",
+                "CodeSpace": "Nielsen",
+                "Name": "Name Value"
+            },
+            "CreationTime": "2023-07-02T17:30:52.570001+03:00",
+            "UpdateTime": "2023-08-02T17:30:52.5700033+03:00"
+        },
+        "headers":
+        {
+            "Content-Type": "application/json"
+        }
+    }
+}

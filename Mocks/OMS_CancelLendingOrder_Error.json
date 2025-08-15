@@ -1,0 +1,17 @@
+{
+    "name" : "OMS Cancel Lending Order Error",
+    "priority": 1,
+    "request": {
+        "urlPath": "/api/ecom/retaillendingorders/PO-ERROR",
+        "method": "PATCH"
+    },
+    "response": {
+        "status": 400,
+
+        "headers": {
+            "Content-Type": "application/json" 
+        },
+
+        "body": "{\"$type\":\"PMI.BDDM.Common.OMSException\",\"$version\":\"2.41.2.0\",\"ExtendedCode\":\"WrongStatusTransfer\",\"Code\":\"BadRequest\",\"Message\":\"Order status cannot be changed from Cancelled to Cancelled\",\"Uid\":\"be247690-f770-4914-bc28-d1bc1588b15d\"}"
+    }
+}

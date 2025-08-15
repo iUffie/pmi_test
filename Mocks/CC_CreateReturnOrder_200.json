@@ -1,0 +1,117 @@
+{
+    "name": "Test Mock /Carts/{basket}/CreateReturnOrder",
+    "priority": 3,
+    "request": {
+        "urlPathPattern": "/Carts/([a-zA-Z0-9\\-]*)/CreateReturnOrder",
+        "method": "POST"
+    },
+    "response": {
+        "status": 200,
+        "jsonBody": {
+            "$type": "PMI.BDDM.Transactionaldata.RetailReturnOrder",
+            "CreatedBy": {
+                "$type": "PMI.BDDM.Staticdata.UserReference",
+                "Code": "0054H000007Tf4fQAC",
+                "CodeSpace": "RRPSF"
+            },
+            "Consumer": {
+                "Code": "CONS33448473",
+                "CodeSpace": "RRPSF",
+                "Name": "Ольга Ольгина"
+            },
+            "PaymentInfo": {
+                "PaymentStatus": "FundsReturned",
+                "PaymentType": "BankAccount"
+            },
+            "SourcePoint": {
+                "$type": "PMI.BDDM.Staticdata.POSReference",
+                "Code": "TP1234561",
+                "CodeSpace": "MDM",
+                "Name": "TEST POS"
+            },
+            "Items": [
+                {
+                    "ItemCode": "ITMCD-00k4H00002G1uBeQAJ",
+                    "Price": {
+                        "Currency": "RUB",
+                        "Value": 180
+                    },
+                    "Product": {
+                        "$type": "PMI.BDDM.Staticdata.BrandVariantReference",
+                        "Code": "BV002358",
+                        "CodeSpace": "MDM",
+                        "Name": "Таб. стики HEETS Purple Wave, пачка"
+                    },
+                    "Quantity": {
+                        "UOM": "Pack",
+                        "Value": 1
+                    },
+                    "DefectCategory": {
+                        "Code": "157.65",
+                        "Name": "HEETS-Блок-Пачки приклеены друг к другу"
+                    },
+                    "DefectCode": "157.65",
+                    "Instances": [
+                        {
+                            "$type": "PMI.BDDM.Transactionaldata.RetailProductOrderItemConsumableInstance",
+                            "EAN": "2222222222",
+                            "InstanceCode": "001",
+                            "DataMatrixCode": "ABCD1234",
+                            "SerialNumber": "0J2N3N4S24W8"
+                        }
+                    ],
+                    "Value": {
+                        "Currency": "RUB",
+                        "Value": 180
+                    },
+                    "SerialNumber": ""
+                }
+            ],
+            "ReturnReason": "Брак производства",
+            "TotalValue": {
+                "Currency": "RUB",
+                "Value": 180
+            },
+            "SaleOrder": {
+                "Code": "OB-0055555",
+                "CodeSpace": "RRPSF"
+            },
+            "Status": "Completed",
+            "AssignedTo": {
+                "$type": "PMI.BDDM.Staticdata.UserReference",
+                "Code": "0054H000007Tf4fQAC",
+                "CodeSpace": "RRPSF"
+            },
+            "CloseDate": "2023-08-04T12:57:49.4277892Z",
+            "DeliveryInfo": {
+                "DeliveryComment": "Оплата на месте"
+            },
+            "Mechanic": "OneToOne",
+            "ProcessedPoint": {
+                "$type": "PMI.BDDM.Staticdata.POSReference",
+                "Code": "TP1234561",
+                "CodeSpace": "MDM",
+                "Name": "TEST POS"
+            },
+            "StatusReason": "Завершена",
+            "OrderDate": "2023-08-04T12:57:49.4277892Z",
+            "UpdatedBy": {
+                "$type": "PMI.BDDM.Staticdata.UserReference",
+                "Code": "0054H000007Tf4fQAC",
+                "CodeSpace": "RRPSF"
+            },
+            "Code": "FB-00000003",
+            "CodeSpace": "OMS",
+            "Country": {
+                "Code": "RU",
+                "CodeSpace": "MDM",
+                "Name": "RU"
+            },
+            "CreationTime": "2023-08-04T12:57:49.4277892Z",
+            "UpdateTime": "2023-08-04T12:57:49.4277892Z"
+        },
+        "headers": {
+            "Content-Type": "application/json"
+        }
+    }
+}

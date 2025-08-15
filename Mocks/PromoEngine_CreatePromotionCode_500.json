@@ -1,0 +1,22 @@
+{
+    "name": "Test Mock /api/Promotioncodes 500",
+    "priority": 1,
+    "request": {
+        "urlPath": "/api/Promotioncodes",
+        "method": "POST",
+        "bodyPatterns": [
+            {
+                "contains": "PCT-Error"
+            }
+        ]
+    },
+    "response": {
+        "status": 500,
+
+        "body": "{\"ExtendedCode\":\"PromoEngineExceptionCode.PromocodeValidationMessages\",\"Message\":\"pe.validation.promoPromocodeNameRequirements\"}",
+
+        "headers": {
+            "Content-Type": "application/json; charset=utf-8"
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{ 
+    "name" : "DM ValidationError", 
+    "request": { 
+        "urlPath": "/QA/hs/DeviceManagement/api/ProductInstances/TQKXG4V0RY9JJX/ChangeConsumerDevice", 
+        "method": "POST" 
+    }, 
+    "response": { 
+        "status": 400, 
+        "body": "{\"$type\":\"PMI.BDDM.Common.DeviceManagementException\",\"Uid\":\"530ada54-0212-4283-8a19-e4da76b592f5\",\"Message\":\"Устройство TQKXG4V0RY9JJX не найдено в базе DeviceManagement1C\",\"Code\":\"BadRequest\",\"ExtendedCode\":\"ValidationError\"}", "headers": { 
+            "Content-Type": "application/json" 
+        } 
+    } 
+}

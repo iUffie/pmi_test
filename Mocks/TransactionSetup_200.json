@@ -1,0 +1,11 @@
+{
+    "name" : "Test Mock /api/Transaction/Setup 200",
+	"priority": 3,
+    "request": {
+        "urlPath": "/api/Transaction/Setup",
+        "method": "POST"
+    },
+    "response": {
+        "status": 200
+    }
+}

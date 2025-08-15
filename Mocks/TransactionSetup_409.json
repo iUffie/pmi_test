@@ -1,0 +1,20 @@
+{
+    "name" : "Test Mock /api/Transaction/Setup 409",
+	"priority": 1,
+    "request": {
+        "urlPath": "/api/Transaction/Setup",
+        "method": "POST",
+		"bodyPatterns": [
+            {
+              "contains":"79000000001"
+            }
+        ]
+    },
+    "response": {
+        "status": 409,
+		"body" : "{\"type\":\"https://tools.ietf.org/html/rfc7231#section-6.5.8\",\"title\":\"Conflict\",\"status\":409,\"traceId\":\"|a8ff578-42bf0130f4f7afca.\"}",
+        "headers" : {
+          "Content-Type" : "application/problem+json; charset=utf-8"
+        }
+    }
+}

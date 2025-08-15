@@ -1,0 +1,25 @@
+{
+    "id": "3852236b-5924-4326-9ef2-a5b99fd36b5e",
+    "name": "uCRM managePerson Test 504",
+    "request": {
+        "url": "/PmiXrmService.svc",
+        "method": "POST",
+        "bodyPatterns": [
+            {
+                "contains": "ManagePersonRq"
+            },
+            {
+                "contains": "PersonId"
+            },
+            {
+                "contains": "79991445510"
+            }
+        ]
+    },
+    "response": {
+        "status": 200,
+        "body": ""
+    },
+    "uuid": "3852236b-5924-4326-9ef2-a5b99fd36b5e",
+    "priority": 1
+}

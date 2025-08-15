@@ -1,0 +1,15 @@
+{
+    "name" : "Test Mock /rest/File/Share",
+    "request": {
+        "urlPathPattern": "/rest/File/Share",
+        "method": "POST"
+    },
+    "response": {
+        "status": 200,
+        "jsonBody": {
+            "presignedPath": "https://fss.com/folder/subfolder/file.json",
+            "expireAt": "2023-11-29T14:08:41.919Z"
+        },
+        "headers": { "Content-Type": "application/json" } 
+    }
+}

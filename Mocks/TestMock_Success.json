@@ -1,0 +1,14 @@
+{
+    "name" : "Test Mock Success",
+    "request": {
+        "urlPath": "/api/test",
+        "method": "GET"
+    },
+    "response": {
+        "status": 200,
+        "body": "{\"statuses\":[{\"status\":\"OK\",\"error_text\":null}]}",
+        "headers": {
+            "Content-Type": "application/json"
+        }
+    }
+}

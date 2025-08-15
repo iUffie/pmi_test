@@ -1,0 +1,14 @@
+{ 
+    "name" : "DM Change Asset State Error", 
+    "priority": 1,
+    "request": { 
+        "urlPath": "/QA/hs/DeviceManagement/api/ConsumerProductInstaceBinding/TFRZF6GBTELA2X/ChangeProductInstanceBinding", 
+        "method": "POST" 
+    }, 
+    "response": { 
+        "status": 400, 
+        "body": "{\"$type\":\"PMI.BDDM.Common.DeviceManagementException\",\"Uid\":\"cc3f40b2-85db-4313-a79f-1fb609e33f87\",\"Message\":\"Статус не может быть изменен в DeviceManagement\",\"Code\":\"BadRequest\",\"ExtendedCode\":\"Unspecified\"}", "headers": { 
+            "Content-Type": "application/json" 
+        } 
+    } 
+}

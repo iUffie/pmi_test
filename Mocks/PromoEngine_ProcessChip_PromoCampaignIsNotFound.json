@@ -1,0 +1,22 @@
+{
+    "name" : "Test Mock /api/ProcessChip PromoCampaignIsNotFound",
+    "request":
+	{
+        "urlPath": "/api/ProcessChip",
+        "method": "POST",
+        "bodyPatterns": [
+            {
+                "contains": "PC-PromoCampaignIsNotFound"
+            }
+        ]
+    },
+    "response":
+	{
+        "status": 400,
+        "body" : "{\r\n    \"$type\": \"PMI.BDDM.Common.PromoEngineException\",\r\n    \"$version\": \"2.67.2.0\",\r\n    \"ExtendedCode\": \"PromoCampaignIsNotFound\",\r\n    \"Code\": \"NotFound\",\r\n    \"Message\": \"Промокод из некорректного шаблона. Обратитесь в поддержку. (423)\",\r\n    \"Uid\": \"f56e9fea-b122-47c6-93c0-1f3536bff2fe\"\r\n}",
+        "headers" :
+		{
+          "Content-Type" : "application/json; charset=utf-8"
+        }
+    }
+}

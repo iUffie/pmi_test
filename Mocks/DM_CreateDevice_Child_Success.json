@@ -1,0 +1,57 @@
+{
+    "name": "DM Create Child Device Success",
+    "request": {
+        "urlPath": "/QA/hs/DeviceManagement/api/ProductInstances/TFRZF6GBTELA2Z/CheckAndCreateDevice",
+        "method": "POST"
+    },
+    "response": {
+        "status": 200,
+        "jsonBody": {
+            "$type": "PMI.BDDM.StaticData.ProductInstance+CheckAndCreate_Response",
+            "ProductInstance": {
+                "$type": "PMI.BDDM.Staticdata.EquipmentProductInstance",
+                "Code": "TFRZF6GBTELA2Z",
+                "CodeSpace": "DeviceManagement",
+                "CreationTime": "2023-06-21T17:20:04.568+03:00",
+                "UpdateTime": "2023-06-21T17:20:04.568+03:00",
+                "Kit": {
+                    "CodeSpace": "MDM",
+                    "Code": "95QGM5PU94UJ",
+                    "Name": "DVC1C-000127202"
+                },
+                "ProductionMaterial": {
+                    "$type": "PMI.BDDM.Staticdata.ComponentProductionMaterialReference",
+                    "CodeSpace": "MDM",
+                    "Code": "DVC0601",
+                    "Name": "DVC0601"
+                },
+                "ProductionDate": "2019-04-04T00:00:00.568+03:00",
+                "Description": "HTPHolderIQOS(3.0GREY)A1404-A1404RNDVEG3.0genericHolder(Grey)",
+                "Product": {
+                    "$type": "PMI.BDDM.Staticdata.BrandVariantReference",
+                    "CodeSpace": "MDM",
+                    "Code": "BV002165",
+                    "Name": "���������IQOS3(������)"
+                },
+                "ProductCategory": {
+                    "Code": "M0301",
+                    "Name": "RRPHTPHolder"
+                },
+                "Status": "New",
+                "TargetMarket": {
+                    "CodeSpace": "MDM",
+                    "Code": "ES07",
+                    "Name": "ES07"
+                },
+                "Country": {
+                    "CodeSpace": "MDM",
+                    "Code": "RU",
+                    "Name": "RU"
+                }
+            }
+        },
+        "headers": {
+            "Content-Type": "application/json"
+        }
+    }
+}

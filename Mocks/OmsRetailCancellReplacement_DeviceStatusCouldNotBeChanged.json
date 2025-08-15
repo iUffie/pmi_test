@@ -1,0 +1,17 @@
+{
+    "id": "6c34cc9d-bc18-42c9-a4e7-394e5a0cbe8c",
+    "name": "OMS Cancel Replacement Order with Error for RB-00004430",
+    "request": {
+        "urlPath": "/api/retail/retailreplacementorders/RB-00004430",
+        "method": "PATCH"
+    },
+    "response": {
+        "status": 400,
+        "body": "{\"$type\":\"PMI.BDDM.Common.OMSException\",\"$version\":\"2.41.2.0\",\"ExtendedCode\":\"DeviceStatusCouldNotBeChanged\",\"Code\":\"BadRequest\",\"Message\":\"Order status cannot be changed from Cancelled to Cancelled\",\"Uid\":\"be247690-f770-4914-bc28-d1bc1588b15d\"}",
+        "headers": {
+            "Content-Type": "application/json"
+        }
+    },
+    "uuid": "6c34cc9d-bc18-42c9-a4e7-394e5a0cbe8c",
+    "priority": 1
+}

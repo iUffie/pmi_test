@@ -1,0 +1,17 @@
+{
+    "id": "1374e742-e84b-4a6f-9afa-0ba85f1b3f02",
+    "name": "OMS Cancel Sale Order with Error for OB-00555186",
+    "request": {
+        "urlPath": "/api/retail/retailsaleorders/OB-00555186",
+        "method": "PATCH"
+    },
+    "response": {
+        "status": 400,
+        "body": "{\"$type\":\"PMI.BDDM.Common.OMSException\",\"$version\":\"2.41.2.0\",\"ExtendedCode\":\"ValidationError\",\"Code\":\"BadRequest\",\"Message\":\"Order status cannot be changed from Cancelled to Cancelled\",\"Uid\":\"be247690-f770-4914-bc28-d1bc1588b15d\"}",
+        "headers": {
+            "Content-Type": "application/json"
+        }
+    },
+    "uuid": "1374e742-e84b-4a6f-9afa-0ba85f1b3f02",
+    "priority": 1
+}

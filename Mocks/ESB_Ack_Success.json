@@ -1,0 +1,10 @@
+{
+    "name" : "ESB ack success",
+    "request" : {
+      "urlPathPattern" : "/messaging/([a-zA-Z0-9.]*)/ack/([0-9]*)",
+      "method" : "PUT"
+    },
+    "response" : {
+      "status" : 200
+    }
+}

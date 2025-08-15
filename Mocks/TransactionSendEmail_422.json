@@ -1,0 +1,20 @@
+{
+    "name" : "Test Mock /api/Transaction/SendEmail 422",
+	"priority": 1,
+    "request": {
+        "urlPath": "/api/Transaction/SendEmail",
+        "method": "POST",
+		"bodyPatterns": [
+            {
+              "contains":"testemail@testemail.com"
+            }
+        ]
+    },
+    "response": {
+        "status": 422,
+        "body" : "Email or PersonId is not valid",
+        "headers" : {
+          "Content-Type" : "text/plain; charset=utf-8"
+        }
+    }
+}

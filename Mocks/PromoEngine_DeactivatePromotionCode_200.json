@@ -1,0 +1,77 @@
+{
+    "name" : "Test Mock /api/Promotioncodes/DeactivatePromotionCode 200",
+    "request":
+    {
+        "urlPath": "/api/Promotioncodes/DeactivatePromotionCode",
+        "method": "POST"
+    },
+    "response": {
+        "status": 200,
+        "jsonBody": {
+          "$type": "PMI.BDDM.Transactionaldata.PromotionCode+DeactivatePromotionCode_Response",
+          "$version": "2.46.3.0",
+          "DeactivatedPromotionCode": [
+              {
+                  "ActualUses": 0,
+                  "Consumer": {
+                      "Code": "CONS7939229",
+                      "CodeSpace": "B2CCRM"
+                  },
+                  "CreatedBy": {
+                      "$type": "PMI.BDDM.Staticdata.UserReference",
+                      "Code": "MYIZHORA\\bgusakov",
+                      "CodeSpace": "ActiveDirectory"
+                  },
+                  "Name": "CLCAP-KGMTCQLZEX",
+                  "Status": "Inactive",
+                  "StatusReason": "TemporaryBlockedFraud",
+                  "Template": {
+                      "Code": "PRTM-0208",
+                      "CodeSpace": "PromoEngine"
+                  },
+                  "UpdatedBy": {
+                      "$type": "PMI.BDDM.Staticdata.UserReference",
+                      "Code": "MYIZHORA\\bgusakov",
+                      "CodeSpace": "ActiveDirectory"
+                  },
+                  "ValidFrom": "2024-02-07T21:00:00Z",
+                  "ValidTo": "2024-03-08T21:00:00Z",
+                  "Code": "PC-0000355880",
+                  "CodeSpace": "PromoEngine",
+                  "CreationTime": "2024-02-08T11:51:12.9952979Z",
+                  "UpdateTime": "2024-02-12T12:21:12.2154808Z"
+              },
+              {
+                  "ActualUses": 0,
+                  "Consumer": {
+                      "Code": "CONS7939229",
+                      "CodeSpace": "B2CCRM"
+                  },
+                  "CreatedBy": {
+                      "$type": "PMI.BDDM.Staticdata.UserReference",
+                      "Code": "MYIZHORA\\bgusakov",
+                      "CodeSpace": "ActiveDirectory"
+                  },
+                  "Name": "CLCAP-KATEWDSMHF",
+                  "Status": "Inactive",
+                  "StatusReason": "TemporaryBlockedFraud",
+                  "Template": {
+                      "Code": "PRTM-0208",
+                      "CodeSpace": "PromoEngine"
+                  },
+                  "UpdatedBy": {
+                      "$type": "PMI.BDDM.Staticdata.UserReference",
+                      "Code": "MYIZHORA\\bgusakov",
+                      "CodeSpace": "ActiveDirectory"
+                  },
+                  "ValidFrom": "2024-02-07T21:00:00Z",
+                  "ValidTo": "2024-03-08T21:00:00Z",
+                  "Code": "PC-0000355878",
+                  "CodeSpace": "PromoEngine",
+                  "CreationTime": "2024-02-08T11:50:59.6270628Z",
+                  "UpdateTime": "2024-02-12T12:21:12.2246763Z"
+              }
+          ]
+        }
+    }
+}

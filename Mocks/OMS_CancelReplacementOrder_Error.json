@@ -1,0 +1,13 @@
+{ 
+    "name" : "OMS Create Replacement Order Error", 
+    "request": { 
+        "urlPath": "/api/ecom/retailreplacementorders/RE-000003", 
+        "method": "PATCH" 
+    }, 
+    "response": { 
+        "status": 400, 
+        "body": "{\"$type\":\"PMI.BDDM.Common.OMSException\",\"$version\":\"2.34.1.0\",\"ExtendedCode\":\"WrongStatusTransfer\",\"Code\":\"BadRequest\",\"Message\":\"Order status cannot be changed from Cancelled to Cancelled\",\"Uid\":\"2aa36471-4cc1-457e-baf3-af6efa89cf4a\"}", "headers": { 
+            "Content-Type": "application/json" 
+        } 
+    } 
+}

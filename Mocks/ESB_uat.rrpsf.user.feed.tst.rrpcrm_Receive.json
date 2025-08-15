@@ -1,0 +1,15 @@
+{
+  "name" : "ESB receive uat.rrpsf.user.feed.tst.rrpcrm",
+  "request" : {
+    "url" : "/messaging/q.uat.rrpsf.user.feed.tst.rrpcrm/receive",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n\t\"BusinessEvent\": {\n\t\t\"$type\": \"PMI.BDDM.Common.Update\",\n\t\t\"BusinessEntity\": {\n\t\t\t\"$type\": \"PMI.BDDM.Staticdata.User\",\n\t\t\t\"ADUser\": {\n\t\t\t\t\"Code\": \"MYIZHORA\\\\vavagyan1\",\n\t\t\t\t\"CodeSpace\": \"ActiveDirectory\",\n\t\t\t\t\"Name\": \"Vardan Avagyan\"\n\t\t\t},\n\t\t\t\"MaskedName\": \"Vardan A*****n\",\n\t\t\t\"Position\": \"Sales Expert\",\n\t\t\t\"Profile\": {\n\t\t\t\t\"Code\": \"00e4H000001IWQrQAO\",\n\t\t\t\t\"Name\": \"Partner - Shop Assistant Extended\"\n\t\t\t},\n\t\t\t\"MSACode\": \"alf52\",\n\t\t\t\"Alias\": \"175381\",\n\t\t\t\"DisplayName\": \"Vardan Avagyan\",\n\t\t\t\"Status\": \"Active\",\n\t\t\t\"Code\": \"0054H000005YcuwQAC\",\n\t\t\t\"CodeSpace\": \"RRPSF\",\n\t\t\t\"Country\": {\n\t\t\t\t\"Code\": \"RU\",\n\t\t\t\t\"CodeSpace\": \"MDM\",\n\t\t\t\t\"Name\": \"RU\"\n\t\t\t},\n\t\t\t\"CreationTime\": \"2021-08-03T14:19:29Z\",\n\t\t\t\"UpdateTime\": \"2023-07-04T20:23:56Z\"\n\t\t},\n\t\t\"EventTime\": \"2023-07-04T20:23:57.624Z\"\n\t}\n}",
+    "headers" : {
+      "Content-Type" : "application/json",
+      "PMI-Messaging-ID" : "{{randomValue length=10 type='NUMERIC'}}"
+    }
+  }
+}

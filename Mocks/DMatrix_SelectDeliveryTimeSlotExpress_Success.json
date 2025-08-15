@@ -1,0 +1,24 @@
+{
+    "name": "Test Mock DMatrix SelectDeliveryTimeSlotExpress Success",
+    "request": {
+        "urlPathPattern": "/api/deliverymatrixdata/selectDeliveryTimeSlotExpress",
+        "method": "GET"
+    },
+    "response": {
+        "status": 200,
+        "jsonBody": {   
+            "timeslotsToday": [{
+                "firstSlot": "2021-12-19 16:30",
+                "lastSlot": "2021-12-19 18:30",
+                "slotLength": 30,
+                "slotStep": 0
+            }],
+             "timeslotsTomorrow": [{
+                  "firstSlot": "2021-12-20 10:00",
+                  "lastSlot": "2021-12-20 19:00",
+                  "slotLength": 60,
+                  "slotStep": 60
+            }]
+        }
+    }
+}

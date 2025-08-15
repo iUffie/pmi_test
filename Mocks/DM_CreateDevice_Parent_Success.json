@@ -1,0 +1,113 @@
+{
+    "name": "DM Create Parent Device Success",
+    "priority": 2,
+    "request": {
+        "urlPathPattern": "/QA/hs/DeviceManagement/api/ProductInstances/([a-zA-Z0-9\\-]*)/CheckAndCreateDevice",
+        "method": "POST"
+    },
+    "response": {
+        "status": 200,
+        "jsonBody": {
+            "$type": "PMI.BDDM.StaticData.ProductInstance+CheckAndCreate_Response",
+            "ConsumerBindings": [
+                {
+                    "$type": "PMI.BDDM.Transactionaldata.ConsumerProductInstanceBinding",
+                    "BindingBasis": {
+                        "$type": "PMI.BDDM.Transactionaldata.RetailSaleOrderReference",
+                        "Code": "BO-12345678",
+                        "CodeSpace": "RRPSF"
+                    },
+                    "BindingTime": "2023-02-21T00:00:00.353+03:00",
+                    "Code": "AST-{{randomValue length=14 type='NUMERIC'}}",
+                    "Consumer": {
+                        "Code": "CONS1234",
+                        "CodeSpace": "RRPSF"
+                    },
+                    "ProductInstance": {
+                        "$type": "PMI.BDDM.Staticdata.EquipmentProductInstanceReference",
+                        "Code": "DV-{{randomValue length=14 type='NUMERIC'}}",
+                        "CodeSpace": "RRPSF"
+                    },
+                    "SaleDate": "2023-02-21T00:00:00.223+03:00",
+                    "Source": "Sale",
+                    "Status": "Active"
+                },
+                {
+                    "$type": "PMI.BDDM.Transactionaldata.ConsumerProductInstanceBinding",
+                    "BindingBasis": {
+                        "$type": "PMI.BDDM.Transactionaldata.RetailSaleOrderReference",
+                        "Code": "BO-12345678",
+                        "CodeSpace": "RRPSF"
+                    },
+                    "BindingTime": "2023-02-21T00:00:00.360+03:00",
+                    "Code": "AST-{{randomValue length=14 type='NUMERIC'}}",
+                    "Consumer": {
+                        "Code": "CONS1234",
+                        "CodeSpace": "RRPSF"
+                    },
+                    "ProductInstance": {
+                        "$type": "PMI.BDDM.Staticdata.EquipmentProductInstanceReference",
+                        "Code": "DV-{{randomValue length=14 type='NUMERIC'}}",
+                        "CodeSpace": "RRPSF"
+                    },
+                    "SaleDate": "2023-02-21T00:00:00.223+03:00",
+                    "Source": "Sale",
+                    "Status": "Active"
+                }
+            ],
+            "EquipmentProductInstances": [
+                {
+                    "$type": "PMI.BDDM.Staticdata.EquipmentProductInstance",
+                    "Code": "{{randomValue length=12 type='NUMERIC'}}",
+                    "Product": {
+                        "$type": "PMI.BDDM.Staticdata.BrandVariantReference",
+                        "Code": "BV002442",
+                        "CodeSpace": "MDM"
+                    },
+                    "ProductionDate": "2023-01-14T00:00:00.352+03:00",
+                    "Status": "UserLinked"
+                },
+                {
+                    "$type": "PMI.BDDM.Staticdata.EquipmentProductInstance",
+                    "Code": "DV-{{randomValue length=14 type='NUMERIC'}}",
+                    "Product": {
+                        "$type": "PMI.BDDM.Staticdata.BrandVariantReference",
+                        "Code": "BV002437",
+                        "CodeSpace": "MDM"
+                    },
+                    "ProductionDate": "2023-01-17T00:00:00.360+03:00",
+                    "Status": "UserLinked"
+                }
+            ],
+            "ProductInstance": {
+                "$type": "PMI.BDDM.Staticdata.KitProductInstance",
+                "Code": "{{request.pathSegments.[5]}}",
+                "CodeSpace": "RRPSF",
+                "CreationTime": "2023-01-24T07:06:16.343+03:00",
+                "Description": "KITIQOS3DUOSGOLDOPK1",
+                "Product": {
+                    "$type": "PMI.BDDM.Staticdata.BrandVariantReference",
+                    "Code": "BV002432",
+                    "CodeSpace": "MDM",
+                    "Name": "КомплектIQOS3DUOS(золотой)"
+                },
+                "ProductionDate": "2023-01-17T00:00:00.343+03:00",
+                "Status": "UserLinked",
+                "TargetMarket": {
+                    "Code": "RU04",
+                    "CodeSpace": "MDM",
+                    "Name": "RU04"
+                },
+                "UpdateTime": "2023-02-21T18:04:59.343+03:00",
+                "Country": {
+                    "CodeSpace": "MDM",
+                    "Code": "RU",
+                    "Name": "RU"
+                }
+            }
+        },
+        "headers": {
+            "Content-Type": "application/json"
+        }
+    }
+}

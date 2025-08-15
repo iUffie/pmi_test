@@ -1,0 +1,76 @@
+{
+    "name": "DM Success",
+    "request": {
+        "urlPath": "/QA/hs/DeviceManagement/api/ProductInstances/BWB893G0EUVWUS/ChangeConsumerDevice",
+        "method": "POST"
+    },
+    "response": {
+        "status": 200,
+        "jsonBody": {
+            "$type": "PMI.BDDM.StaticData.ProductInstance+ChangeConsumerDevice_Response",
+            "ProductInstance": {
+                "$type": "PMI.BDDM.Staticdata.EquipmentProductInstance",
+                "Code": "BWB893G0EUVWUS",
+                "CodeSpace": "RRPSF",
+                "CreationTime": "2023-01-01T01:23:12.904+03:00",
+                "UpdateTime": "2023-09-25T17:31:07.904+03:00",
+                "Country": {
+                    "CodeSpace": "MDM",
+                    "Code": "RU",
+                    "Name": "RU"
+                },
+                "ProductionMaterial": {
+                    "$type": "PMI.BDDM.Staticdata.ComponentProductionMaterialReference",
+                    "CodeSpace": "MDM",
+                    "Code": "DVC3364",
+                    "Name": "DVC3364"
+                },
+                "ProductionDate": "2022-09-17T00:00:00.904+03:00",
+                "Description": "HTPHolderIQOS3DUOWHITEA1406RNDWWH3.1GenericHolder(NBSealX)-OX/FL",
+                "Product": {
+                    "$type": "PMI.BDDM.Staticdata.BrandVariantReference",
+                    "CodeSpace": "MDM",
+                    "Code": "BV002439",
+                    "Name": "ДержательIQOS3DUOS(белый)"
+                },
+                "ProductCategory": {
+                    "Code": "0000M0301",
+                    "Name": "RRPHTPHolder"
+                },
+                "Status": "UserLinked",
+                "TargetMarket": {
+                    "CodeSpace": "MDM",
+                    "Code": "RU04",
+                    "Name": "RU04"
+                }
+            },
+            "ConsumerBindings": [
+                {
+                    "$type": "PMI.BDDM.Transactionaldata.ConsumerProductInstanceBinding",
+                    "Code": "AST-{{randomValue length=8 type='NUMERIC'}}",
+                    "Source": "Relinking",
+                    "BindingTime": "{{now format='yyyy-MM-dd HH:mm:ssZ'}}",
+                    "SaleDate": "2023-10-11T00:00:00.910+03:00",
+                    "Status": "Active",
+                    "BindingBasis": {
+                        "$type": "PMI.BDDM.Transactionaldata.RetailSaleOrderReference",
+                        "CodeSpace": "RRPSF",
+                        "Code": "CS-12345679"
+                    },
+                    "Consumer": {
+                        "CodeSpace": "RRPSF",
+                        "Code": "CONS7891423"
+                    },
+                    "ProductInstance": {
+                        "$type": "PMI.BDDM.Staticdata.EquipmentProductInstanceReference",
+                        "CodeSpace": "RRPSF",
+                        "Code": "BWB893G0EUVWUS"
+                    }
+                }
+            ]
+        },
+        "headers": {
+            "Content-Type": "application/json"
+        }
+    }
+}

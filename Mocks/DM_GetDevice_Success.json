@@ -1,0 +1,13 @@
+{ 
+    "name" : "DM Get Device Success", 
+    "request": { 
+        "urlPath": "/QA/hs/DeviceManagement/api/ProductInstances/BG2UAQZLZRNH", 
+        "method": "GET" 
+    }, 
+    "response": { 
+        "status": 200, 
+        "body": "{\"Status\":\"Ok\"}", "headers": { 
+            "Content-Type": "application/json" 
+        } 
+    } 
+}

@@ -1,0 +1,21 @@
+{
+    "id": "fd269097-4041-4ece-aa44-52b0b242487c",
+    "name": "uCRM TrackAction Test",
+    "request": {
+        "url": "/PmiXrmService.svc",
+        "method": "POST",
+        "bodyPatterns": [
+            {
+                "contains": "TrackActionRq"
+            }
+        ]
+    },
+    "response": {
+        "status": 200,
+        "body": "<s:Envelope xmlns:s=\"http://schemas.xmlsoap.org/soap/envelope/\"><s:Body xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"><TrackActionRs xmlns=\"http://acxiom.com/pmiservice/ws/types\"><MessageResponseHeader><TransactionStatus>0</TransactionStatus><TransactionStatusMessages><TransactionStatusMessage>Success</TransactionStatusMessage></TransactionStatusMessages><RequestUuid>fd269097-4041-4ece-aa44-52b0b242487c</RequestUuid></MessageResponseHeader></TrackActionRs></s:Body></s:Envelope>",
+        "headers": {
+            "Content-Type": "text/xml; charset=utf-8"
+        }
+    },
+    "uuid": "fd269097-4041-4ece-aa44-52b0b242487c"
+}

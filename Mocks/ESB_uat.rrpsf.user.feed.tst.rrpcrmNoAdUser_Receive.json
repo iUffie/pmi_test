@@ -1,0 +1,15 @@
+{
+  "name" : "ESB receive uat.rrpsf.user.feed.tst.rrpcrmNoAdUser",
+  "request" : {
+    "url" : "/messaging/q.uat.rrpsf.user.feed.tst.rrpcrmNoAdUser/receive",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n\t\"BusinessEvent\": {\n\t\t\"$type\": \"PMI.BDDM.Common.Update\",\n\t\t\"EventTime\": \"2023-07-04T09:55:53.123Z\",\n\t\t\"BusinessEntity\": {\n\t\t\t\"$type\": \"PMI.BDDM.Staticdata.User\",\n\t\t\t\"UpdateTime\": \"2023-07-04T09:55:47.000Z\",\n\t\t\t\"CreationTime\": \"2023-05-31T12:21:35.000Z\",\n\t\t\t\"CodeSpace\": \"RRPSF\",\n\t\t\t\"Code\": \"0052600000AvYRjAAN\",\n\t\t\t\"Status\": \"Active\",\n\t\t\t\"MSACode\": \"alf97\",\n\t\t\t\"Profile\": {\n\t\t\t\t\"Name\": \"Partner PopUp Expert\",\n\t\t\t\t\"Code\": \"00e58000000d2H7AAI\"\n\t\t\t},\n\t\t\t\"MaskedName\": \"Natalia S*********************t\",\n\t\t\t\"DisplayName\": \"Natalia Streltsova PopUp Expert\",\n\t\t\t\"Country\": {\n\t\t\t\t\"Name\": \"RU\",\n\t\t\t\t\"CodeSpace\": \"MDM\",\n\t\t\t\t\"Code\": \"RU\"\n\t\t\t},\n\t\t\t\"Alias\": \"npopu\"\n\t\t}\n\t}\n}",
+    "headers" : {
+      "Content-Type" : "application/json",
+      "PMI-Messaging-ID" : "{{randomValue length=10 type='NUMERIC'}}"
+    }
+  }
+}

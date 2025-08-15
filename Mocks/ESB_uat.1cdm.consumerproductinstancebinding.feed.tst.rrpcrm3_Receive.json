@@ -1,0 +1,15 @@
+{
+  "name" : "ESB receive uat.1cdm.consumerproductinstancebinding.feed.tst.rrpcrm3",
+  "request" : {
+    "url" : "/messaging/q.uat.1cdm.consumerproductinstancebinding.feed.tst.rrpcrm3/receive",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n\t\"BusinessEvent\": {\n\t\t\"$type\": \"PMI.BDDM.Common.Update\",\n\t\t\"EventTime\": \"2023-07-28T10:26:21.729+03:00\",\n\t\t\"BusinessEntity\": {\n\t\t\t\"$type\": \"PMI.BDDM.Transactionaldata.ConsumerProductInstanceBinding\",\n\t\t\t\"Code\": \"AST-00000018\",\n\t\t\t\"CodeSpace\": \"DeviceManagement\",\n\t\t\t\"CreationTime\": \"2023-05-22T11:54:11.730+03:00\",\n\t\t\t\"UpdateTime\": \"2023-07-28T10:26:21.730+03:00\",\n\t\t\t\"Country\": {\n\t\t\t\t\"CodeSpace\": \"MDM\",\n\t\t\t\t\"Code\": \"RU\",\n\t\t\t\t\"Name\": \"RU\"\n\t\t\t},\n\t\t\t\"Consumer\": {\n\t\t\t\t\"CodeSpace\": \"RRPSF\",\n\t\t\t\t\"Code\": \"CONSCOS0010231233123\"\n\t\t\t},\n\t\t\t\"ProductInstance\": {\n\t\t\t\t\"$type\": \"PMI.BDDM.Staticdata.EquipmentProductInstanceReference\",\n\t\t\t\t\"CodeSpace\": \"RRPSF\",\n\t\t\t\t\"Code\": \"T6XFJ23TBQKRNX\",\n\t\t\t\t\"Name\": \"DVC-91184867\"\n\t\t\t},\n\t\t\t\"SaleDate\": \"2023-05-18T00:00:00.735+03:00\",\n\t\t\t\"Source\": \"Manual\",\n\t\t\t\"BindingTime\": \"2023-05-22T11:54:11.735+03:00\",\n\t\t\t\"BindingBasis\": {\n\t\t\t\t\"$type\": \"PMI.BDDM.Transactionaldata.RetailReplacementOrderReference\",\n\t\t\t\t\"CodeSpace\": \"MDM\",\n\t\t\t\t\"Code\": \"da234238\"\n\t\t\t},\n\t\t\t\"UnbindingBasis\": {\n\t\t\t\t\"$type\": \"PMI.BDDM.Transactionaldata.ConsumerProductInstanceBindingRequestReference\",\n\t\t\t\t\"CodeSpace\": \"RRPSF\",\n\t\t\t\t\"Code\": \"da234239\"\n\t\t\t},\n\t\t\t\"Status\": \"Active\"\n\t\t}\n\t}\n}",
+    "headers" : {
+      "Content-Type" : "application/json",
+      "PMI-Messaging-ID" : "{{randomValue length=10 type='NUMERIC'}}"
+    }
+  }
+}

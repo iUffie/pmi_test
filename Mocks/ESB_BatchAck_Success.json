@@ -1,0 +1,10 @@
+{
+    "name" : "ESB batchack success",
+    "request" : {
+      "urlPathPattern" : "/messaging/([a-zA-Z0-9.]*)/batchack",
+      "method" : "PUT"
+    },
+    "response" : {
+      "status" : 200
+    }
+}

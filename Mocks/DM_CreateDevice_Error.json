@@ -1,0 +1,14 @@
+{ 
+    "name" : "DM Create Device Error", 
+    "priority": 1,
+    "request": { 
+        "urlPath": "/QA/hs/DeviceManagement/api/ProductInstances/TFRZF6GBTELA2X/CheckAndCreateDevice", 
+        "method": "POST" 
+    }, 
+    "response": { 
+        "status": 400, 
+        "body": "{\"$type\":\"PMI.BDDM.Common.DeviceManagementException\",\"Uid\":\"cc3f40b2-85db-4313-a79f-1fb609e33f87\",\"Message\":\"Устройство C8J8BGJ8LXYB уже существует в DeviceManagement\",\"Code\":\"BadRequest\",\"ExtendedCode\":\"Unspecified\"}", "headers": { 
+            "Content-Type": "application/json" 
+        } 
+    } 
+}

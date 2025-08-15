@@ -1,0 +1,16 @@
+{
+    "name" : "Test Mock /api/ProcessChip Success",
+    "request":
+	{
+        "urlPath": "/api/ProcessChip",
+        "method": "POST"
+    },
+    "response":
+	{
+        "status": 200,
+        "headers" :
+		{
+          "Content-Type" : "application/json; charset=utf-8"
+        }
+    }
+}

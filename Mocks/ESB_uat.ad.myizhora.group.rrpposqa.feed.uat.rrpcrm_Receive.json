@@ -1,0 +1,15 @@
+{
+  "name" : "ESB receive uat.ad.myizhora.group.rrpposqa.feed.uat.rrpcrm",
+  "request" : {
+    "url" : "/messaging/q.uat.ad.myizhora.group.rrpposqa.feed.uat.rrpcrm/receive",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{ \"BusinessEvent\": { \"$type\": \"PMI.BDDM.Common.Update\", \"EventTime\": \"2023-07-27T11:53:41.8018929+03:00\", \"BusinessEntity\": { \"$type\": \"PMI.BDDM.Staticdata.ADUserRole\", \"Users\": [ { \"Code\": \"#0001\", \"CodeSpace\": \"Atlas\", \"Name\": \"Name Value\" }, { \"Code\": \"#0002\", \"CodeSpace\": \"LMS\", \"Name\": \"Name Value\" } ], \"Name\": \"Name Value\", \"AlternateCodes\": [ { \"Code\": \"#0001\", \"CodeSpace\": \"SocialMediaTool\" }, { \"Code\": \"#0002\", \"CodeSpace\": \"SAP\" } ], \"Code\": \"Code Value\", \"CodeSpace\": \"YandexMetrica\", \"Country\": { \"Code\": \"Code Value\", \"CodeSpace\": \"SmartIQOS\", \"Name\": \"Name Value\" }, \"CreationTime\": \"2023-06-27T11:53:41.8014174+03:00\", \"UpdateTime\": \"2023-07-27T11:53:41.8014224+03:00\" } } }",
+    "headers" : {
+      "Content-Type" : "application/json",
+      "PMI-Messaging-ID" : "{{randomValue length=10 type='NUMERIC'}}"
+    }
+  }
+}

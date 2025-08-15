@@ -1,0 +1,10 @@
+{
+    "name" : "ESB send success",
+    "request" : {
+      "urlPathPattern" : "/messaging/([a-zA-Z0-9.]*)/send",
+      "method" : "POST"
+    },
+    "response" : {
+      "status" : 200
+    }
+}

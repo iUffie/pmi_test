@@ -1,0 +1,43 @@
+{
+    "name": "DM Change Asset State Success",
+    "priority": 2,
+    "request": {
+        "urlPathPattern": "/QA/hs/DeviceManagement/api/ConsumerProductInstaceBinding/([a-zA-Z0-9\\-]*)/ChangeProductInstanceBinding",
+        "method": "POST"
+    },
+    "response": {
+        "status": 200,
+        "jsonBody": {
+            "$type": "PMI.BDDM.StaticData.ConsumerProductInstanceBinding+ChangeProductInstanceBinding_Response",
+            "ConsumerBinding": {
+                "$type": "PMI.BDDM.Transactionaldata.ConsumerProductInstanceBinding",
+                "Code": "AST-00004861",
+                "CodeSpace": "DeviceManagement",
+                "CreationTime": "2023-10-09T16:27:51.929+03:00",
+                "UpdateTime": "2023-12-20T22:48:48.930+03:00",
+                "Consumer": {
+                    "CodeSpace": "RRPSF",
+                    "Code": "CONS27035932"
+                },
+                "ProductInstance": {
+                    "$type": "PMI.BDDM.Staticdata.EquipmentProductInstanceReference",
+                    "CodeSpace": "DeviceManagement",
+                    "Code": "00000OMS017803",
+                    "Name": "DVC1C-000257175"
+                },
+                "SaleDate": "2023-12-20T00:00:00.930+03:00",
+                "Source": "Sale",
+                "BindingTime": "2023-10-09T16:27:51.930+03:00",
+                "BindingBasis": {
+                    "$type": "PMI.BDDM.Transactionaldata.RetailSaleOrderReference",
+                    "CodeSpace": "RRPSF",
+                    "Code": "BO-12345678"
+                },
+                "Status": "Inactive"
+            }
+        },
+        "headers": {
+            "Content-Type": "application/json"
+        }
+    }
+}

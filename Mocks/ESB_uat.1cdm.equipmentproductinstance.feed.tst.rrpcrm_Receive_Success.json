@@ -1,0 +1,15 @@
+{
+    "name" : "ESB receive uat.1cdm.equipmentproductinstance.feed.tst.rrpcrm",
+    "request" : {
+      "url" : "/messaging/q.uat.1cdm.equipmentproductinstance.feed.tst.rrpcrm/receive",
+      "method" : "GET"
+    },
+    "response" : {
+      "status" : 200,
+      "body" : "{\n    \"BusinessEvent\": {\n        \"$type\": \"PMI.BDDM.Common.Update\",\n        \"EventTime\": \"2023-06-22T16:57:12.701+03:00\",\n        \"BusinessEntity\": {\n            \"$type\": \"PMI.BDDM.Staticdata.EquipmentProductInstance\",\n            \"Code\": \"TZ203ZCTWF52Q8\",\n            \"CodeSpace\": \"RRPSF\",\n            \"CreationTime\": \"2018-09-19T06:23:26.701+03:00\",\n            \"UpdateTime\": \"2023-06-22T16:57:12.701+03:00\",\n            \"Country\": {\n                \"CodeSpace\": \"MDM\",\n                \"Code\": \"RU\",\n                \"Name\": \"RU\"\n            },\n            \"FirmwareVersion\": \"1.2.3\",\n            \"FirmwareDataSource\": \"DesktopAppUSU\",\n            \"Kit\": {\n                \"CodeSpace\": \"MDM\",\n                \"Code\": \"7J8BDZSZWXNS\",\n                \"Name\": \"DVC-08492036\"\n            },\n            \"ProductionMaterial\": {\n                \"$type\": \"PMI.BDDM.Staticdata.ComponentProductionMaterialReference\",\n                \"CodeSpace\": \"MDM\",\n                \"Code\": \"DVC0361\",\n                \"Name\": \"DVC0361\"\n            },\n            \"ProductionDate\": \"2018-09-10T00:00:00.701+03:00\",\n            \"Description\": \"Holder /S IQOS A1403 RND WHT2.4 PLUS\",\n            \"Product\": {\n                \"$type\": \"PMI.BDDM.Staticdata.BrandVariantReference\",\n                \"CodeSpace\": \"MDM\",\n                \"Code\": \"BV001953\",\n                \"Name\": \"Держатель IQOS 2.4P (белый)\"\n            },\n            \"ProductCategory\": {\n                \"Code\": \"M0301\",\n                \"Name\": \"RRP HTP Holder\"\n            },\n            \"Status\": \"UserLinked\",\n            \"TargetMarket\": {\n                \"CodeSpace\": \"MDM\",\n                \"Code\": \"RU04\",\n                \"Name\": \"RU04\"\n            }\n        }\n    }\n}",
+      "headers" : {
+        "Content-Type" : "application/json",
+        "PMI-Messaging-ID" : "{{randomValue length=10 type='NUMERIC'}}"
+      }
+    }
+}

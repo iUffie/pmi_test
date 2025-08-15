@@ -1,0 +1,22 @@
+{
+    "name" : "Test Mock /api/Promotioncodes/AssignPromocodeToCustomer 500 BPMSoft Error",
+    "request":
+	{
+        "urlPath": "/api/Promotioncodes/AssignPromocodeToCustomer",
+        "method": "POST",
+        "bodyPatterns": [
+            {
+                "contains": "PCT-9999999999"
+            }
+        ]
+    },
+    "response":
+	{
+        "status": 500,
+        "body" : "{ \"Uid\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\", \"Code\": 513, \"Message\": \"BPMSoft Server Error\"}",
+        "headers" :
+		{
+          "Content-Type" : "application/json; charset=utf-8"
+        }
+    }
+}

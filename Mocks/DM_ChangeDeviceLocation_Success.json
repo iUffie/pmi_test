@@ -1,0 +1,57 @@
+{
+    "name": "DM Change Device Location Success",
+    "priority": 2,
+    "request": {
+        "urlPathPattern": "/QA/hs/DeviceManagement/api/ProductInstances/([a-zA-Z0-9\\-]*)/ChangeDeviceLocation",
+        "method": "POST"
+    },
+    "response": {
+        "status": 200,
+        "jsonBody": {
+            "$type": "PMI.BDDM.StaticData.EquipmentProductInstance+ChangeDeviceLocation_Response",
+            "EquipmentProductInstance": {
+                "$type": "PMI.BDDM.Staticdata.EquipmentProductInstance",
+                "Code": "{{request.pathSegments.[5]}}",
+                "CodeSpace": "DeviceManagement",
+                "CreationTime": "2023-10-17T12:11:39.328+03:00",
+                "UpdateTime": "2024-01-15T13:02:14.328+03:00",
+                "Country": {
+                    "CodeSpace": "MDM",
+                    "Code": "RU",
+                    "Name": "RU"
+                },
+                "Kit": {
+                    "CodeSpace": "DeviceManagement",
+                    "Code": "RENTDU0K0013",
+                    "Name": "DVC1C-000522412"
+                },
+                "ProductionMaterial": {
+                    "$type": "PMI.BDDM.Staticdata.ComponentProductionMaterialReference",
+                    "CodeSpace": "MDM",
+                    "Code": "DVC2310",
+                    "Name": "DVC2310"
+                },
+                "ProductionDate": "2023-09-09T00:00:00.328Z",
+                "Transaction": {
+                    "CodeSpace": "B2CCRM",
+                    "Code": "CPR-00000970"
+                },
+                "Description": "Pocket Charger IQOS 3 DUO GREY A1505 - A1505 RND VEG3.1 Generic Charger (NCM) - OX / FL",
+                "Location": {
+                    "$type": "{{jsonPath request.body '$.Location.$type'}}",
+                    "Code": "{{jsonPath request.body '$.Location.Code'}}",
+                    "CodeSpace": "{{jsonPath request.body '$.Location.CodeSpace'}}"
+                },
+                "Status": "{{jsonPath request.body '$.Status'}}",
+                "TargetMarket": {
+                    "CodeSpace": "MDM",
+                    "Code": "RU04",
+                    "Name": "RU04"
+                }
+            }
+        },
+        "headers": {
+            "Content-Type": "application/json"
+        }
+    }
+}

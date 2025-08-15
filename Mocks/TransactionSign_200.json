@@ -1,0 +1,12 @@
+{
+    "name" : "Test Mock /api/Transaction/Sign 200",
+	"priority": 2,
+    "request": {
+        "urlPath": "/api/Transaction/Sign",
+        "method": "POST"
+    },
+    "response": {
+        "status": 200,
+        "body": "Введённый код 0000 совпал с отправленным кодом. Кейс подписан."
+    }
+}

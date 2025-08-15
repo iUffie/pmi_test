@@ -1,0 +1,15 @@
+{
+    "name" : "ESB receive uat.ad.myizhora.group.rrpcrmqa.feed.uat.rrpcrm",
+    "request" : {
+      "url" : "/messaging/q.uat.ad.myizhora.group.rrpcrmqa.feed.uat.rrpcrm/receive",
+      "method" : "GET"
+    },
+    "response": {
+      "status" : 200,
+      "body" : "{\n  \"BusinessEvent\": {\n    \"$type\": \"PMI.BDDM.Common.Update\",\n    \"EventTime\": \"2023-07-12T17:35:52.7148583+03:00\",\n    \"BusinessEntity\": {\n      \"$type\": \"PMI.BDDM.Staticdata.ADUserRole\",\n      \"Users\": [\n        {\n          \"Code\": \"1234567\",\n          \"CodeSpace\": \"DeviceManagement\",\n          \"Name\": \"Новая роль1\"\n        },\n        {\n          \"Code\": \"7654321\",\n          \"CodeSpace\": \"SmartIQOS\",\n          \"Name\": \"Новая роль2\"\n        }\n      ],\n      \"Name\": \"Name Value\",\n      \"AlternateCodes\": [\n        {\n          \"Code\": \"#0001\",\n          \"CodeSpace\": \"IndustryExchange\"\n        },\n        {\n          \"Code\": \"#0002\",\n          \"CodeSpace\": \"PiON\"\n        }\n      ],\n      \"Code\": \"Code Value\",\n      \"CodeSpace\": \"ActiveDirectory\",\n      \"Country\": {\n        \"Code\": \"Code Value\",\n        \"CodeSpace\": \"IMDL\",\n        \"Name\": \"Name Value\"\n      },\n      \"CreationTime\": \"2023-06-12T17:35:52.7144499+03:00\",\n      \"UpdateTime\": \"2023-07-12T17:35:52.714454+03:00\"\n    }\n  }\n}",
+      "headers" : {
+        "Content-Type" : "application/json",
+        "PMI-Messaging-ID" : "{{randomValue length=10 type='NUMERIC'}}"
+      }
+    }
+}

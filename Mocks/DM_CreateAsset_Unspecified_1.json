@@ -1,0 +1,13 @@
+{ 
+    "name" : "DM Unspecified", 
+    "request": { 
+        "urlPath": "/QA/hs/DeviceManagement/api/ProductInstances/TABCDEFGH12345/ChangeConsumerDevice", 
+        "method": "POST" 
+    }, 
+    "response": { 
+        "status": 503, 
+        "body": "{\"$type\":\"PMI.BDDM.Common.DeviceManagementException\",\"Uid\":\"530ada54-0212-4283-8a19-e4da76b592f5\",\"Message\":\"Сервер временно не имеет возможности обрабатывать запросы по техническим причинам.\",\"Code\":\"ServiceUnavailable\",\"ExtendedCode\":\"Unspecified\"}", "headers": { 
+            "Content-Type": "application/json" 
+        } 
+    } 
+}

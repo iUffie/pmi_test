@@ -1,0 +1,15 @@
+{
+  "name" : "ESB receive uat.ebx.legalentity.feed.tst.rrpcrmNoAdressLine",
+  "request" : {
+    "url" : "/messaging/q.uat.ebx.legalentity.feed.tst.rrpcrmNoAdressLine/receive",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\n\t\"BusinessEvent\": {\n\t\t\"$type\": \"PMI.BDDM.Common.Create\",\n\t\t\"BusinessEntity\": {\n\t\t\t\"$type\": \"PMI.BDDM.Staticdata.LegalEntity\",\n\t\t\t\"Addresses\": [\n\t\t\t\t{\n\t\t\t\t\t\"AddressLine\": \"\",\n\t\t\t\t\t\"Building\": \"д 2/1 стр 1\",\n\t\t\t\t\t\"City\": \"Москва г\",\n\t\t\t\t\t\"Region\": \"Москва\",\n\t\t\t\t\t\"Street\": \"Новая Басманная ул\",\n\t\t\t\t\t\"Type\": \"Registration\",\n\t\t\t\t\t\"ZipCode\": \"107174\"\n\t\t\t\t}\n\t\t\t],\n\t\t\t\"Email\": [\n\t\t\t\t{\n\t\t\t\t\t\"Address\": \"GAL86@BK.RU\"\n\t\t\t\t}\n\t\t\t],\n\t\t\t\"Form\": \"NAO\",\n\t\t\t\"INN\": \"7708503727\",\n\t\t\t\"KPP\": \"770801001\",\n\t\t\t\"Name\": \"РЖД НАО\",\n\t\t\t\"Phone\": [\n\t\t\t\t{\n\t\t\t\t\t\"Number\": \"+7 800 7750000\",\n\t\t\t\t\t\"Type\": \"Work\"\n\t\t\t\t}\n\t\t\t],\n\t\t\t\"RegisteredName\": \"ОАО \\\"РЖД\\\"\",\n\t\t\t\"Status\": \"Active\",\n\t\t\t\"Code\": \"LE7708503727\",\n\t\t\t\"CodeSpace\": \"MDM\",\n\t\t\t\"Country\": {\n\t\t\t\t\"Code\": \"RU\",\n\t\t\t\t\"CodeSpace\": \"MDM\",\n\t\t\t\t\"Name\": \"Russian Fed.\"\n\t\t\t},\n\t\t\t\"CreationTime\": \"2023-07-13T09:01:09.692Z\",\n\t\t\t\"UpdateTime\": \"2023-07-13T09:01:21.969Z\"\n\t\t},\n\t\t\"EventTime\": \"2023-07-13T09:02:05.161Z\"\n\t}\n}",
+    "headers" : {
+      "Content-Type" : "application/json",
+      "PMI-Messaging-ID" : "{{randomValue length=10 type='NUMERIC'}}"
+    }
+  }
+}

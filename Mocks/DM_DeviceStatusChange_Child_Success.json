@@ -1,0 +1,95 @@
+{ 
+    "name" : "DM Child Device Status Change Success", 
+    "priority": 3,
+    "request": { 
+        "urlPathPattern": "/QA/hs/DeviceManagement/api/ProductInstances/([a-zA-Z0-9\\-]*)/ChangeDevice", 
+        "method": "POST" 
+    }, 
+    "response": { 
+        "status": 200, 
+        "jsonBody": {
+            "$type": "PMI.BDDM.StaticData.ProductInstance+ChangeDevice_Response",
+            "ProductInstance": {
+                "$type": "PMI.BDDM.Staticdata.EquipmentProductInstance",
+                "Code": "TELGKYE8Y27UBR",
+                "CodeSpace": "RRPSF",
+                "FirmwareVersion": "1.1.1",
+                "CreationTime": "2023-05-04T10:22:10.760+03:00",
+                "UpdateTime": "2023-10-19T11:36:16.760+03:00",
+                "Country": {
+                    "CodeSpace": "MDM",
+                    "Code": "RU",
+                    "Name": "RU"
+                },
+                "Kit": {
+                    "CodeSpace": "RRPSF",
+                    "Code": "MLHNV7DJTED1",
+                    "Name": "DVC1C-000184310"
+                },
+                "ProductionMaterial": {
+                    "$type": "PMI.BDDM.Staticdata.ComponentProductionMaterialReference",
+                    "CodeSpace": "MDM",
+                    "Code": "DVC2309",
+                    "Name": "DVC2309"
+                },
+                "Product": {
+                    "$type": "PMI.BDDM.Staticdata.BrandVariantReference",
+                    "CodeSpace": "MDM",
+                    "Code": "BV002434",
+                    "Name": "Комплект IQOS 3 DUOS (белый)"
+                },
+                "ProductionDate": "2022-03-21T00:00:00.760+03:00",
+                "Transaction": {
+                    "CodeSpace": "B2CCRM",
+                    "Code": "CPR-123456"
+                },
+                "Description": "Pocket Charger IQOS 3 DUO WHITE A1505 - A1505 RND WWH3.1 Generic Charger (NCM) - OX / FL",
+                "Location": {
+                    "$type": "PMI.BDDM.Staticdata.POSReference",
+                    "CodeSpace": "MDM",
+                    "Code": "CE002076"
+                },
+                "Status": "UserLinked",
+                "TargetMarket": {
+                    "CodeSpace": "MDM",
+                    "Code": "RU04",
+                    "Name": "RU04"
+                }
+            },
+            "ConsumerBindings": [
+                {
+                "$type": "PMI.BDDM.Transactionaldata.ConsumerProductInstanceBinding",
+                    "BindingBasis":
+                    {
+                        "$type": "PMI.BDDM.Transactionaldata.RetailSaleOrderReference",
+                        "Code": "BRO-685468",
+                        "CodeSpace": "CouponAdaptor",
+                        "Name": "Name Value"
+                    },
+                    "BindingTime": "2023-05-17T15:28:02.0731843+03:00",
+                    "Consumer":
+                    {
+                        "Code": "CONS123456",
+                        "CodeSpace": "SegmentationTool",
+                        "Name": "Name Value"
+                    },
+                    "ProductInstance":
+                    {
+                        "$type": "PMI.BDDM.Staticdata.EquipmentProductInstanceReference",
+                        "Code": "djkdsf",
+                        "CodeSpace": "TradeAccountSaleEstimateTool",
+                        "Name": "Name Value"
+                    },
+                    "SaleDate": "2023-05-17T15:28:02.0747421+03:00",
+                    "Source": "Replacement",
+                    "Status": "Active",
+                    "Code": "WWRE5454",
+                    "CodeSpace": "Arvato"
+                }
+            ]
+        }, 
+        "headers": { 
+            "Content-Type": "application/json" 
+        } 
+    } 
+}

@@ -1,0 +1,48 @@
+{
+    "name": "Test Mock DMatrix SelectDeliveryData Success",
+    "priority": 3,
+    "request": {
+        "urlPathPattern": "/api/deliverymatrixdata/selectDeliveryData",
+        "method": "GET"
+    },
+    "response": {
+        "status": 200,
+        "jsonBody": {
+            "data": [
+                {
+                    "index": 129090,
+                    "courier_company": "EXPRESS",
+                    "holiday": "Да",
+                    "saturday": "Да",
+                    "sunday": "Да",
+                    "online_payable": "Да",
+                    "cash_acceptable": "Да",
+                    "delivery_card_acceptable": "Нет",
+                    "stockManagement": false,
+                    "websiteLabel ": "СДЭК",
+                    "blur": true
+                },
+                {
+                    "index": 129090,
+                    "courier_company": "CDEKPICKUP",
+                    "holiday": "Нет",
+                    "saturday": "Да",
+                    "sunday": "Да",
+                    "online_payable": "Да",
+                    "cash_acceptable": "Нет",
+                    "delivery_card_acceptable": "Нет",
+                    "stockManagement": false,
+                    "websiteLabel ": "СДЭК ПВЗ"
+                },
+                {
+                    "data": [],
+                    "reason": "no_stock"
+                },
+                {
+                    "data": [],
+                    "reason": "no_stock"
+                }
+            ]
+        }
+    }
+}

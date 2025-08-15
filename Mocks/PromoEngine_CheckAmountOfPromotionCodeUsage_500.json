@@ -1,0 +1,15 @@
+{
+    "name" : "Test Mock /api/Promotioncodes/CheckAmountOfPromotionCodeUsage 500",
+    "request":
+    {
+        "urlPath": "/api/Promotioncodes/CheckAmountOfPromotionCodeUsage",
+        "method": "POST"
+    },
+    "response": {
+        "status": 500,
+        "body": "{\"$type\":\"PMI.BDDM.Common.PromoEngineException\",\"$version\":\"2.38.0.0\",\"ExtendedCode\":\"LimitOfAvailablePromotionCodesReached\",\"Code\":\"BadRequest\",\"Message\":\"Достигнут лимит выдачи промокодов\",\"Uid\":\"8a42466f-d182-4dad-9347-428f6e202e93\"}",
+        "headers": {
+            "Content-Type": "application/json; charset=utf-8"
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{ 
+    "name" : "DM Success", 
+    "request": { 
+        "urlPath": "/QA/hs/DeviceManagement/api/ProductInstances/TFRZF6GBTELA2Y/ChangeConsumerDevice", 
+        "method": "POST" 
+    }, 
+    "response": { 
+        "status": 200, 
+        "body": "{\n \"$type\": \"PMI.BDDM.StaticData.ProductInstance+ChangeConsumerDevice_Response\",\n \"ProductInstance\": {\n \"$type\": \"PMI.BDDM.Staticdata.EquipmentProductInstance\",\n \"Code\": \"T1596WSQPB6D1Y\",\n \"CodeSpace\": \"RRPSF\",\n \"CreationTime\": \"2022-09-27T01:23:12.904+03:00\",\n \"UpdateTime\": \"2023-05-02T17:31:07.904+03:00\",\n \"Country\": {\n \"CodeSpace\": \"MDM\",\n \"Code\": \"RU\",\n \"Name\": \"RU\"\n },\n \"ProductionMaterial\": {\n \"$type\": \"PMI.BDDM.Staticdata.ComponentProductionMaterialReference\",\n \"CodeSpace\": \"MDM\",\n \"Code\": \"DVC3364\",\n \"Name\": \"DVC3364\"\n },\n \"ProductionDate\": \"2022-09-17T00:00:00.904+03:00\",\n \"Description\": \"HTPHolderIQOS3DUOWHITEA1406RNDWWH3.1GenericHolder(NBSealX)-OX/FL\",\n \"Product\": {\n \"$type\": \"PMI.BDDM.Staticdata.BrandVariantReference\",\n \"CodeSpace\": \"MDM\",\n \"Code\": \"BV002439\",\n \"Name\": \"ДержательIQOS3DUOS(белый)\"\n },\n \"ProductCategory\": {\n \"Code\": \"0000M0301\",\n \"Name\": \"RRPHTPHolder\"\n },\n \"Status\": \"UserLinked\",\n \"TargetMarket\": {\n \"CodeSpace\": \"MDM\",\n \"Code\": \"RU04\",\n \"Name\": \"RU04\"\n }\n },\n \"ConsumerBindings\": [\n {\n \"$type\": \"PMI.BDDM.Transactionaldata.ConsumerProductInstanceBinding\",\n \"Code\": \"AST-00000348\",\n \"Source\": \"Relinking\",\n \"BindingTime\": \"{{ now }}\",\n \"SaleDate\": \"2023-10-01T00:00:00.910+03:00\",\n \"Status\": \"Active\",\n \"BindingBasis\": {\n \"$type\": \"PMI.BDDM.Transactionaldata.RetailSaleOrderReference\",\n \"CodeSpace\": \"RRPSF\",\n \"Code\": \"CS-12345679\"\n },\n \"Consumer\": {\n \"CodeSpace\": \"RRPSF\",\n \"Code\": \"CONS7891423\"\n },\n \"ProductInstance\": {\n \"$type\": \"PMI.BDDM.Staticdata.EquipmentProductInstanceReference\",\n \"CodeSpace\": \"RRPSF\",\n \"Code\": \"T1596WSQPB6D1Y\"\n }\n }\n ]\n}", "headers": { 
+            "Content-Type": "application/json" 
+        } 
+    } 
+}

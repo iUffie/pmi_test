@@ -1,0 +1,25 @@
+{
+    "id": "b0269336-1b3e-4ea4-8878-dc7b21a9b31b",
+    "name": "uCRM managePerson Test",
+    "priority": 1,
+    "request": {
+        "url": "/PmiXrmService.svc",
+        "method": "POST",
+		"bodyPatterns": [
+            {
+              "contains":"ManagePersonRq"
+            },
+            {
+                "contains":"LoginMobile"
+            }
+        ]
+    },
+    "response": {
+        "status": 200,
+        "body": "<s:Envelope xmlns:s=\"http://schemas.xmlsoap.org/soap/envelope/\">    <s:Body xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"        xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\">        <ManagePersonRs xmlns=\"http://acxiom.com/pmiservice/ws/types\">            <MessageResponseHeader>                <TransactionStatus>4</TransactionStatus>                <TransactionStatusMessages>                    <TransactionStatusMessage>Person created</TransactionStatusMessage>                </TransactionStatusMessages>                <RequestUuid>5b351dea-2eda-42a3-8b4c-530d55ba0bf4</RequestUuid>            </MessageResponseHeader>            <PersonId>{{randomValue length=10 type='NUMERIC'}}</PersonId>            <VerificationStatus>0</VerificationStatus>            <LoginID>7929965</LoginID>            <NewPersonFlag>Y</NewPersonFlag>            <NewConsumerFlag>N</NewConsumerFlag>        </ManagePersonRs>    </s:Body></s:Envelope>",
+        "headers": {
+            "Content-Type": "text/xml; charset=utf-8"
+        }
+    },
+    "uuid": "b0269336-1b3e-4ea4-8878-dc7b21a9b31b"
+}

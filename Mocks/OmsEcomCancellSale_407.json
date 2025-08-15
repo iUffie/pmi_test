@@ -1,0 +1,17 @@
+{
+    "id": "8e2f4d60-f2f1-4a69-bd4d-dcf47fbf3e8c",
+    "name": "OMS Cancel Sale Order with Error for OB-00555225",
+    "request": {
+        "urlPath": "/api/ecom/retailsaleorders/OB-00555225",
+        "method": "PATCH"
+    },
+    "response": {
+        "status": 400,
+        "body": "{\"$type\":\"PMI.BDDM.Common.OMSException\",\"$version\":\"2.41.2.0\",\"ExtendedCode\":\"CancellationHasAlreadyBeenRequested\",\"Code\":\"BadRequest\",\"Message\":\"Order status cannot be changed from Cancelled to Cancelled\",\"Uid\":\"be247690-f770-4914-bc28-d1bc1588b15d\"}",
+        "headers": {
+            "Content-Type": "application/json"
+        }
+    },
+    "uuid": "8e2f4d60-f2f1-4a69-bd4d-dcf47fbf3e8c",
+    "priority": 1
+}
